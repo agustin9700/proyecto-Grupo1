@@ -6,3 +6,10 @@ Montero Agustin,
 Gimenez Paulo,
 Kneeteman Ariana,
 Fernadez Santiago
+
+INSPIRACIÓN: 
+1. kentucky, para colores y detalles de producto.
+2. Fravega, para el home.
+3. Jumbo, para el home.
+4. Carrefour, para carrito de compras.
+5. Dribbble, para login y register.
