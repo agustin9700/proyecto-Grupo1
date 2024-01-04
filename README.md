@@ -8,7 +8,7 @@ Este equipo comenzó a desarrollar un sitio web donde se ofrece comida rápida, 
 Nombre | Edad | Localidad | Email
 -------|------|-----------|------
 Erba Luka Ezequiel | 21 | Castelli, Buenos Aires | ezequielerba7@gmail.com
-Montero Agustin | 0 | asdasd
+Montero Agustin | 26 | San Miguel de Tucumán, Tucumán | Agustin.montero1997@gmail.com
 Gimenez Paulo  | 0 | asdasd
 Kneeteman Ariana | 30 | Gualeguaychú, Entre Ríos | kneetemana@gmail.com
 Fernández Santiago | 0 | asdasd
