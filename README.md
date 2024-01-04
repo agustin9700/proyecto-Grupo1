@@ -5,12 +5,12 @@ Este equipo comenzó a desarrollar un sitio web donde se ofrece comida rápida, 
 
 ## DESARROLLADORES
 
-Nombre | Edad | Localidad
--------|------|----------
-Erba Luka Ezequiel | 21 | Castelli, Buenos Aires.
+Nombre | Edad | Localidad | Email
+-------|------|-----------|------
+Erba Luka Ezequiel | 21 | Castelli, Buenos Aires | ezequielerba7@gmail.com
 Montero Agustin | 0 | asdasd
 Gimenez Paulo  | 0 | asdasd
-Kneeteman Ariana | 0 | asdasd
+Kneeteman Ariana | 30 | Gualeguaychú, Entre Ríos | kneetemana@gmail.com
 Fernández Santiago | 0 | asdasd
 - - -
 
