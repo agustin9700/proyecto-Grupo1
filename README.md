@@ -11,7 +11,7 @@ Erba Luka Ezequiel | 21 | Castelli, Buenos Aires | ezequielerba7@gmail.com
 Montero Agustin | 26 | San Miguel de Tucumán, Tucumán | Agustin.montero1997@gmail.com
 Gimenez Paulo  | 0 | asdasd
 Kneeteman Ariana | 30 | Gualeguaychú, Entre Ríos | kneetemana@gmail.com
-Fernández Santiago | 0 | asdasd
+Fernández Santiago | 22 | Lanús, Buenos Aires | santyjf7@gmail.com
 - - -
 
 ## INSPIRACIÓN
