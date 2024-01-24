@@ -1,4 +1,4 @@
-Los colores itulizados son:
+Los colores utilizados son:
 Naranja = FF6600
 Blanco = FFFFFF
 Negro = 000000
