@@ -31,16 +31,16 @@ header{
     position: relative;
     display: inline-block;
     width: 100%;
-  }
+  } 
 
-.divBusquedaHeader input {
+  .divBusquedaHeader input {
     padding-left: 30px;
     border: none;
-    background-color: var(--Blanco); 
+    background-color: var(--Blanco);
     height: 25px;
     width: 100%;
-    border-radius: 10px;
-  }
+    border-radius: 12px;
+  } 
 
 .divBusquedaHeader button{
     position: absolute;
@@ -48,10 +48,11 @@ header{
     height: 100%;
     padding-left: 10px;
     border: none;
-    background-color: var(--Blanco); /* Fondo del botón */
+    background-color: var(--Blanco);
     color: var(--Naranja);
     border-radius: 10px;
   }
+
 /*TABLET*/
 @media(min-width: 400px){
     header{
@@ -77,11 +78,15 @@ header{
         padding: 5px;
         margin-right: 20px;
         border-radius: 70px;
+        transition: all 0.5s;
+    }
+    .logueoHeader nav ul li a:hover{
+        background-color: var(--Blanco);
+        color: var(--Naranja);
     }
     .logueoHeader nav ul{
         display: flex;
         flex-wrap: wrap;
-        /* gap: 40px; */
         margin-top: 10px;
         max-width: 90%;
     }
@@ -97,8 +102,8 @@ header{
     }
     .partInf{
         display: flex;
-        margin: 0 0 15px 5px;
-        width: 70%;
+        justify-content: space-between;
+        padding-bottom: 10px;
     }
     .navHeader2{
         display: inline-block;
@@ -107,11 +112,8 @@ header{
         display: inline-block;
     }
     .navHeader2 ul li a{
-        color: var(--Blanco);
-        padding: 0 10px;
-        border-right: solid 1px var(--Blanco);
-        font-size: 12px;
-    }
+        display: none;
+    } 
     .navHeader2 ul li a img{
         vertical-align: middle;
     }
@@ -122,5 +124,65 @@ header{
         font-size: 12px;
         margin-bottom: 5px;
         vertical-align: middle;
+    }
+    .ulInf{
+        display: inline-block;
+        padding-left: 6px;
+    }
+    .verMenu{
+        border:none;
+        background-color: var(--Naranja);
+        color: var(--Blanco);
+        font-size: 16px;
+        padding: 4px 12px;
+        transition: all 0.5s;
+    }
+    .verMenu:hover{
+        color: var(--Negro);
+    }
+    .divBusquedaHeader{
+        max-width: 65%;
+        padding-right: 1em;
+    }
+    .divBusquedaHeader input{
+        height: 30px;
+        padding-left: 10px;
+    }
+    .divBusquedaHeader button{
+        left: auto;
+        right: 0;
+        padding: 2px 5px 0 6px;
+        background-color: var(--Naranja);
+        color: var(--Blanco);
+        height: 80%;
+        margin: 3px 20px 0 0;
+        transition: all 0.5s;
+    }
+    .divBusquedaHeader button:hover{
+        color: var(--Negro);
+        background-color: var(--Blanco);
+        border: solid 1px var(--Negro);
+    }
+    .ulInf{
+        padding-top: 3px;
+    }
+}
+@media(min-width:769px){
+    .navHeader2 ul li a{
+        display: inline-block;
+        color: var(--Blanco);
+        padding: 2px 16px 2px 10px;
+        border-right: solid 1px var(--Blanco);
+        font-size: 16px;
+        transition: all 0.5s;
+    }
+    .navHeader2 ul li a:hover{
+        color: var(--Negro);
+    }
+    .verMenu{
+        border-right: 1px solid var(--Blanco);
+    }
+    .divBusquedaHeader{
+        max-width: 35%;
     }
 }
