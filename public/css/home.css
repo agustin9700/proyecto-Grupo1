@@ -1,0 +1,51 @@
+.main-banner{
+    width: 100vw;
+}
+
+.main-banner figure img{
+    width: 100%;
+}
+
+.main-banner figure img:nth-child(2), img:nth-child(3){
+    display: none;
+}
+
+.container-main .upper-body div h2{
+    text-align: center;
+}
+
+.container-main .upper-body ul{
+display: flex;
+flex-direction: column;
+}
+
+.container-main .upper-body ul li{
+
+}
+
+.container-main .upper-body ul li .upper-body-img{
+    
+}
+
+
+/* TABLET */
+@media(min-width: 400px){
+    .main-banner figure img:nth-child(1), img:nth-child(3){
+        display: none;
+    }
+    .main-banner figure img:nth-child(2){
+        display: flex;
+    }
+    
+}
+
+@media(min-width:769px){
+    .main-banner figure img:nth-child(2){
+        display: none;
+    }
+    .main-banner figure img:nth-child(3){
+        display: flex;
+    }
+   
+}
+
