@@ -1,0 +1,96 @@
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-footer .logo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    border-bottom: 1px solid white;
+}
+
+.main-footer .logo figure {
+    width: 12vw;
+}
+
+.main-footer .logo figure img {
+    width: 100%;
+}
+
+.main-footer .suscrip-forms {
+    display: inline-block;
+    width: 42%;
+}
+
+.main-footer .suscrip-forms form {}
+
+.main-footer .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-footer .container .ul1 {
+    margin: 10px;
+}
+
+.main-footer .container .ul1 .nosotros {
+    padding-bottom: 10px;
+}
+
+
+.main-footer .container .ul1 li {
+    padding-bottom: 4px;
+}
+
+.main-footer .container .ul1 li a {}
+
+.main-footer .container .ul2 {
+    margin: 10px;
+}
+
+.main-footer .container .ul2 .redes {
+    padding-bottom: 10px;
+}
+
+
+.main-footer .container .ul2 li {
+    padding-bottom: 4px;
+}
+
+.main-footer .container .ul2 li a {}
+
+.main-footer .container .ul3 {
+    margin: 10px;
+}
+
+.main-footer .container .ul3 .ayuda {
+    padding-bottom: 10px;
+}
+
+.main-footer .container .ul3 li {
+    padding-bottom: 4px;
+}
+
+.main-footer .container .ul3 li a {}
+
+.main-footer .fin {
+    display: flex;
+}
+
+.main-footer .fin .copy-left {}
+
+.main-footer .fin .right .iconos-right {
+    display: -webkit-inline-box;
+    margin-left: 668%;
+    text-align: end;
+}
+
+.main-footer .fin .right .iconos-right li {
+    padding: 5px;
+}
