@@ -14,6 +14,7 @@
 .fa-angle-left{
     border: 2px solid var(--Gris);
     color: var(--Negro);
+    transition: all 0.5s;
 }
 .volverRegister{
     border-radius: 50%;
@@ -82,7 +83,6 @@
 .enviarRegister:hover{
     background-color: var(--Gris);
     color: var(--Negro);
-    border: 1px solid var(--Negro);
 }
 .loguearRegister{
     font-size: 13px;
@@ -99,6 +99,20 @@ font-size: 10px;
 }
 .reCAPTCHAregister a{
     color: var(--Naranja);
+}
+.aCAPTCHA:hover{
+    background-color: rgba(255, 102, 0, 0.2);
+}
+.aComoRegister:hover{
+    background-color: rgba(255, 102, 0, 0.2);
+}
+.iniciarSesionRegister:hover{
+    background-color: rgba(255, 102, 0, 0.2);
+}
+.fa-angle-left:hover{
+    color: var(--Blanco);
+    border: 2px solid var(--Blanco);
+    background-color: var(--Negro);
 }
 /*TABLET*/
 @media(min-width: 400px){
@@ -137,7 +151,7 @@ font-size: 10px;
 @media(min-width:769px){
     .pizzaRegister{
         display: inline-block;
-        width: 33%;
+        width: 40%;
     }
     .bodyRegister{
         display: flex;
