@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="partSup">
+            <img class="logoHeader" src="/images/logo.png" alt="logo">
+            <i class="fas fa-bars hamb1"></i>
+            <div class="logueoHeader">
+                <nav>
+                    <ul>
+                        <li><a href=""><i class="fas fa-cart-plus carritoHeader"></i></a></li>
+                        <li><a href=""><i class="fa-regular fa-heart coraHeader"></i></a></li>
+                        <li><a href=""><i class="fa-regular fa-user userHeader"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="partInf">
+            <nav class="navHeader2">
+                <ul class="ulInf">
+                    <button type="button" class="verMenu"><i class="fas fa-bars hamb2"></i> Ver menú</button>
+                    <li><a href="/productDetail"> Papas</a></li>
+                    <li><a href="/productDetail"> Pizzas</a></li>
+                    <li><a href="/productDetail"> Hamburguesas</a></li>
+                </ul>
+            </nav>
+            <div class="divBusquedaHeader">
+                <form action="/register" method="post">
+                    <input type="text" name="productoBuscado" placeholder="Buscar productos" value="">
+                    <button><i class="fas fa-search lupaHeader"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-productos">
+
+        <section class="pizzas">
+            <h2 class="titulo">PIZZAS</h2>
+
+            <article class="variedades">
+                <!--<img src="/images/Pizza-img6.jpg" alt="pizza1">-->
+                <h4>Rucula</h4>
+                <p></p>
+            </article>
+            <article class="variedades">
+                <figure>
+                    <!--<img src="/images/Pizza-img7.jpg" alt="pizza2">
+                </figure>-->
+                <h4>Fugazzeta</h4>
+                <p></p>
+            </article>
+            <article class="variedades">
+                <figure>
+                    <!--<img src="/images/Pizza-img16.jpg" alt="pizza3">
+                </figure>-->
+                <h4>Albaca</h4>
+                <p></p>
+            </article>
+        </section>
+
+        <section class="hamburguesas">
+            <h2 class="titulo">HAMBURGUESAS</h2>
+
+            <article class="variedades">
+                <figure>
+                   <!-- <img src="/images/Hamb- img12.jpg" alt="hamb1">
+                </figure>-->
+                <h4></h4>
+                <p></p>
+            </article>
+
+            <article class="variedades">
+                <figure>
+                  <!--  <img src="/images/Hamb-img10.jpg" alt="hamb2">
+                </figure>-->
+                <h4></h4>
+                <p></p>
+            </article>
+
+            <article class="variedades">
+                <figure>
+                  <!--  <img src="/images/Hamb-img11.jpg" alt="hamb3">
+                </figure>-->
+                <h4></h4>
+                <p></p>
+            </article>
+        </section>
+
+        <section class="papas">
+            <h2>PAPAS FRITAS</h2>
+
+            <article class="variedades">
+                <figure>
+                   <!-- <img src="/images/Papas-img13.png" alt="papas1">
+                </figure>-->
+                <h4></h4>
+                <p></p>
+            </article>
+
+            <article>
+                <figure class="variedades">
+                    <img src="/images/Papas-img15.png" alt="papas2">
+                </figure>
+                <h4></h4>
+                <p></p>
+            </article>
+        </section>
+
+    </main>
+
+
+    <footer class="main-footer">
+
+        <div class="logo">
+            <figure>
+                <img src="./images/logos/logo-normal.png" alt="logo">
+            </figure>
+
+            <div class="suscrip-forms">
+                <form>
+                    <label>Suscribete y enterate de nuestras Promos!</label>
+                    <input type="text" id="suscripcion" name="suscripcion" placeholder="Ingresa tu email">
+                </form>
+            </div>
+
+            <nav class="container">
+                <ul class="ul1">
+                    <li class="nosotros">Sobre Nosotros</li>
+                    <li><a href="">Quienes somos</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Terminos de uso</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+                <ul class="ul2">
+                    <li class="redes">Redes Sociales</li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+                <ul class="ul3">
+                    <li class="ayuda">Ayuda</li>
+                    <li><a href="">Devoluciones</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Soporte</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="fin">
+
+            <div class="copy-left">
+                <p>&copy; 2023, Group1-C24</p>
+            </div>
+
+            <div class="right">
+                <ul class="iconos-right">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--Boostrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
