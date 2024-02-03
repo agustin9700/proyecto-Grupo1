@@ -111,6 +111,9 @@
     padding: 5px;
 }    
 }
+.aFooter{
+    color: var(--Blanco);
+}
 
 /*TABLET*/
 @media(min-width: 400px){
