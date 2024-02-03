@@ -1,9 +1,6 @@
-
 @media(max-width: 399px){
-   .main-productos{
-
-    margin:auto;
-
+.main-productos{
+    
    }
 
 .pizzas{
@@ -33,19 +30,36 @@
     background-size: cover;
 }
 
+.contenedor-pizzas{
 
+}
+
+.contenedor-hamburguesas{
+    
+}
+
+.contenedor-papas{
+    
+}
 .titulo{
 }
 
-.variedades{}
+
+.variedades{
+
+}
 
 .variedades img {
     width: 30vw;
 }
 
-.variedades h4{}
+.variedades h4{
 
-.variedades p{}
+}
+
+.variedades p{
+    
+}
  
 }
 
