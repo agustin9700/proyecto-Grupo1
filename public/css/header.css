@@ -86,9 +86,9 @@ header{
     }
     .logueoHeader nav ul{
         display: flex;
-        flex-wrap: wrap;
         margin-top: 10px;
         max-width: 90%;
+        padding: 0;
     }
     .userHeader{
         padding: 0 3px 0 3px;
