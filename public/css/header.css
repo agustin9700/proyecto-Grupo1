@@ -86,10 +86,6 @@ header{
     }
     .logueoHeader nav ul{
         display: flex;
-<<<<<<< HEAD
-=======
-        /* flex-wrap: wrap;*/
->>>>>>> Develop
         margin-top: 10px;
         max-width: 90%;
         padding: 0;
