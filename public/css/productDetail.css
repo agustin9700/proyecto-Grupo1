@@ -1,0 +1,144 @@
+
+@media(max-width: 399px){
+   .main-productos{
+
+    margin:auto;
+
+   }
+
+.pizzas{
+    height: 100vh;
+    background-image: url('/images/img3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburguesas{
+    height: 100vh;
+    background-image: url('/images/img5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.papas{
+    height: 100vh;
+    background-image: url('/images/img14.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.titulo{
+}
+
+.variedades{}
+
+.variedades img {
+    width: 30vw;
+}
+
+.variedades h4{}
+
+.variedades p{}
+ 
+}
+
+
+@media(min-width: 400px){
+    .main-productos{}
+
+    .pizzas{
+        height: 100vh;
+        background-image: url('/images/img3.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hamburguesas{
+        height: 100vh;
+        background-image: url('/images/img5.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .papas{
+        height: 100vh;
+        background-image: url('/images/img14.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .titulo{
+    }
+    
+    .variedades{}
+    
+    .variedades img {
+        width: 30vw;
+    }
+    
+    .variedades h4{}
+    
+    .variedades p{}
+     
+}
+
+
+@media(min-width:769px){
+    .main-productos{}
+
+    .pizzas{
+        height: 100vh;
+        background-image: url('/images/img3.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hamburguesas{
+        height: 100vh;
+        background-image: url('/images/img5.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .papas{
+        height: 100vh;
+        background-image: url('/images/img14.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .titulo{
+    }
+    
+    .variedades{}
+    
+    .variedades img {
+        width: 30vw;
+    }
+    
+    .variedades h4{}
+    
+    .variedades p{}
+     
+}
