@@ -86,6 +86,10 @@ header{
     }
     .logueoHeader nav ul{
         display: flex;
+<<<<<<< HEAD
+=======
+        /* flex-wrap: wrap;*/
+>>>>>>> Develop
         margin-top: 10px;
         max-width: 90%;
         padding: 0;
@@ -150,13 +154,15 @@ header{
     }
     .divBusquedaHeader button{
         left: auto;
-        right: 0;
+        right: 20px;
+        top: 50%;
         padding: 2px 5px 0 6px;
         background-color: var(--Naranja);
         color: var(--Blanco);
-        height: 80%;
-        margin: 3px 20px 0 0;
+        height: 75%;
+        margin-top: -3px;
         transition: all 0.5s;
+        transform: translateY(-50%);
     }
     .divBusquedaHeader button:hover{
         color: var(--Negro);
