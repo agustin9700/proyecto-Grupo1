@@ -1,343 +1,401 @@
 /*MOBILE*/
-@media(max-width: 399px){
+@media(max-width: 399px) {
 
-.main-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 2rem 0;
-}
-
-.main-footer .logo {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    border-bottom: 1px solid white;
-}
-
-.main-footer .logo figure {
-    width: 12vw;
-}
-
-.main-footer .logo figure img {
-    width: 100%;
-    display: none;
-}
-
-.main-footer .suscrip-forms {
-    display: inline-block;
-    width: 42%;
-    display: none;
-}
-
-.main-footer .suscrip-forms form label {
-    font-weight: 600;
-}
-
-.main-footer .suscrip-forms form input {
-    margin-top: 10px;
-    padding: 4px;
-    padding-left: 12px;
-    border-radius: 15px;
-    width: 150%;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.main-footer .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.main-footer .container .ul1 {
-    margin: 10px;
-}
-
-.main-footer .container .ul1 .nosotros {
-    padding-bottom: 10px;
-}
-
-.main-footer .container .ul1 li {
-    padding-bottom: 4px;
-}
-
-.main-footer .container .ul1 li a {}
-
-.main-footer .container .ul2 {
-    margin: 10px;
-}
-
-.main-footer .container .ul2 .redes {
-    padding-bottom: 10px;
-}
-
-
-.main-footer .container .ul2 li {
-    padding-bottom: 4px;
-}
-
-.main-footer .container .ul2 li a {}
-
-.main-footer .container .ul3 {
-    margin: 10px;
-}
-
-.main-footer .container .ul3 .ayuda {
-    padding-bottom: 10px;
-}
-
-.main-footer .container .ul3 li {
-    padding-bottom: 4px;
-}
-
-.main-footer .container .ul3 li a {}
-
-.main-footer .fin {
-    display: flex;
-}
-
-.main-footer .fin .copy-left {
-    padding: 12px;
-}
-
-.main-footer .fin .right .iconos-right {
-    display: -webkit-inline-box;
-    margin-left: 668%;
-    text-align: end;
-    display: none;
-}
-
-.main-footer .fin .right .iconos-right li {
-    padding: 5px;
-}    
-}
-.aFooter{
-    color: var(--Blanco);
-}
-
-/*TABLET*/
-@media(min-width: 400px){
- .main-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.main-footer .logo {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    border-bottom: 1px solid white;
-}
-
-.main-footer .logo figure {
-    width: 12vw;
-}
-
-.main-footer .logo figure img {
-    width: 100%;
-}
-
-.main-footer .suscrip-forms {
-    display: inline-block;
-    width: 42%;
-}
-
-.main-footer .suscrip-forms form label {
-    font-weight: 600;
-}
-
-.main-footer .suscrip-forms form input {
-    margin-top: 10px;
-    padding: 4px;
-    padding-left: 12px;
-    border-radius: 15px;
-    width: 150%;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.main-footer .container {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.main-footer .container .ul1 {
-    margin: 10px;
-}
-
-.main-footer .container .ul1 .nosotros {
-    padding-bottom: 10px;
-}
-
-.main-footer .container .ul1 li {
-    padding-bottom: 4px;
-}
-
-.main-footer .container .ul1 li a {}
-
-.main-footer .container .ul2 {
-    margin: 10px;
-}
-
-.main-footer .container .ul2 .redes {
-    padding-bottom: 10px;
-}
-
-
-.main-footer .container .ul2 li {
-    padding-bottom: 4px;
-}
-
-.main-footer .container .ul2 li a {}
-
-.main-footer .container .ul3 {
-    margin: 10px;
-}
-
-.main-footer .container .ul3 .ayuda {
-    padding-bottom: 10px;
-}
-
-.main-footer .container .ul3 li {
-    padding-bottom: 4px;
-}
-
-.main-footer .container .ul3 li a {}
-
-.main-footer .fin {
-    display: flex;
-}
-
-.main-footer .fin .copy-left {}
-
-.main-footer .fin .right .iconos-right {
-    display: -webkit-inline-box;
-    margin-left: 668%;
-    text-align: end;
-}
-
-.main-footer .fin .right .iconos-right li {
-    padding: 5px;
-}    
-}   
-
-/*DESKTOP*/
-@media(min-width:769px){
     .main-footer {
         background-color: #333;
         color: #fff;
-        padding: 12px;
-        /* display: flex; */
-        /* justify-content: space-between; */
+        margin: auto;
+    }
+
+    .seccion1-footer {}
+
+    .sinacordeon {
+        border-top: 2px solid white;
+    }
+
+    .ul2 {
+        margin: 10px;
+        padding-bottom: 6px;
+        border-bottom: 2px solid white;
+    }
+
+    .ul2 .redes {
+        font-weight: 800;
+        display: block;
+        padding: 4px;
+        font-size: 21px;
+    }
+
+    li {
+        display: inline;
+        color: white;
+        padding: 4px;
+        margin: 3px;
+    }
+
+    .suscrip-forms {
+        margin: 10px;
+        border-bottom: 2px solid white;
+        padding-bottom: 10px;
+    }
+
+    form {
+        position: relative;
+    }
+
+
+    label {
+        font-weight: 800;
+        padding-bottom: 6px;
+    }
+
+    input {
+        position: relative;
+        padding: 4px;
+        border-radius: 6px;
+    }
+
+    .button {
+        background-color: var(--Naranja);
+        color: white;
+        padding: 4px;
+        border-radius: 6px;
+        position: absolute;
+        left: 157px;
+        top: 31px;
+    }
+
+    .aFooter {
+        color: white;
+        font-size: 22px;
+    }
+
+    .fin {
+        margin-left: 11px;
+    }
+
+    .footer-info {
+        color: white;
+
+    }
+
+    .seccion2-footer {
+        display: none;
+    }
+}
+
+/*TABLET*/
+
+@media(min-width: 400px) {
+    .seccion1-footer {
+        display: none;
+    }
+
+    .seccion2-footer {
+        margin: 0;
+    }
+
+    .main-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
         align-items: center;
         flex-wrap: wrap;
     }
-    
+
     .main-footer .logo {
         display: flex;
         flex-wrap: nowrap;
         align-content: center;
         border-bottom: 1px solid white;
+        height: 30vh;
     }
-    
+
     .main-footer .logo figure {
-        width: 12vw;
+        width: 40vw;
+        height: 14vh;
+        margin: 9px;
     }
-    
+
     .main-footer .logo figure img {
         width: 100%;
     }
-    
+
     .main-footer .suscrip-forms {
         display: inline-block;
-        width: 22%;
-        font-size: 14px;
-        padding: 10px;
-        margin-left: 25px;
+        width: 75%;
+        margin: 4px;
+        padding: 4px;
+        position: relative;
     }
-    
+
+    .main-footer .suscrip-forms form label {
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .main-footer .suscrip-forms form input {
+        margin-top: 10px;
+        padding: 4px;
+        padding-left: 12px;
+        border-radius: 15px;
+        width: 150%;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .button {
+        background-color: var(--Naranja);
+        color: white;
+        padding: 4px;
+        border-radius: 15px;
+        position: absolute;
+        left: 143px;
+        top: 60px;
+    }
+
     .main-footer .container {
-        display: flex;
-        justify-content: flex-end;
-        font-size: 12px;
-        margin-left: 210px;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-left: 60px;
+        padding: 0;
     }
-    
+
     .main-footer .container .ul1 {
-        margin: 10px;
-        margin-right: 25px;
+        margin: 5px;
+        width: 18vw;
+        display: inline;
+        padding: 0;
     }
-    
+
     .main-footer .container .ul1 .nosotros {
         padding-bottom: 10px;
-        font-weight: 600;
+        font-size: 16px;
     }
-    
-    
+
     .main-footer .container .ul1 li {
-        padding-bottom: 4px;
+        font-size: 13px;
     }
-    
-    .main-footer .container .ul1 li a {}
-    
+
     .main-footer .container .ul2 {
-        margin: 10px;
-        margin-right: 25px;
+        margin: 5px;
+        width: 18vw;
+        display: inline;
+        padding: 0;
     }
-    
+
     .main-footer .container .ul2 .redes {
         padding-bottom: 10px;
-        font-weight: 600;
+        font-size: 16px;
     }
-    
-    
+
+
     .main-footer .container .ul2 li {
-        padding-bottom: 4px;
+        font-size: 13px;
     }
-    
-    .main-footer .container .ul2 li a {}
-    
+
     .main-footer .container .ul3 {
-        margin: 10px;
+        margin: 5px;
+        width: 10vw;
+        display: inline;
+        padding: 0;
     }
-    
+
     .main-footer .container .ul3 .ayuda {
         padding-bottom: 10px;
-        font-weight: 600;
+        font-size: 16px;
     }
-    
+
     .main-footer .container .ul3 li {
-        padding-bottom: 4px;
+        font-size: 13px;
     }
-    
-    .main-footer .container .ul3 li a {}
-    
+
     .main-footer .fin {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 6px;
+        display: flex;
     }
-    
-    .main-footer .fin .copy-left p{
-    margin: 10px;
-}
-    
+
+    .main-footer .fin .copy-left {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
     .main-footer .fin .right .iconos-right {
         display: -webkit-inline-box;
-        margin-left: -20%;
-        text-align: end;
-        font-size: x-large;
+        /* text-align: end; */
     }
-    
+
+    .right {
+        margin-left: 54%;
+        font-size: 20px;
+    }
+
     .main-footer .fin .right .iconos-right li {
         padding: 5px;
+    }
+
+    .afooter {
         color: white;
     }
+
+}
+
+/*DESKTOP*/
+
+@media(min-width:769px) {
+
+    .seccion1-footer {
+        display: none;
+    }
+
+    .seccion2-footer {
+        margin: 0;
+    }
+
+    .main-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .main-footer .logo {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        border-bottom: 1px solid white;
+        height: 25vh;
+    }
+
+    .main-footer .logo figure {
+        width: 40vw;
+        height: 14vh;
+        margin: 9px;
+    }
+
+    .main-footer .logo figure img {
+        width: 100%;
+    }
+
+    .main-footer .suscrip-forms {
+        display: inline-block;
+        width: 75%;
+        margin: 4px;
+        padding: 4px;
+        position: relative;
+    }
+
+    .main-footer .suscrip-forms form label {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .main-footer .suscrip-forms form input {
+        margin-top: 10px;
+        padding: 4px;
+        padding-left: 12px;
+        border-radius: 15px;
+        width: 150%;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .button {
+        background-color: var(--Naranja);
+        color: white;
+        padding: 4px;
+        border-radius: 15px;
+        position: absolute;
+        left: 206px;
+        top: 68px;
+    }
+
+    .main-footer .container {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-left: 10px;
+        padding: 0;
+    }
+
+    .main-footer .container .ul1 {
+        margin: 5px;
+        width: 18vw;
+        display: inline;
+        padding: 0;
+    }
+
+    .main-footer .container .ul1 .nosotros {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .main-footer .container .ul1 li {
+        font-size: 15px;
+    }
+
+    .main-footer .container .ul2 {
+        margin: 5px;
+        width: 18vw;
+        display: inline;
+        padding: 0;
+    }
+
+    .main-footer .container .ul2 .redes {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+
+    .main-footer .container .ul2 li {
+        font-size: 15px;
+    }
+
+    .main-footer .container .ul3 {
+        margin: 5px;
+        width: 10vw;
+        display: inline;
+        padding: 0;
+    }
+
+    .main-footer .container .ul3 .ayuda {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .main-footer .container .ul3 li {
+        font-size: 15px;
+    }
+
+    .main-footer .fin {
+        display: flex;
+    }
+
+    .main-footer .fin .copy-left {
+        font-size: 20px;
+    }
+
+    .main-footer .fin .right .iconos-right {
+        display: -webkit-inline-box;
+        /* text-align: end; */
+    }
+
+    .right {
+        margin-left: 54%;
+        font-size: 27px;
+    }
+
+    .main-footer .fin .right .iconos-right li {
+        padding: 5px;
+    }
+
+    .afooter {
+        color: white;
+    }
+
 }
