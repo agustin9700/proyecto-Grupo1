@@ -17,14 +17,17 @@
 
 body {
     margin: 0;
+
   }
+ 
   
   ul {
+    list-style: none;
     margin: 0;
     list-style-type: none;
   }
   
   a {
     text-decoration: none;
-    color: black;
+    color: var(--Negro);
   }

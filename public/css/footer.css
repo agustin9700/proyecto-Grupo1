@@ -1,0 +1,343 @@
+/*MOBILE*/
+@media(max-width: 399px){
+
+.main-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.main-footer .logo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    border-bottom: 1px solid white;
+}
+
+.main-footer .logo figure {
+    width: 12vw;
+}
+
+.main-footer .logo figure img {
+    width: 100%;
+    display: none;
+}
+
+.main-footer .suscrip-forms {
+    display: inline-block;
+    width: 42%;
+    display: none;
+}
+
+.main-footer .suscrip-forms form label {
+    font-weight: 600;
+}
+
+.main-footer .suscrip-forms form input {
+    margin-top: 10px;
+    padding: 4px;
+    padding-left: 12px;
+    border-radius: 15px;
+    width: 150%;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-footer .container .ul1 {
+    margin: 10px;
+}
+
+.main-footer .container .ul1 .nosotros {
+    padding-bottom: 10px;
+}
+
+.main-footer .container .ul1 li {
+    padding-bottom: 4px;
+}
+
+.main-footer .container .ul1 li a {}
+
+.main-footer .container .ul2 {
+    margin: 10px;
+}
+
+.main-footer .container .ul2 .redes {
+    padding-bottom: 10px;
+}
+
+
+.main-footer .container .ul2 li {
+    padding-bottom: 4px;
+}
+
+.main-footer .container .ul2 li a {}
+
+.main-footer .container .ul3 {
+    margin: 10px;
+}
+
+.main-footer .container .ul3 .ayuda {
+    padding-bottom: 10px;
+}
+
+.main-footer .container .ul3 li {
+    padding-bottom: 4px;
+}
+
+.main-footer .container .ul3 li a {}
+
+.main-footer .fin {
+    display: flex;
+}
+
+.main-footer .fin .copy-left {
+    padding: 12px;
+}
+
+.main-footer .fin .right .iconos-right {
+    display: -webkit-inline-box;
+    margin-left: 668%;
+    text-align: end;
+    display: none;
+}
+
+.main-footer .fin .right .iconos-right li {
+    padding: 5px;
+}    
+}
+.aFooter{
+    color: var(--Blanco);
+}
+
+/*TABLET*/
+@media(min-width: 400px){
+ .main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-footer .logo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    border-bottom: 1px solid white;
+}
+
+.main-footer .logo figure {
+    width: 12vw;
+}
+
+.main-footer .logo figure img {
+    width: 100%;
+}
+
+.main-footer .suscrip-forms {
+    display: inline-block;
+    width: 42%;
+}
+
+.main-footer .suscrip-forms form label {
+    font-weight: 600;
+}
+
+.main-footer .suscrip-forms form input {
+    margin-top: 10px;
+    padding: 4px;
+    padding-left: 12px;
+    border-radius: 15px;
+    width: 150%;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-footer .container .ul1 {
+    margin: 10px;
+}
+
+.main-footer .container .ul1 .nosotros {
+    padding-bottom: 10px;
+}
+
+.main-footer .container .ul1 li {
+    padding-bottom: 4px;
+}
+
+.main-footer .container .ul1 li a {}
+
+.main-footer .container .ul2 {
+    margin: 10px;
+}
+
+.main-footer .container .ul2 .redes {
+    padding-bottom: 10px;
+}
+
+
+.main-footer .container .ul2 li {
+    padding-bottom: 4px;
+}
+
+.main-footer .container .ul2 li a {}
+
+.main-footer .container .ul3 {
+    margin: 10px;
+}
+
+.main-footer .container .ul3 .ayuda {
+    padding-bottom: 10px;
+}
+
+.main-footer .container .ul3 li {
+    padding-bottom: 4px;
+}
+
+.main-footer .container .ul3 li a {}
+
+.main-footer .fin {
+    display: flex;
+}
+
+.main-footer .fin .copy-left {}
+
+.main-footer .fin .right .iconos-right {
+    display: -webkit-inline-box;
+    margin-left: 668%;
+    text-align: end;
+}
+
+.main-footer .fin .right .iconos-right li {
+    padding: 5px;
+}    
+}   
+
+/*DESKTOP*/
+@media(min-width:769px){
+    .main-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 12px;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .main-footer .logo {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        border-bottom: 1px solid white;
+    }
+    
+    .main-footer .logo figure {
+        width: 12vw;
+    }
+    
+    .main-footer .logo figure img {
+        width: 100%;
+    }
+    
+    .main-footer .suscrip-forms {
+        display: inline-block;
+        width: 22%;
+        font-size: 14px;
+        padding: 10px;
+        margin-left: 25px;
+    }
+    
+    .main-footer .container {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 12px;
+        margin-left: 210px;
+    }
+    
+    .main-footer .container .ul1 {
+        margin: 10px;
+        margin-right: 25px;
+    }
+    
+    .main-footer .container .ul1 .nosotros {
+        padding-bottom: 10px;
+        font-weight: 600;
+    }
+    
+    
+    .main-footer .container .ul1 li {
+        padding-bottom: 4px;
+    }
+    
+    .main-footer .container .ul1 li a {}
+    
+    .main-footer .container .ul2 {
+        margin: 10px;
+        margin-right: 25px;
+    }
+    
+    .main-footer .container .ul2 .redes {
+        padding-bottom: 10px;
+        font-weight: 600;
+    }
+    
+    
+    .main-footer .container .ul2 li {
+        padding-bottom: 4px;
+    }
+    
+    .main-footer .container .ul2 li a {}
+    
+    .main-footer .container .ul3 {
+        margin: 10px;
+    }
+    
+    .main-footer .container .ul3 .ayuda {
+        padding-bottom: 10px;
+        font-weight: 600;
+    }
+    
+    .main-footer .container .ul3 li {
+        padding-bottom: 4px;
+    }
+    
+    .main-footer .container .ul3 li a {}
+    
+    .main-footer .fin {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6px;
+    }
+    
+    .main-footer .fin .copy-left p{
+    margin: 10px;
+}
+    
+    .main-footer .fin .right .iconos-right {
+        display: -webkit-inline-box;
+        margin-left: -20%;
+        text-align: end;
+        font-size: x-large;
+    }
+    
+    .main-footer .fin .right .iconos-right li {
+        padding: 5px;
+        color: white;
+    }
+}
