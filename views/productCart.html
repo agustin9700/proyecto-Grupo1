@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
+ <main class="main-carrito">
     <div class="carroDeCompras">
         <div class="parteSuperiorCarrito">
-            <button type="button" class="cerrarCarrito1"><i class="fa-solid fa-chevron-left carritoCerrar1"></i></button>
+            <button type="button" class="cerrarCarrito1"><a href="/"><i
+                    class="fa-solid fa-chevron-left carritoCerrar1"></i></a></button>
             <div class="datosUsuarioCarrito">
                 <i class="fa-solid fa-circle-user userCarritoCompras" style="color: #000000;"></i>
                 <h4>Usuario anónimo</h4>
@@ -53,8 +57,9 @@
                     </div>
                 </div>
             </div>
+       
             <div class="agregarProductosCarrito">
-                <button type="button" class="agregarPorductosCarrito"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" class="agregarPorductosCarrito"><a href="/productDetail"><i class="fa-solid fa-plus"></i></a></button>
             </div>
             <div class="parteInferiorCarrito">
                 <div class="totalCarritoCompras">
@@ -65,6 +70,6 @@
                     <button class="confirmarCompraCarrito">Confirmar</button>
                 </div>
             </div>
-        </div>
     </div>
+</main> 
 </body>

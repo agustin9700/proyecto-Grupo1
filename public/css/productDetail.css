@@ -149,6 +149,7 @@
         font-size: 14px;
         font-weight: 900;
     }
+
 }
 
 /*TABLET*/
@@ -324,6 +325,8 @@
         display: flex;
         justify-content: center;
     }
+
+
 }
 
 /*DESKTOP*/
@@ -334,7 +337,7 @@
     }
 
     .pizzas {
-        height: 140vh;
+        height: 92vh;
         background-image: url('/images/img3.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -345,18 +348,15 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-
-        .copy-left {
-        padding-left: 20px;
-        }
-
+    }
 
     .pizzas .contenedor-pizzas {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: space-between;
         margin-left: 28px;
+        margin: 50px;
     }
 
     .hamburguesas {
@@ -521,6 +521,5 @@
         display: flex;
         justify-content: center;
     }
-    
-}
+ 
 }
