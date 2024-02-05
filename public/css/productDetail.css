@@ -69,6 +69,11 @@
         margin-right: 5px;
     }
 
+    .variedades img:hover {
+        transform: scale(1.2);
+      }
+
+
     .variedadesPapas img {
         width: 40vw;
         height: 26vh;
@@ -78,17 +83,21 @@
         margin-left: 30px;
         margin-top: 30px;
     }
+    .variedadesPapas img:hover {
+        transform: scale(1.2);
+      }
 
-    .articuloPapas{
 
+    .articuloPapas {}
+
+    .variedadesPapas1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 20px;
     }
-    .variedadesPapas1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 20px;
-    }
-    .variedadesPapas1 img{
+
+    .variedadesPapas1 img {
         width: 40vw;
         height: 26vh;
         border: 1px solid black;
@@ -98,12 +107,17 @@
         margin-top: 30px;
     }
 
+    .variedadesPapas1 img:hover {
+        transform: scale(1.2);
+      }
+
+
     .texto {
         display: inline-block;
         text-align: center;
         font-weight: 600;
         width: 58vw;
-        background-color: rgb(250 235 215);
+        background-color: rgb(250 235 216);
         margin-right: 12px;
     }
 
@@ -112,7 +126,7 @@
         text-align: center;
         font-weight: 600;
         width: 35vw;
-        background-color: rgb(250 235 215);
+        background-color: rgb(250 235 216);
         margin: 8px;
     }
 
@@ -156,14 +170,13 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 500px;
     }
 
     .hamburguesas {
         background-image: url('/images/img5.jpg');
-        height: 140vh;
+        height: 150vh;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -176,7 +189,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between
+        justify-content: space-around;
     }
 
     .papas {
@@ -197,9 +210,7 @@
         /* justify-content: space-between; */
     }
 
-    .articuloPapas {
-
-    }
+    .articuloPapas {}
 
     .variedadesPapas {
         display: flex;
@@ -214,7 +225,7 @@
         font-weight: 700;
         margin-bottom: 0;
         border: 1px solid antiquewhite;
-        background-color: antiquewhite;
+        background-color: rgb(250, 235, 215);
         padding-left: 20px;
         text-align: center;
         font-size: 30px;
@@ -222,13 +233,18 @@
 
     .variedades img {
         width: 28vw;
-        height: 32vh;
+        height: 40vh;
         border: 1px solid black;
         border-radius: 100%;
         display: flex;
-        /* margin-left: 30px; */
-        /* margin-top: 30px; */
+        margin-left: 30px;
+        margin-top: 30px;
     }
+
+    .variedades img:hover {
+        transform: scale(1.2);
+      }
+
 
     .variedadesPapas img {
         width: 28vw;
@@ -240,14 +256,19 @@
         margin-top: 30px;
     }
 
-    .variedadesPapas1{
+    .variedadesPapas img:hover {
+        transform: scale(1.2);
+      }
+
+
+    .variedadesPapas1 {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         margin-right: 30px;
     }
 
-    .variedadesPapas1 img{
+    .variedadesPapas1 img {
         width: 28vw;
         height: 32vh;
         border: 1px solid black;
@@ -257,12 +278,17 @@
         margin-top: 30px;
     }
 
+    .variedadesPapas1 img:hover {
+        transform: scale(1.2);
+      }
+
+
     .texto {
         display: inline-block;
         text-align: center;
         font-weight: 600;
         width: 35vw;
-        background-color: rgb(250 235 215);
+        background-color: rgba(250 235 216);
         margin: 8px;
     }
 
@@ -271,7 +297,7 @@
         text-align: center;
         font-weight: 600;
         width: 35vw;
-        background-color: rgb(250 235 215);
+        background-color: rgb(250 235 216);
         margin: 8px;
     }
 
@@ -301,9 +327,7 @@
         justify-content: center;
     }
 
-    .articuloPapas{
-
-    }
+    .articuloPapas {}
 }
 
 /*DESKTOP*/
@@ -314,27 +338,22 @@
     }
 
     .pizzas {
-        height: 75vh;
+        height: 140vh;
         background-image: url('/images/img3.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        .copy-left{
+
+        .copy-left {
         padding-left: 20px;
-  };
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    .copy-left{
+
+        .copy-left {
         padding-left: 20px;
-  };
-    .copy-left{
-        padding-left: 20px;
-  };
-    .copy-left{
-        padding-left: 20px;
-  };
-    }
+        }
+
 
     .pizzas .contenedor-pizzas {
         display: flex;
@@ -363,8 +382,6 @@
         justify-content: center;
         margin-left: 28px;
     }
-    
-
 
     .papas {
         background-image: url('/images/img14.png');
@@ -385,9 +402,7 @@
 
     }
 
-    .articuloPapas {
-
-    }
+    .articuloPapas {}
 
     .variedadesPapas {
         display: flex;
@@ -409,10 +424,10 @@
         font-size: 44px;
     }
 
-    .variedades{
-display: flow;
-margin: 30px;
-}
+    .variedades {
+        display: flow;
+        margin: 30px;
+    }
 
     .variedades img {
         width: 22vw;
@@ -422,6 +437,10 @@
         display: flex;
         margin-top: 30px;
     }
+
+    .variedades img:hover {
+        transform: scale(1.2);
+      }
 
     .variedadesPapas img {
         width: 35vw;
@@ -433,7 +452,12 @@
         margin-top: 30px;
     }
 
-    .variedadesPapas1{
+    .variedadesPapas img:hover {
+        transform: scale(1.2);
+      }
+
+
+    .variedadesPapas1 {
         display: flex;
         flex-direction: row-reverse;
         margin-right: 30px;
@@ -443,7 +467,7 @@
         margin-top: 80px;
     }
 
-    .variedadesPapas1 img{
+    .variedadesPapas1 img {
         width: 32vw;
         height: 32vh;
         border: 1px solid black;
@@ -452,6 +476,9 @@
         margin-right: 40px;
         margin-top: 30px;
     }
+    .variedadesPapas1 img:hover {
+        transform: scale(1.2);
+      }
 
     .texto {
         display: inline-block;
@@ -471,22 +498,26 @@
         margin: 8px;
     }
 
-    .texto h4 {
+    .texto
+        h4 {
         font-size: 20px;
         font-weight: bolder;
     }
 
-    .texto p {
+    .texto
+        p {
         font-size: 14px;
         font-weight: 900;
     }
 
-    .textoPapas h4 {
+    .textoPapas
+        h4 {
         font-size: 20px;
         font-weight: bolder;
     }
 
-    .textoPapas p {
+    .textoPapas
+        p {
         font-size: 14px;
         font-weight: 900;
     }
@@ -498,3 +529,4 @@
     }
 
 }
+ 

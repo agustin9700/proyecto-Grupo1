@@ -2,437 +2,312 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles de producto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <!--Boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="partSup">
-            <img class="logoHeader" src="/images/logo.png" alt="logo">
-            <i class="fas fa-bars hamb1"></i>
-            <div class="logueoHeader">
-                <nav>
-                    <ul>
-                        <li><a href=""><i class="fas fa-cart-plus carritoHeader"></i></a></li>
-                        <li><a href=""><i class="fa-regular fa-heart coraHeader"></i></a></li>
-                        <li><a href="/register"><i class="fa-regular fa-user userHeader"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="partInf">
-            <nav class="navHeader2">
-                <ul class="ulInf">
-                    <button type="button" class="verMenu"><i class="fas fa-bars hamb2"></i> Ver menú</button>
-                    <li><a href="/productDetail"> Papas</a></li>
-                    <li><a href="/productDetail"> Pizzas</a></li>
-                    <li><a href="/productDetail"> Hamburguesas</a></li>
-                </ul>
-            </nav>
-            <div class="divBusquedaHeader">
-                <form action="/register" method="post">
-                    <input type="text" name="productoBuscado" placeholder="Buscar productos" value="">
-                    <button><i class="fas fa-search lupaHeader"></i></button>
-                </form>
-            </div>
-        </div>
-    </header>
-
-    <main class="main-productos">
-
-        <h2 class="titulo">PIZZAS</h2>
-
-        <section class="pizzas">
-
-            <div class="contenedor-pizzas">
-
-                <article class="variedades">
-                    <img src="/images/Pizza-img6.jpg" alt="pizza1">
-                    <div class="texto">
-                        <h4>Rucula</h4>
-                        <p>Una exquicita combinacion de muzzarella fundida, tomate cherrys gratinados y rucula </p>
-                    </div>
-                </article>
-
-                <article class="variedades">
-                    <figure>
-                        <img src="/images/Pizza-img16.jpg" alt="pizza3">
-                    </figure>
-                    <div class="texto">
-                        <h4>Albaca</h4>
-                        <p>Una exquicita combinacion de muzzarella fundida, jamón crudo y albaca</p>
-                    </div>
-                </article>
-                <div class="articulo">
-                <article class="variedades">
-                    <figure>
-                        <img src="/images/Pizza-img7.jpg" alt="pizza2">
-                    </figure>
-                    <div class="texto">
-                        <h4>Fugazzeta</h4>
-                        <p>Una exquicita combinacion de muzzarella fundida con cebolla caramelizada</p>
-                    </div>
-                </article>
-            </div>
-
-            </div>
-        </section>
-
-        <h2 class="titulo">HAMBURGUESAS</h2>
-        <section class="hamburguesas">
-
-            <div class="contenedor-hamburguesas">
-
-                <article class="variedades">
-                    <figure>
-                        <img src="/images/Hamb- img12.jpg" alt="hamb1">
-                    </figure>
-                    <div class="texto">
-                        <h4>Extra Clasica</h4>
-                        <p>Entre los panes combinamos dos medallones de carne con queso fundido, el sabor del tocino,
-                            jamón, tomate y la lechuga</p>
-                    </div>
-                </article>
-
-                <article class="variedades">
-                    <figure>
-                        <img src="/images/Hamb-img11.jpg" alt="hamb3">
-                    </figure>
-                    <div class="texto">
-                        <h4>Diabolica</h4>
-                        <p> Entre dos panes combinamos dos medallones de carne con cheddar fundido, aros de cebolla,
-                            tomate
-                            y lechuga</p>
-                    </div>
-
-                </article>
-
-                <div class="articulo">
-                <article class="variedades">
-                    <figure>
-                        <img src="/images/Hamb-img10.jpg" alt="hamb2">
-                    </figure>
-                    <div class="texto">
-                        <h4>Clasica</h4>
-                        <p> Entre dos panes combinamos un medallon de carne con cheddar fundido, el sabor del tocino,
-                            tomate
-                            y lechuga</p>
-                    </div>
-                </article>
-            </div>
-            </div>
-        </section>
-
-        <h2 class="titulo">PAPAS FRITAS</h2>
-        <section class="papas">
-
-            <div class="contenedor-papas">
-                <article class="variedadesPapas">
-                    <figure>
-                        <img src="/images/Papas-img13.png" alt="papas1">
-                    </figure>
-                    <div class="textoPapas">
-                        <h4>Papas Recargadas</h4>
-                        <p>Cheddar + verdeo + beccon</p>
-                    </div>
-
-                </article>
-
-            <div class="articuloPapas">
-                <article class="variedadesPapas1">
-                    <figure>
-                        <img src="/images/Papas-img15.png" alt="papas2">
-                    </figure>
-                    <div class="textoPapas">
-                        <h4>Papas clasicas</h4>
-                        <p>Cheddar + verdeo</p>
-                    </div>
-                </article>
-            </div>
-             
-            </div>
-        </section>
-
-    </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <footer class="main-footer">
-
-        <div class="seccion1-footer">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Sobre nosotros
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul>
-                    <li>Quienes somos</li>
-                    <li>Contacto</li>
-                    <li>Terminos de uso</li>
-                    <li>Privaticy policy</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Ayuda
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul>
-                    <li>Devoluciones</li>
-                    <li>FAQ</li>
-                    <li>Soporte</li>
-    
-                  </ul>
-                </div>
-              </div>
-            </div>
-    
+  <header>
+    <div class="partSup">
+      <img class="logoHeader" src="/images/logo.png" alt="logo">
+      <i class="fas fa-bars hamb1"></i>
+      <div class="logueoHeader">
+        <nav>
+          <ul>
+            <li><a href="/productCart"><i class="fas fa-cart-plus carritoHeader"></i></a></li>
+            <li><a href="/login"><i class="fa-regular fa-heart coraHeader"></i></a></li>
+            <li><a href="/register"><i class="fa-regular fa-user userHeader"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="partInf">
+      <nav class="navHeader2">
+        <ul class="ulInf">
+          <button type="button" class="verMenu"><i class="fas fa-bars hamb2"></i> Ver menú</button>
+          <li><a href="/productDetail"> Papas</a></li>
+          <li><a href="/productDetail"> Pizzas</a></li>
+          <li><a href="/productDetail"> Hamburguesas</a></li>
+        </ul>
+      </nav>
+      <div class="divBusquedaHeader">
+        <form action="/register" method="post">
+          <input type="text" name="productoBuscado" placeholder="Buscar productos" value="">
+          <button><i class="fas fa-search lupaHeader"></i></button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-productos">
+
+    <h2 class="titulo">PIZZAS</h2>
+
+    <section class="pizzas">
+
+      <div class="contenedor-pizzas">
+
+        <article class="variedades">
+          <img src="/images/Pizza-img6.jpg" alt="pizza1">
+          <div class="texto">
+            <h4>Rucula</h4>
+            <p>Una exquicita combinacion de muzzarella fundida, tomate cherrys gratinados y rucula </p>
           </div>
-    
-          <div class="sinacordeon">
-            <div class="redes">Redes Sociales</div>
-            <ul class="ul2">
-              <li><a class="aFooter" href=""><i class="fa-brands fa-facebook aFooter"></i></a></li>
-              <li><a class="aFooter" href=""><i class="fa-brands fa-twitter aFooter"></i></a></li>
-              <li><a class="aFooter" href=""><i class="fa-brands fa-instagram aFooter"></i></a></li>
-              <li><a class="aFooter" href=""><i class="fa-brands fa-youtube aFooter"></i></a></li>
-            </ul>
-    
-            <div class="suscrip-forms">
-              <div><span>Recibir ofertar y Promos!</span></div>
-              <form>
-                <div> <input type="text" id="suscripcion" name="suscripcion" placeholder="Ingresa tu email"></div>
-                <button class="button" type="button">Suscribir </button>
-              </form>
-            </div>
-    
-            <div class="fin">
-              <div class="copy-left">
-                <p>&copy; 2023, Group1-C24</p>
-              </div>
-            </div>
+        </article>
+
+        <article class="variedades">
+          <figure>
+            <img src="/images/Pizza-img16.jpg" alt="pizza3">
+          </figure>
+          <div class="texto">
+            <h4>Albaca</h4>
+            <p>Una exquicita combinacion de muzzarella fundida, jamón crudo y albaca</p>
           </div>
+        </article>
+        <div class="articulo">
+          <article class="variedades">
+            <figure>
+              <img src="/images/Pizza-img7.jpg" alt="pizza2">
+            </figure>
+            <div class="texto">
+              <h4>Fugazzeta</h4>
+              <p>Una exquicita combinacion de muzzarella fundida con cebolla caramelizada</p>
+            </div>
+          </article>
         </div>
-    
-        <section class="seccion2-footer">
-          <div class="container-links-info">
-            <div class="logo">
-              <figure>
-                <img src="./images/logos/logo-normal.png" alt="logo">
-              </figure>
-              <div class="suscrip-forms-2">
-                <div><span>Recibir ofertar y Promos!</span></div>
-                <form>
-                  <div> <input type="text" id="suscripcion" name="suscripcion" placeholder="Ingresa tu email"></div>
-                  <button type="button">Suscribir </button>
-                </form>
-              </div>
-            </div>
-    
-            <div class="container-col-info">
-              <div class="ul-info">
-                <h5>Sobre nosotros</h5>
-                <ul class="link-info">
-                  <li><a class="afooter" href="">Quienes somos</a></li>
-                  <li><a class="afooter" href="">Contacto</a></li>
-                  <li><a class="afooter" href="">Terminos de uso</a></li>
-                  <li><a class="afooter" href="">Privacy Policy</a></li>
-                </ul>
-              </div>
-              <div class="ul-info">
-                <h5>Redes sociales</h5>
-                <ul class="link-info">
-                  <li><a class="afooter" href="">Facebook</a></li>
-                  <li><a class="afooter" href="">Twitter</a></li>
-                  <li><a class="afooter" href="">Instagram</a></li>
-                  <li><a class="afooter" href="">Youtube</a></li>
-                </ul>
-              </div>
-              <div class="ul-info">
-                <h5>Ayuda</h5>
-                <ul class="link-info">
-                  <li><a class="afooter" href="">Devoluciones</a></li>
-                  <li><a class="afooter" href="">FAQ</a></li>
-                  <li><a class="afooter" href="">Soporte</a></li>
-    
-                </ul>
-              </div>
-            </div>
+
+      </div>
+    </section>
+
+    <h2 class="titulo">HAMBURGUESAS</h2>
+    <section class="hamburguesas">
+
+      <div class="contenedor-hamburguesas">
+
+        <article class="variedades">
+          <figure>
+            <img src="/images/Hamb- img12.jpg" alt="hamb1">
+          </figure>
+          <div class="texto">
+            <h4>Extra Clasica</h4>
+            <p>Entre los panes combinamos dos medallones de carne con queso fundido, el sabor del tocino,
+              jamón, tomate y la lechuga</p>
           </div>
-          <div class="fin">
-    
-            <div class="copy-left">
-              <p>&copy; 2023, Group1-C24</p>
+        </article>
+
+        <article class="variedades">
+          <figure>
+            <img src="/images/Hamb-img11.jpg" alt="hamb3">
+          </figure>
+          <div class="texto">
+            <h4>Diabolica</h4>
+            <p> Entre dos panes combinamos dos medallones de carne con cheddar fundido, aros de cebolla,
+              tomate
+              y lechuga</p>
+          </div>
+
+        </article>
+
+        <div class="articulo">
+          <article class="variedades">
+            <figure>
+              <img src="/images/Hamb-img10.jpg" alt="hamb2">
+            </figure>
+            <div class="texto">
+              <h4>Clasica</h4>
+              <p> Entre dos panes combinamos un medallon de carne con cheddar fundido, el sabor del tocino,
+                tomate
+                y lechuga</p>
             </div>
-    
-            <div class="right">
-              <ul class="iconos-right">
-                <li><a class="afooter" href=""><i class="fa-brands fa-facebook aFooter"></i></a></li>
-                <li><a class="afooter" href=""><i class="fa-brands fa-twitter aFooter"></i></a></li>
-                <li><a class="afooter" href=""><i class="fa-brands fa-instagram aFooter"></i></a></li>
-                <li><a class="afooter" href=""><i class="fa-brands fa-youtube aFooter"></i></a></li>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="titulo">PAPAS FRITAS</h2>
+    <section class="papas">
+
+      <div class="contenedor-papas">
+        <article class="variedadesPapas">
+          <figure>
+            <img src="/images/Papas-img13.png" alt="papas1">
+          </figure>
+          <div class="textoPapas">
+            <h4>Papas Recargadas</h4>
+            <p>Cheddar + verdeo + beccon</p>
+          </div>
+
+        </article>
+
+        <div class="articuloPapas">
+          <article class="variedadesPapas1">
+            <figure>
+              <img src="/images/Papas-img15.png" alt="papas2">
+            </figure>
+            <div class="textoPapas">
+              <h4>Papas clasicas</h4>
+              <p>Cheddar + verdeo</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+
+    <div class="seccion1-footer">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Sobre nosotros
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Quienes somos</li>
+                <li>Contacto</li>
+                <li>Terminos de uso</li>
+                <li>Privaticy policy</li>
               </ul>
             </div>
-    
           </div>
-    
-        </section>
-    
-      </footer>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Ayuda
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Devoluciones</li>
+                <li>FAQ</li>
+                <li>Soporte</li>
 
-    <!--Boostrap script-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="sinacordeon">
+        <div class="redes">Redes Sociales</div>
+        <ul class="ul2">
+          <li><a class="aFooter" href=""><i class="fa-brands fa-facebook aFooter"></i></a></li>
+          <li><a class="aFooter" href=""><i class="fa-brands fa-twitter aFooter"></i></a></li>
+          <li><a class="aFooter" href=""><i class="fa-brands fa-instagram aFooter"></i></a></li>
+          <li><a class="aFooter" href=""><i class="fa-brands fa-youtube aFooter"></i></a></li>
+        </ul>
+
+        <div class="suscrip-forms">
+          <div><span>Recibir ofertar y Promos!</span></div>
+          <form>
+            <div> <input type="text" id="suscripcion" name="suscripcion" placeholder="Ingresa tu email"></div>
+            <button class="button" type="button">Suscribir </button>
+          </form>
+        </div>
+
+        <div class="fin">
+          <div class="copy-left">
+            <p>&copy; 2023, Group1-C24</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="seccion2-footer">
+      <div class="container-links-info">
+        <div class="logo">
+          <figure>
+            <img src="./images/logos/logo-normal.png" alt="logo">
+          </figure>
+          <div class="suscrip-forms-2">
+            <div><span>Recibir ofertar y Promos!</span></div>
+            <form>
+              <div> <input type="text" id="suscripcion" name="suscripcion" placeholder="Ingresa tu email"></div>
+              <button type="button">Suscribir </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="container-col-info">
+          <div class="ul-info">
+            <h5>Sobre nosotros</h5>
+            <ul class="link-info">
+              <li><a class="afooter" href="">Quienes somos</a></li>
+              <li><a class="afooter" href="">Contacto</a></li>
+              <li><a class="afooter" href="">Terminos de uso</a></li>
+              <li><a class="afooter" href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="ul-info">
+            <h5>Redes sociales</h5>
+            <ul class="link-info">
+              <li><a class="afooter" href="">Facebook</a></li>
+              <li><a class="afooter" href="">Twitter</a></li>
+              <li><a class="afooter" href="">Instagram</a></li>
+              <li><a class="afooter" href="">Youtube</a></li>
+            </ul>
+          </div>
+          <div class="ul-info">
+            <h5>Ayuda</h5>
+            <ul class="link-info">
+              <li><a class="afooter" href="">Devoluciones</a></li>
+              <li><a class="afooter" href="">FAQ</a></li>
+              <li><a class="afooter" href="">Soporte</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="fin">
+
+        <div class="copy-left">
+          <p>&copy; 2023, Group1-C24</p>
+        </div>
+
+        <div class="right">
+          <ul class="iconos-right">
+            <li><a class="afooter" href=""><i class="fa-brands fa-facebook aFooter"></i></a></li>
+            <li><a class="afooter" href=""><i class="fa-brands fa-twitter aFooter"></i></a></li>
+            <li><a class="afooter" href=""><i class="fa-brands fa-instagram aFooter"></i></a></li>
+            <li><a class="afooter" href=""><i class="fa-brands fa-youtube aFooter"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+
+
+
+    </section>
+
+
+  </footer>
+
+  <!--Boostrap script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
