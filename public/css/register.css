@@ -47,7 +47,7 @@
     padding: 10px;
 }
 .divInputsRegister span{
-    display: none;
+    display: block;
     color: red;
     font-size: 13px;
 }
