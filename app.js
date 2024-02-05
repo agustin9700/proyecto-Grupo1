@@ -4,6 +4,7 @@ const port = 3030
 const path = require("path")
 
 createPath = (filename) => path.join(__dirname,`./views/${filename}.html`);
+
 app.use(express.static('public'))
 
 
