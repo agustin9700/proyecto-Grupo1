@@ -76,7 +76,6 @@ header{
     .logueoHeader nav ul li a{
         background-color: var(--Naranja);
         padding: 5px;
-        margin-right: 20px;
         border-radius: 70px;
         transition: all 0.5s;
     }
