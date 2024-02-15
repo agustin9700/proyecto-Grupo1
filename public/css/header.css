@@ -39,7 +39,7 @@ header{
     background-color: var(--Blanco);
     height: 25px;
     width: 100%;
-    border-radius: 12px;
+    border-radius: 20px;
   } 
 
 .divBusquedaHeader button{
@@ -50,7 +50,7 @@ header{
     border: none;
     background-color: var(--Blanco);
     color: var(--Naranja);
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
 /*TABLET*/
@@ -103,6 +103,7 @@ header{
         display: flex;
         justify-content: space-between;
         padding-bottom: 10px;
+        align-items: center;
     }
     .navHeader2{
         display: inline-block;
@@ -144,20 +145,20 @@ header{
         padding-right: 1em;
     }
     .divBusquedaHeader input{
-        height: 30px;
+        height: 35px;
         padding-left: 10px;
     }
+    .divBusquedaHeader form{
+        position: relative;
+    }
     .divBusquedaHeader button{
-        left: auto;
-        right: 20px;
-        top: 50%;
         padding: 2px 5px 0 6px;
         background-color: var(--Naranja);
         color: var(--Blanco);
-        height: 75%;
-        margin-top: -7px;
-        transition: all 0.5s;
-        transform: translateY(-50%);
+       transition: all 0.5s;
+       position: absolute;
+        left: 92%;
+         width: 34px;
     }
     .divBusquedaHeader button:hover{
         color: var(--Negro);
