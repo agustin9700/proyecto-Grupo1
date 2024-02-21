@@ -1,0 +1,3 @@
+module.exports= (req,res) => {
+    res.render('home') // a cambiar la vista de producto...
+}
