@@ -3,6 +3,7 @@
 }
 .bodyRegister{
     margin: 0;
+    background-color: var(--Blanco);
 }
 .mainRegister{
     padding: 15px;
