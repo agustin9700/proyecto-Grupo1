@@ -13,10 +13,12 @@ const authenticationRoutes = require('./routes/user.routes');
 const productCartRoutes = require('./routes/productCart.routes');
 const productRoutes = require('./routes/product.routes');
 
+
 app.use('/', homeRoutes);
 app.use('/user', authenticationRoutes);
 app.use('/carrito', productCartRoutes);
 app.use('/producto', productRoutes);
+
 
 app.listen(port,() => console.log(`http://localhost:${port}`));
 
