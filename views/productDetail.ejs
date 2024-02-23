@@ -6,9 +6,35 @@
   <!-- header -->
   <%- include ("./partials/header") %>
 
-  <main class="main-productos">
+  <h2 class="tituloSeccion">Pizza</h2>
+  <section class="seccionPizza" id="pizza">
+   
+   <div class="container-articulo" >
+    <% for (i=0; i<productos.length; i++ ) {%>
+      <article>
+        <figure  style="width: 200px">
+          <img src=<%= productos[i].image %> alt=""></figure>
+        <h4><%= productos[i].name %></h4>
+        <div>
+          <span>$<%= productos[i].price %></span>
+          <span><%= productos[i].discount %>%OFF</span>
+        </div>
+        <div>
+          <button >detalle</button>
+          <button >agregar</button>
+        </div>
+         </article>
+   
+     <% } %>
+    </div>
 
-    <h2 class="titulo">PIZZAS</h2>
+  </section>
+  
+  
+  
+  <!-- <main class="main-productos">
+
+    <h2 class="titulo"  id="pizza">PIZZAS</h2>
 
     <section class="pizzas">
 
@@ -50,7 +76,7 @@
       </div>
     </section>
 
-    <h2 class="titulo">HAMBURGUESAS</h2>
+    <h2 class="titulo"  id="hamburguesa">HAMBURGUESAS</h2>
     <section class="hamburguesas">
 
       <div class="contenedor-hamburguesas">
@@ -96,7 +122,7 @@
       </div>
     </section>
 
-    <h2 class="titulo">PAPAS FRITAS</h2>
+    <h2 class="titulo"  id="papas">PAPAS FRITAS</h2>
     <section class="papas">
 
       <div class="contenedor-papas">
@@ -128,7 +154,7 @@
       </div>
     </section>
 
-  </main>
+  </main> -->
 
   <%- include ("./partials/footer") %>
 

@@ -19,9 +19,7 @@
   padding-bottom: 30px;
 }
 
-.container-main .upper-body a{
 
-}
 .container-main .upper-body div h2 {
   text-align: center;
   font-size: 1.5rem;
@@ -126,6 +124,7 @@
 
 .articulos-home span {
   font-weight: bold;
+  font-size: 11px;
 }
 
 .articulos-home .precio-off span:nth-child(2) {
@@ -255,9 +254,7 @@
     display: flex;
   }
 
-  .container-main .upper-body a{
-  
-  }
+ 
   .container-main .upper-body ul {
     display: flex;
     flex-direction: row;
@@ -310,9 +307,7 @@
     width: 17vw;
   }
 
-  .container-main .upper-body a{
-  
-  }
+ 
   .container-main .upper-body div h2 {
     font-size: 2rem;
   }
