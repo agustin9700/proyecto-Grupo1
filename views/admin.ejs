@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- head -->
+<%- include ("./partials/head",{title: "Administración" ,bootstrapActive: true})%>
+
+<body>
+
+    <div class="main-admin">
+        <div class="barraLateral">
+
+        <div class="logo">
+            <img src="\images\logos\logo.ico" alt="">
+        </div>
+
+        <div class="menu">
+ 
+            <ul class= menu-ul>
+
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#"><p>Usuario</p></a>
+                </li>
+                
+                <li>
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                    <a href="#"><p>Stock</p></a>
+                </li>
+                
+                <li>
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <a href="#"><p>Agregar producto</p></a>
+                </li>
+                
+                <li>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <a href="#"><p>Pedidos</p></a>
+                </li>
+                
+                <li>
+                    <i class="fa-solid fa-box-archive"></i>
+                    <a href="#"><p>Archivos </p></a>
+                </li>
+                
+                <li>
+                    <i class="fa-solid fa-inbox"></i>
+                    <a href="#"><p>Mensajes</p></a>
+                </li>
+            </ul>
+        </div>
+        </div> 
+
+    <div class="container-superior">
+    
+            <div class="buscador"> 
+              <input type="search" placeholder="Search..." />
+              <i class="fas fa-search"></i>
+            </div>
+
+            <div class="adminUser">
+                <i class="fa-solid fa-circle-user"></i> 
+                <h4>ArianaKneeteman</h4>
+                <h6>Admin</h6>
+            </div>
+    </div>
+
+    <div class="dashboard-admin-content p-5">
+
+        <h1 class="text-center text-danger my-4">Lista Productos</h1>
+ 
+        <div class="tabla">
+        <table class="table table-list-products">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">ID</th>
+                        <td><img class="img-product" src="/images/products/Sushi-web.jpg" alt=""></td>
+                        <td>Pizza Napolitana</td>
+                        <td>10530</td>
+                        <td></td>
+    
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a href="" class="btn btn-info d-inline-block">Info</a>
+                                <a href="" class="btn btn-warning d-inline-block">Editar</a>
+                                <a href="" class="btn btn-danger d-inline-block">Eliminar</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">ID</th>
+                        <td><img class="img-product" src="/images/products/Sushi-web.jpg" alt=""></td>
+                        <td>Titulo</td>
+                        <td>precio</td>
+                        <td>descripcion</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a href="" class="btn btn-info d-inline-block">Info</a>
+                                <a href="" class="btn btn-warning d-inline-block">Editar</a>
+                                <a href="" class="btn btn-danger d-inline-block">Eliminar</a>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>  
+        </div>
+
+        <div class="botonCrear">
+            <a href="" class="btn btn-primary mb-8">Crear Producto</a>  
+        </div>
+            
+    </div>
+
+</div>
+
+<!--Scripts Bootstrap-->
+    <script src="/js/functions/dashboard.js"></script>
+
+
+</body>
+
+</html>
