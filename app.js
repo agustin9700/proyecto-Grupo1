@@ -15,6 +15,7 @@ const productRoutes = require('./routes/product.routes');
 const adminRoutes = require("./routes/admin.routes");
 
 
+const errorPagina = require("./routes/error.routes")
 
 app.use('/', homeRoutes);
 app.use('/user', authenticationRoutes);
@@ -24,6 +25,8 @@ app.use('/admin', adminRoutes)
 
 
 
+
+app.use("*", errorPagina)
 
 app.listen(port,() => console.log(`http://localhost:${port}`));
 

@@ -1,3 +1,8 @@
 module.exports= (req,res) => {
-    res.render('home')
+    const datos= require("./basedate.json")
+    
+    
+    res.render('home',{"datosProductos":datos})
+
+
 }
