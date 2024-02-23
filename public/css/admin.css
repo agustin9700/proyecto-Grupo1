@@ -1,0 +1,152 @@
+.main-admin {
+    width: 100%;
+
+}
+
+.barraLateral {
+    width: 6vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: rgb(231, 202, 121);
+    transition: all 300ms;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barraLateral p {
+    display: none;
+}
+
+.barraLateral .menu i {
+    padding: 5px;
+    color: var(--Naranja);
+    font-size: 18px
+}
+
+.barraLateral .logo {
+    padding-top: 15px;
+}
+
+.barraLateral .logo p {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+.barraLateral .menu {
+    margin-top: 1rem;
+}
+
+.barraLateral .menu-ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.barraLateral:hover {
+    width: 15vw;
+}
+
+.barraLateral:hover .logo img {
+    width: 100px;
+}
+
+.barraLateral:hover .menu li {
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 1rem;
+    display: flex;
+}
+
+.barraLateral:hover .menu i {
+    color: var(--Naranja)
+}
+
+.barraLateral:hover p {
+    display: block;
+    color: var(--Naranja);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.barraLateral:hover .menu a {
+    padding-left: 2rem;
+    display: block;
+    font-size: 1.1rem;
+    align-items: center;
+}
+
+.main-admin .container-superior {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 202, 121);
+}
+
+.container-superior .buscador {
+    font-size: medium;
+    margin-left: 30%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: solid 1px #ccc;
+    border-radius: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.buscador i {
+    display: inline-block;
+    padding: 0.45rem 1rem;
+    font-size: 1.5rem;
+    background: white;
+    color: var(--Naranja)
+}
+
+.buscador input {
+    width: 25vw;
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+
+.container-superior .adminUser {
+    display: flow;
+    margin-right: 65px
+}
+
+.adminUser i {
+    display: inline-block;
+    color: var(--Naranja);
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.adminUser h4 {
+    display: contents;
+    color: var(--Naranja);
+}
+
+.adminUser h6 {
+    text-align: center;
+    color: var(--Naranja);
+}
+
+.tabla{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    padding: 0 60px;
+}
+
+.botonCrear{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
