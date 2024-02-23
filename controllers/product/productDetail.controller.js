@@ -1,3 +1,5 @@
 module.exports= (req,res) => {
-    res.render('productDetail')
+    const productos= require("./productos.json")
+    
+    res.render('productDetail',{"productos":productos})
 }
