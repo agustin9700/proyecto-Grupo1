@@ -1,38 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- head -->
-<%- include ("./partials/head",{title: "Detalle de producto",bootstrapActive: true})%>
-<body>
-  <!-- header -->
-  <%- include ("./partials/header") %>
+<%- include ("./partials/head",{title: "Detalle de producto" ,bootstrapActive: true})%>
 
-  <h2 class="tituloSeccion">Pizza</h2>
-  <section class="seccionPizza" id="pizza">
-   
-   <div class="container-articulo" >
-    <% for (i=0; i<productos.length; i++ ) {%>
-      <article>
-        <figure  style="width: 200px">
-          <img src=<%= productos[i].image %> alt=""></figure>
-        <h4><%= productos[i].name %></h4>
-        <div>
-          <span>$<%= productos[i].price %></span>
-          <span><%= productos[i].discount %>%OFF</span>
-        </div>
-        <div>
-          <button >detalle</button>
-          <button >agregar</button>
-        </div>
-         </article>
-   
-     <% } %>
-    </div>
+  <body>
+    <!-- header -->
+    <%- include ("./partials/header") %>
 
-  </section>
-  
-  
-  
-  <!-- <main class="main-productos">
+      <h2 class="tituloSeccion">Pizza</h2>
+      <section class="seccionPizza" id="pizza">
+
+        <div class="variedades">
+          <% productos.forEach(p=> {%>
+            <article>
+              <figure style="width: 200px">
+                <img src="<%= p.image %>" alt="">
+              </figure>
+
+              <h4>
+                <%= p.name %>
+              </h4>
+
+              <div>
+                <span>$<%= p.price %></span>
+                <span>
+                  <%= p.discount %>%OFF
+                </span>
+              </div>
+
+              <div>
+                <button>detalle</button>
+                <button>agregar</button>
+              </div>
+            </article>
+
+            <% }) %>
+        </div>
+
+      </section>
+
+
+      <h2 class="tituloSeccion">HAMBURGUESAS</h2>
+      <section class="seccionHamburguesa" id="hamburguesa">
+        <div class="variedades">
+          <% productos.forEach(p=> {%>
+            <article>
+              <figure style="width: 200px">
+                <img src="<%= p.image %>" alt="">
+              </figure>
+
+              <h4>
+                <%= p.name %>
+              </h4>
+
+              <div>
+                <span>$<%= p.price %></span>
+                <span>
+                  <%= p.discount %>%OFF
+                </span>
+              </div>
+
+              <div>
+                <button>detalle</button>
+                <button>agregar</button>
+              </div>
+            </article>
+
+            <% }) %>
+        </div>
+
+      </section>
+
+      <h2 class="tituloSeccion">PAPAS FRITAS</h2>
+      <section class="seccionPapas" id="papas">
+
+        <div class="variedades">
+          <% productos.forEach(p=> {%>
+            <article>
+              <figure style="width: 200px">
+                <img src="<%= p.image %>" alt="">
+              </figure>
+
+              <h4>
+                <%= p.name %>
+              </h4>
+
+              <div>
+                <span>$<%= p.price %></span>
+                <span>
+                  <%= p.discount %>%OFF
+                </span>
+              </div>
+
+              <div>
+                <button>detalle</button>
+                <button>agregar</button>
+              </div>
+            </article>
+
+            <% }) %>
+        </div>
+
+      </section>
+
+
+
+      <!-- <main class="main-productos">
 
     <h2 class="titulo"  id="pizza">PIZZAS</h2>
 
@@ -156,10 +229,10 @@
 
   </main> -->
 
-  <%- include ("./partials/footer") %>
+      <%- include ("./partials/footer") %>
 
-  <!--Boostrap script-->
-  <%- include ("./partials/scripts") %>
-</body>
+        <!--Boostrap script-->
+        <%- include ("./partials/scripts") %>
+  </body>
 
 </html>
