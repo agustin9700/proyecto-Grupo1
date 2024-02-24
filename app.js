@@ -26,7 +26,7 @@ app.use('/', homeRoutes);
 app.use('/user', authenticationRoutes);
 app.use('/carrito', productCartRoutes);
 app.use('/producto', productRoutes);
-app.use('/listProducts', adminRoutes)
+app.use('/admin', adminRoutes)
 
 
 
