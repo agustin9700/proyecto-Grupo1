@@ -6,4 +6,8 @@ const adminController = require("../controllers/admin");
 router.get("/", adminController.admin); 
 
 
+
+// "/admin"
+router.get("/editar", adminController.update);
+
 module.exports = router;
