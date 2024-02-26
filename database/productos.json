@@ -1,5 +1,5 @@
 [
-    {
+   {
       "id": 1,
       "category": "pizzas",
       "name": "Rucula",
@@ -8,8 +8,8 @@
       "freeShipping": true,
       "image": "/images/Pizza-img6.jpg",
       "detail": "Una exquicita combinacion de muzzarella fundida, tomate cherrys gratinados y rucula"
-    },
-    {
+   },
+   {
       "id": 2,
       "category": "pizzas",
       "name": "Albaca",
@@ -18,9 +18,9 @@
       "freeShipping": true,
       "image": "/images/Pizza-img16.jpg",
       "detail": "Una exquicita combinacion de muzzarella fundida, jamón crudo y albaca"
-    },
-    {
-      "id":3,
+   },
+   {
+      "id": 3,
       "category": "pizzas",
       "name": "Rucula",
       "price": 8000,
@@ -28,8 +28,8 @@
       "freeShipping": true,
       "image": "/images/Pizza-img7.jpg",
       "detail": "Una exquicita combinacion de muzzarella fundida, tomate cherrys gratinados y rucula"
-    },
-    {
+   },
+   {
       "id": 4,
       "category": "pizzas",
       "name": "Rucula",
@@ -38,8 +38,8 @@
       "freeShipping": true,
       "image": "/images/Pizza-img6.jpg",
       "detail": "Una exquicita combinacion de muzzarella fundida, tomate cherrys gratinados y rucula"
-    },
-    {
+   },
+   {
       "id": 5,
       "category": "pizzas",
       "name": "Rucula",
@@ -48,7 +48,15 @@
       "freeShipping": true,
       "image": "/images/Pizza-img6.jpg",
       "detail": "Una exquicita combinacion de muzzarella fundida, tomate cherrys gratinados y rucula"
-    }
-    
-  ]
-  
+   },
+   {
+      "id": 6,
+      "category": "pizzas",
+      "name": "pizza nueva",
+      "price": 1258,
+      "discount": 10,
+      "freeShipping": true,
+      "image": "/images/Papas-img15.png",
+      "detail": "pizza nueva"
+   }
+]
