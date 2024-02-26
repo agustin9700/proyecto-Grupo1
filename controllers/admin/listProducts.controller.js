@@ -16,7 +16,8 @@ module.exports = (req, res) => {
           views: content
         })
       })
+  }
 
-  };
+
 
   
