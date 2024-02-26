@@ -77,9 +77,10 @@
     font-weight: 600;
     transition: all 0.5ms;
 }
+
 .barraLateral:hover p:hover {
     color: black;
-    
+
 }
 
 
@@ -133,11 +134,11 @@
 }
 
 .adminUser img {
-    width: 40px; 
+    width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: .5rem;
-  }
+    margin-top: 8px;
+}
 
 .adminUser i {
     color: rgb(255 180 100);
@@ -160,26 +161,53 @@
     text-align: center;
 }
 
-.dashboard-conten h1{
+.dashboard-conten h1 {
     color: rgba(129, 51, 20, 0.9);
     font-weight: bolder;
     text-align: center;
     margin-bottom: 2.5rem;
 }
 
-.listProductos .img-product {
+.listaProducts {
+    max-width: 1200px;
+    height: 52vh;
+    overflow-y: scroll;
+    display: block;
+}
+
+.listaProducts::-webkit-scrollbar {
+    display: none;
+}
+
+.listaProducts::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.listaProducts::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.listaProducts:hover::-webkit-scrollbar-thumb {
+    background: var(--red);
+}
+
+.listaProducts:hover::-webkit-scrollbar-track {
+    background: var(--red);
+}
+
+.listaProducts .img-product {
     width: 100px;
     height: 100px;
     object-fit: contain;
 }
 
 
-.tabla{
+.tabla {
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin-left: 50px;
-    padding: 0 60px;
+    margin-left: 45px;
+    padding: 0px 45px;
 }
 
 .botonCrear {

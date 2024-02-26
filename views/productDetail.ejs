@@ -13,7 +13,7 @@
         <div class="variedades">
           <% productos.filter(p => p.category.toLowerCase() === 'pizzas').forEach(p=> {%>
             <article>
-              <figure style="width: 200px">
+              <figure>
                 <img src="<%= p.image %>" alt="">
               </figure>
 
@@ -28,8 +28,8 @@
                 </span>
               </div>
 
-              <div>
-                <button>Detalle</button>
+              <div class="botones">
+                <button><a href=""></a>Detalle</button>
                 <button><a href="/carrito"></a>Agregar</button>
               </div>
             </article>
@@ -47,7 +47,7 @@
           <% productos.filter(p => p.category.toLowerCase() === 'hamburguesas').forEach(p=> {%>
           
             <article>
-              <figure style="width: 200px">
+              <figure>
                 <img src="<%= p.image %>" alt="">
               </figure>
 
@@ -62,7 +62,7 @@
                 </span>
               </div>
 
-              <div>
+              <div class="botones">
                 <button><a href=""></a>Detalle</button>
                 <button><a href="/carrito"></a>Agregar</button>
               </div>
@@ -79,7 +79,7 @@
         <div class="variedades">
           <% productos.filter(p => p.category.toLowerCase() === 'papas fritas').forEach(p=> {%>
             <article>
-              <figure style="width: 200px">
+              <figure>
                 <img src="<%= p.image %>" alt="">
               </figure>
 
@@ -94,8 +94,8 @@
                 </span>
               </div>
 
-              <div>
-                <button>Detalle</button>
+              <div class="botones">
+                <button> <a href=""></a>Detalle</button>
                 <button><a href=""></a>Agregar</button>
               </div>
             </article>
