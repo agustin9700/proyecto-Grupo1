@@ -7,6 +7,14 @@ router.get("/", adminController.admin);
 
 
 
+
+
+
+
+
+
+
+
 // "/admin"
 router.get("/editar", adminController.update);
 
