@@ -8,8 +8,7 @@ router.get("/listProducts", adminController.admin);
 router.get("/crearProduct",adminController.crear)
 router.post("/crearProduct", adminController.newProduct);
 
-
-
-
+// "/admin"
+router.get("/editar", adminController.update);
 
 module.exports = router;

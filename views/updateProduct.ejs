@@ -1,0 +1,67 @@
+        <div class="update">
+            <div class="prevList">
+                <form action="/" method="POST">
+                    <input type="button" value="Volver a Lista">
+                </form>
+            </div>
+            <section>
+                <h1>
+                    Editar Producto
+                </h1>
+                <div class="info">
+                    <form action="/" method="POST">
+                        <div>
+                            <label for="id">ID:   </label>
+                            <input type="number" placeholder="id" name="id" value="" id="id">
+                        </div>
+                        <div>
+                            <label for="categoria">categoria</label>
+                            <input type="text" placeholder="categoria" name="categoria" value="" id="categoria">
+                        </div>
+                        <div>
+                            <label for="producto">Producto</label>
+                            <input type="text" placeholder="nombre de producto" name="producto" value="" id="producto">
+                        </div>
+                        <div>
+                            <label for="precio">Precio</label>
+                            <input type="number" placeholder="precio de producto" name="precio" value="" id="precio">
+                        </div>
+                        <div>
+                            <label for="imagen">Seleccionar imagen:</label\>
+                                <input type="file" name="imagen" value="" id="imagen">
+                        </div>
+                        <div class="seccion">
+
+                            <div>
+                                <input type="radio" name="seccion" checked value="oferta" id="oferta">
+                                <label for="oferta">Oferta</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="seccion" value="nuevo" id="nuevo">
+                                <label for="nuevo">Nuevo</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="seccion" value="gratis" id="gratis">
+                                <label for="gratis">Gratis</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="textarea">Descripción</label\>
+                                <input type="textarea" name="textarea" value="" id="descripcion">
+                        </div>
+                        <div class="boton">
+                            <form action="">
+                                <button type="submit">Guardar Cambios</button>
+                                <button type="reset">Borrar</button>
+                            </form>
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </section>
+        </div>
+
