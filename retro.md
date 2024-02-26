@@ -31,3 +31,17 @@ Las preguntas y sus conclusiones son:
 5) ¿QUÉ VAMOS A INTENTAR MEJORAR EN EL PRÓXIMO SPRINT?
 
     Por último y de las más importantes que nos hicimos fue esta. Como equipo nos podriamos juntar más días, el sprint 1 hicimos videollamadas pero no todos los días o día por medio. Ser mas detallistas con el proyecto, pensarlo de manera funcional y tratar de estar en cada detalle, siempre un paso adelante del cliente para poder desarrollar una interacción más dinamica y fácil entre el cliente y la página.
+
+Charla Retrospectiva:
+
+Uno de los aspectos que resaltó durante nuestra conversación fue la responsabilidad que cada uno asumió con sus tareas. Fue evidente que todos estábamos comprometidos con el éxito del proyecto, y esa dedicación se tradujo en un flujo de trabajo eficiente y resultados positivos.
+
+La comunicación y el compañerismo fueron elementos clave. Desde el inicio, mantuvimos líneas abiertas para discutir ideas, resolver problemas y compartir conocimientos que no solo fortaleció nuestro trabajo, sino que también creó un ambiente donde todos nos sentimos apoyados y valorados.
+
+En momentos cruciales, cuando uno de nuestros compañeros no pudo estar presente, demostramos una verdadera solidaridad. Distribuimos las tareas entre nosotros para cubrir cualquier vacío y asegurarnos de que el proyecto no se viera afectado. 
+
+Sin embargo, también identificamos áreas de mejora durante nuestra retrospectiva. Notamos que el movimiento de las tarjetas en Jira podría optimizarse para una mayor eficiencia. Además, reconocemos la necesidad de agregar algunos días de reuniones para abordar cuestiones pendientes y planificar con mayor anticipación.
+
+Estas áreas de mejora no son obstáculos insuperables; más bien, son oportunidades para crecer y perfeccionar nuestras prácticas de trabajo. 
+
+En resumen, nuestra charla retrospectiva no solo fue una revisión de nuestras acciones pasadas, sino también un compromiso colectivo de seguir creciendo y aprendiendo juntos.
