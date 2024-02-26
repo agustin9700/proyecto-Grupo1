@@ -7,13 +7,13 @@
     <!-- header -->
     <%- include ("./partials/header") %>
 
-      <h2 class="tituloSeccion">Pizza</h2>
-      <section class="seccionPizza" id="pizza">
+      <h2 class="tituloSeccion">Pizzas</h2>
+      <section class="seccionPizza" id="pizza" category="Pizzas">
 
         <div class="variedades">
-          <% productos.forEach(p=> {%>
+          <% productos.filter(p => p.category.toLowerCase() === 'pizzas').forEach(p=> {%>
             <article>
-              <figure style="width: 200px">
+              <figure>
                 <img src="<%= p.image %>" alt="">
               </figure>
 
@@ -21,16 +21,16 @@
                 <%= p.name %>
               </h4>
 
-              <div>
+              <div class="price-discount">
                 <span>$<%= p.price %></span>
                 <span>
-                  <%= p.discount %>%OFF
+                  <%= p.discount ? p.discount + '% OFF' : '' %>
                 </span>
               </div>
 
-              <div>
-                <button>detalle</button>
-                <button>agregar</button>
+              <div class="botones">
+                <button><a href=""></a>Detalle</button>
+                <button><a href="/carrito"></a>Agregar</button>
               </div>
             </article>
 
@@ -41,11 +41,13 @@
 
 
       <h2 class="tituloSeccion">HAMBURGUESAS</h2>
-      <section class="seccionHamburguesa" id="hamburguesa">
+      <section class="seccionHamburguesa" id="hamburguesa" category="hamburguesas">
         <div class="variedades">
-          <% productos.forEach(p=> {%>
+
+          <% productos.filter(p => p.category.toLowerCase() === 'hamburguesas').forEach(p=> {%>
+          
             <article>
-              <figure style="width: 200px">
+              <figure>
                 <img src="<%= p.image %>" alt="">
               </figure>
 
@@ -53,16 +55,16 @@
                 <%= p.name %>
               </h4>
 
-              <div>
+              <div class="price-discount">
                 <span>$<%= p.price %></span>
                 <span>
-                  <%= p.discount %>%OFF
+                  <%= p.discount ? p.discount + '% OFF' : '' %>
                 </span>
               </div>
 
-              <div>
-                <button>detalle</button>
-                <button>agregar</button>
+              <div class="botones">
+                <button><a href=""></a>Detalle</button>
+                <button><a href="/carrito"></a>Agregar</button>
               </div>
             </article>
 
@@ -72,12 +74,12 @@
       </section>
 
       <h2 class="tituloSeccion">PAPAS FRITAS</h2>
-      <section class="seccionPapas" id="papas">
+      <section class="seccionPapas" id="papas" category="Papas Fritas">
 
         <div class="variedades">
-          <% productos.forEach(p=> {%>
+          <% productos.filter(p => p.category.toLowerCase() === 'papas fritas').forEach(p=> {%>
             <article>
-              <figure style="width: 200px">
+              <figure>
                 <img src="<%= p.image %>" alt="">
               </figure>
 
@@ -85,16 +87,16 @@
                 <%= p.name %>
               </h4>
 
-              <div>
+              <div class="price-discount">
                 <span>$<%= p.price %></span>
                 <span>
-                  <%= p.discount %>%OFF
+                  <%= p.discount ? p.discount + '% OFF' : '' %>
                 </span>
               </div>
 
-              <div>
-                <button>detalle</button>
-                <button>agregar</button>
+              <div class="botones">
+                <button> <a href=""></a>Detalle</button>
+                <button><a href=""></a>Agregar</button>
               </div>
             </article>
 
@@ -102,132 +104,6 @@
         </div>
 
       </section>
-
-
-
-      <!-- <main class="main-productos">
-
-    <h2 class="titulo"  id="pizza">PIZZAS</h2>
-
-    <section class="pizzas">
-
-      <div class="contenedor-pizzas">
-
-        <article class="variedades">
-          <img src="/images/Pizza-img6.jpg" alt="pizza1">
-          <div class="texto">
-            <h4>Rucula</h4>
-            <p>Una exquicita combinacion de muzzarella fundida, tomate cherrys gratinados y rucula </p>
-          </div>
-      </div>
-
-        </article>
-
-      <article class="variedades">
-        <figure>
-          <img src="/images/Pizza-img16.jpg" alt="pizza3">
-        </figure>
-        <div class="texto">
-          <h4>Albaca</h4>
-          <p>Una exquicita combinacion de muzzarella fundida, jamón crudo y albaca</p>
-        </div>
-      </article>
-
-
-      <div class="articulo">
-        <article class="variedades">
-          <figure>
-            <img src="/images/Pizza-img7.jpg" alt="pizza2">
-          </figure>
-          <div class="texto">
-            <h4>Fugazzeta</h4>
-            <p>Una exquicita combinacion de muzzarella fundida con cebolla caramelizada</p>
-          </div>
-        </article>
-      </div>
-
-      </div>
-    </section>
-
-    <h2 class="titulo"  id="hamburguesa">HAMBURGUESAS</h2>
-    <section class="hamburguesas">
-
-      <div class="contenedor-hamburguesas">
-
-        <article class="variedades">
-          <figure>
-            <img src="/images/Hamb- img12.jpg" alt="hamb1">
-          </figure>
-          <div class="texto">
-            <h4>Extra Clasica</h4>
-            <p>Entre los panes combinamos dos medallones de carne con queso fundido, el sabor del tocino,
-              jamón, tomate y la lechuga</p>
-          </div>
-
-        </article>
-
-        <article class="variedades">
-          <figure>
-            <img src="/images/Hamb-img11.jpg" alt="hamb3">
-          </figure>
-          <div class="texto">
-            <h4>Diabolica</h4>
-            <p> Entre dos panes combinamos dos medallones de carne con cheddar fundido, aros de cebolla,
-              tomate
-              y lechuga</p>
-          </div>
-        </article>
-
-        <div class="articulo">
-          <article class="variedades">
-            <figure>
-              <img src="/images/Hamb-img10.jpg" alt="hamb2">
-            </figure>
-            <div class="texto">
-              <h4>Clasica</h4>
-              <p> Entre dos panes combinamos un medallon de carne con cheddar fundido, el sabor del tocino,
-                tomate
-                y lechuga</p>
-            </div>
-
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <h2 class="titulo"  id="papas">PAPAS FRITAS</h2>
-    <section class="papas">
-
-      <div class="contenedor-papas">
-        <article class="variedadesPapas">
-          <figure>
-            <img src="/images/Papas-img13.png" alt="papas1">
-          </figure>
-          <div class="textoPapas">
-            <h4>Papas Recargadas</h4>
-            <p>Cheddar + verdeo + beccon</p>
-          </div>
-
-        </article>
-
-        <div class="articuloPapas">
-          <article class="variedadesPapas1">
-            <figure>
-              <img src="/images/Papas-img15.png" alt="papas2">
-            </figure>
-            <div class="textoPapas">
-              <h4>Papas clasicas</h4>
-              <p>Cheddar + verdeo</p>
-            </div>
-
-        </div>
-        </article>
-      </div>
-
-      </div>
-    </section>
-
-  </main> -->
 
       <%- include ("./partials/footer") %>
 
