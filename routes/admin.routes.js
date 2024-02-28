@@ -5,13 +5,11 @@ const adminController = require("../controllers/admin");
 // "/admin"
 router.get("/", adminController.admin);
 router.get("/listProducts", adminController.admin);
-
-
-
-
-
+router.get("/crearProduct",adminController.crear)
+router.post("/crearProduct", adminController.newProduct);
 
 // "/admin"
-router.get("/editar", adminController.update);
+router.get("/editar/:id", adminController.update);
+router.put("/editar/:id",adminController.datosMod)
 
 module.exports = router;
