@@ -117,18 +117,18 @@
 }
 
 .container-superior .adminUser {
-    display: flow;
-    margin-right: 65px
+    display: inline-block;
+    margin-right: 66px;
 }
 
 .adminUser i {
-    display: inline-block;
     color: var(--Naranja);
     border-radius: 50%;
     margin-right: .5rem;
+    font-size: 30px;
 }
 
-.adminUser h4 {
+.adminUser h5 {
     display: contents;
     color: var(--Naranja);
 }

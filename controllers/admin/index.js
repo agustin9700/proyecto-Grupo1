@@ -1,4 +1,5 @@
 module.exports = {
-    admin: require("./admin.controller"),
+    admin: require("./listProducts.controller"),
+    
     update: require("./update.controller")
 }
