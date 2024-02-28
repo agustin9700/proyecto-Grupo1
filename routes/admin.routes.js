@@ -10,6 +10,6 @@ router.post("/crearProduct", adminController.newProduct);
 
 // "/admin"
 router.get("/editar/:id", adminController.update);
-// router.post("/editar/:id",adminController.update)
+router.put("/editar/:id",adminController.datosMod)
 
 module.exports = router;

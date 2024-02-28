@@ -1,7 +1,11 @@
+ let productos= require("../../database/productos.json")
+
 module.exports = (req, res) => {
+
+
     id = req.params.id ;
     
-    const productos= require("../../database/productos.json")
+   
     const product = productos.find((p) => p.id === +id); 
     
     res.render("admin/updateProduct", {product}, (err, content) =>{
