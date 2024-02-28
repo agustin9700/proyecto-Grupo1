@@ -9,6 +9,7 @@ router.get("/crearProduct",adminController.crear)
 router.post("/crearProduct", adminController.newProduct);
 
 // "/admin"
-router.get("/editar", adminController.update);
+router.get("/editar/:id", adminController.update);
+// router.post("/editar/:id",adminController.update)
 
 module.exports = router;

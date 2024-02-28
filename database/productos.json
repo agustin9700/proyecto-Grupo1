@@ -9,16 +9,7 @@
      "image": "/images/Pizza-img6.jpg",
      "detail": "Una exquisita combinación de muzzarella fundida, tomate cherrys gratinados y rucula"
    },
-   {
-     "id": 2,
-     "category": "pizzas",
-     "name": "Albaca",
-     "price": 7600,
-     "discount": 5,
-     "freeShipping": false,
-     "image": "/images/Pizza-img16.jpg",
-     "detail": "Una exquisita combinación de muzzarella fundida, jamón crudo y albaca"
-   },
+   
    {
      "id":3,
      "category": "Pizzas",

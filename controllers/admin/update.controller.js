@@ -1,6 +1,10 @@
 module.exports = (req, res) => {
+    id = req.params.id ;
+    
     const productos= require("../../database/productos.json")
-      res.render("admin/update", {productos}, (err, content) =>{
+    const product = productos.find((p) => p.id === +id); 
+    
+    res.render("admin/updateProduct", {product}, (err, content) =>{
         err && res.send(err.message)
 
         res.render("partials/dashboard", {
