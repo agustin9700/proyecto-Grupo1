@@ -2,7 +2,9 @@ const express = require("express");
 const app = express();
 const port = 3030;
 const path = require("path");
+const cookieParser = require('cookie-parser');
 const partials = require('express-partials');
+const methodOverride = require("method-override")
 
 
 app.use(express.static('public'));
@@ -18,9 +20,12 @@ const authenticationRoutes = require('./routes/user.routes');
 const productCartRoutes = require('./routes/productCart.routes');
 const productRoutes = require('./routes/product.routes');
 const adminRoutes = require("./routes/admin.routes");
-
-
 const errorPagina = require("./routes/error.routes")
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser())
+app.use(methodOverride("_method"))
 
 app.use('/', homeRoutes);
 app.use('/user', authenticationRoutes);

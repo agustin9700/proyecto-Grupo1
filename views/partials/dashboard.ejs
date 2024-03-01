@@ -7,7 +7,7 @@
 
 <body>
 
-    <div class="main-admin">
+    <main class="main-admin">
 
         <div class="barraLateral">
 
@@ -19,32 +19,32 @@
  
             <ul class= menu-ul>
 
-                <li>
+                <li class="li-dash">
                     <i class="fa-solid fa-user"></i>
                     <a href="#"><p>Usuario</p></a>
                 </li>
                 
-                <li>
+                <li class="li-dash">
                     <i class="fa-solid fa-cubes-stacked"></i>
                     <a href="#"><p>Stock</p></a>
                 </li>
                 
-                <li>
+                <li class="li-dash">
                     <i class="fa-solid fa-circle-plus"></i>
-                    <a href="#"><p>Agregar producto</p></a>
+                    <a href="../admin/crearProduct"><p>Agregar producto</p></a>
                 </li>
                 
-                <li>
+                <li class="li-dash">
                     <i class="fa-solid fa-layer-group"></i>
                     <a href="#"><p>Pedidos</p></a>
                 </li>
                 
-                <li>
+                <li class="li-dash">
                     <i class="fa-solid fa-box-archive"></i>
                     <a href="#"><p>Archivos </p></a>
                 </li>
                 
-                <li>
+                <li class="li-dash">
                     <i class="fa-solid fa-inbox"></i>
                     <a href="#"><p>Mensajes</p></a>
                 </li>
@@ -60,20 +60,19 @@
             </div>
 
             <div class="adminUser">
-                <i class="fa-solid fa-circle-user"></i> 
+                <img src="/images/DSC_0661.JPG" alt="ImagePerfil">
                 <h5>ArianaKneeteman</h5>
                 <h6>Admin</h6>
             </div>
-        </div>
-
-    </div>
+        </div>                  
+      
+    </main>
 
 <!--Contenido de las demas vistas-->
     <%- views %>
 
 <!--Scripts Bootstrap-->
 <script src="/js/functions/dashboard.js"></script>
-
 
 </body>
 
