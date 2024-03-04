@@ -20,7 +20,8 @@ const authenticationRoutes = require('./routes/user.routes');
 const productCartRoutes = require('./routes/productCart.routes');
 const productRoutes = require('./routes/product.routes');
 const adminRoutes = require("./routes/admin.routes");
-const errorPagina = require("./routes/error.routes")
+const errorPagina = require("./routes/error.routes");
+const search= require("./routes/search.routes")
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -31,7 +32,8 @@ app.use('/', homeRoutes);
 app.use('/user', authenticationRoutes);
 app.use('/carrito', productCartRoutes);
 app.use('/producto', productRoutes);
-app.use('/admin', adminRoutes)
+app.use('/admin', adminRoutes);
+app.use("/",search)
 
 
 
