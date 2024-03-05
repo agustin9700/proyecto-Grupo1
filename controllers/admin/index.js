@@ -4,5 +4,6 @@ module.exports = {
     newProduct:require("./newProduct.controller.js"),
     update: require("./update.controller"),
     datosMod:require("./datosMod.controller.js"),
-    deleteProduct: require("./deleteProduct.controller.js")
+    deleteProduct: require("./deleteProduct.controller.js"),
+    putDeleteProduct: require("./putDeleteProduct.controller.js")
 }

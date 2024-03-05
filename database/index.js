@@ -10,7 +10,7 @@ module.exports = {
         return dataJS
     },
 
-    saveData:(data, filanemeJSON) => {
+    saveData:(data, filenameJSON) => {
         const pathJSON = path.join(__dirname, `./${filenameJSON}.json`);
         const dataString = JSON.stringify(data, null, 3)
         fs.writeFileSync = (pathJSON , data , 'utf-8')
