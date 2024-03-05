@@ -13,8 +13,6 @@ app.set('view engine', 'ejs');
 app.use(partials())
 
 
-
-
 const homeRoutes = require ('./routes/home.routes');
 const authenticationRoutes = require('./routes/user.routes');
 const productCartRoutes = require('./routes/productCart.routes');
