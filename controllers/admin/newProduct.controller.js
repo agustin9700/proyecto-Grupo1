@@ -13,7 +13,7 @@ module.exports = function(req, res) {
         price:+price,
         discount:+discount,
         freeShipping: freeShipping === "true",
-        image: "/images/Papas-1.png",
+        image: "/images/default.jpg",
         detail
     }
     console.log(newProduct)

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- head -->
+<%- include ("./partials/head",{title: "Home" ,bootstrapActive: true})%>
+
+  <body>
+    <!-- header -->
+    <%- include ("./partials/header") %>
+ 
+<h4 class=" p-3">Resultado de Busqueda</h4>
+    <div class="container-article m-3 p-3 flex-wrap">
+      <% for (let i = 0; i < resultadosBusqueda.length; i++) { %>
+          <div class="articulos-home item">
+              <figure class="container-img">
+                  <img class="d-block w-100 img-fluid" src="<%= resultadosBusqueda[i].image %>" alt="">
+              </figure>
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-plus"></i>
+              <span><%= resultadosBusqueda[i].name %></span>
+              <div class="precio-off">
+                  <span>$<%= resultadosBusqueda[i].price %></span>
+                  <span><%= resultadosBusqueda[i].discount %> %OFF</span>
+              </div>
+              <div class="envio-gratis">
+                  <% if (resultadosBusqueda[i].freeShipping) { %>
+                      <span>Envío Gratis</span>
+                  <% } else { %>
+                      <br>
+                  <% } %>
+              </div>
+              <div class="button-container">
+                  <button>Agregar Carrito</button>
+              </div>
+          </div>
+      <% } %>
+  </div>
+  
+ 
+ 
+ 
+ 
+ 
+ <!--footer-->
+ <%- include ("./partials/footer") %>
+ <!--Boostrap script-->
+ <%- include ("./partials/scripts") %>
+
+</body>
