@@ -1,6 +1,6 @@
-const path = require("path");
-const fs = require("fs");
+
 let products = require("../../database/productos.json");
+const { saveData } = require("../../database");
 
 module.exports = function(req, res) {
     const { name,category,price,discount,freeShipping,image,detail } = req.body;
@@ -20,10 +20,7 @@ module.exports = function(req, res) {
 
     products = [...products, newProduct];
 
-    products = JSON.stringify(products, null, 3);
-    const pathProducts = path.join(__dirname, "../../database/productos.json");
-    
-    fs.writeFileSync(pathProducts, products, "utf-8");
+    saveData(products,"productos")
 
     
     

@@ -1,12 +1,14 @@
-const { loadData } = require("../../database")
+let productEdit= require("../../database/productos.json")
+
+
 
 
 module.exports = (req,res) => {
     const {id} = req.params;
-    const productEdit = loadData();
+    
     const findProductEdit = productEdit.find(p => p.id === +id)
 
-    res.render("admin/editProduct", {productEdit: findProductEdit},(err, content) =>{
+    res.render("admin/editProduct", {"productEdit" : findProductEdit},(err, content) =>{
         err && res.send(err.message)
     
         res.render("partials/dashboard", {
