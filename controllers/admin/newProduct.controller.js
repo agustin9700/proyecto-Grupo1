@@ -1,5 +1,7 @@
-const { saveData, loadData } = require("../../database");
-const products = loadData("productos")
+const { saveData,loadData } = require("../../database");
+let products = loadData("productos");
+
+
 module.exports = function(req, res) {
     const { name,category,price,discount,freeShipping,image,detail } = req.body;
    

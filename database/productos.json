@@ -171,42 +171,12 @@
    },
    {
       "id": 18,
-      "category": "Hamburguesas",
-      "name": "asdasdasdasd",
-      "price": 12312312312,
-      "discount": 0,
-      "freeShipping": false,
-      "image": "/images/default.jpg",
-      "detail": "asdasdasd"
-   },
-   {
-      "id": 19,
       "category": "Pizzas",
-      "name": "pizzaaaaa",
-      "price": 123123,
-      "discount": 0,
-      "freeShipping": true,
-      "image": "/images/default.jpg",
-      "detail": "fffff"
-   },
-   {
-      "id": 20,
-      "category": "Hamburguesas",
-      "name": "asdasdasdasdasd",
-      "price": 123123123123,
-      "discount": 0,
+      "name": "n 18",
+      "price": 18,
+      "discount": 18,
       "freeShipping": false,
       "image": "/images/default.jpg",
-      "detail": "asdasdasdasdasd"
-   },
-   {
-      "id": 21,
-      "category": "Pizzas",
-      "name": "pizzademierda",
-      "price": 2131312,
-      "discount": 0,
-      "freeShipping": false,
-      "image": "/images/default.jpg",
-      "detail": "asdasdasdasd"
+      "detail": "18"
    }
 ]
