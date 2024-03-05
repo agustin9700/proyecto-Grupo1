@@ -11,8 +11,6 @@ module.exports = {
     saveData: function (data, filenameJSON = 'productos') {
        const jsonData = JSON.stringify(data, null, 3); 
        fs.writeFileSync(path.join(__dirname, `./${filenameJSON}.json`), jsonData, 'utf-8');
-
-    return jsonData
     }
 
 }
