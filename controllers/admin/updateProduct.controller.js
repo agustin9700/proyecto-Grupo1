@@ -1,13 +1,13 @@
-const fs = require("fs");
-const path = require("path");
+const { loadData, saveData } = require("../../database");
 
-module.exports = function (req, res) {
-  let productos = require("../../database/productos.json"); // Cambiado de const a let
-
-  const id = req.params.id;
+module.exports = (req, res)=> {
+  
+  const {id} = req.params;
 
   const { category, name, price, discount, freeShipping, image, detail } =
     req.body;
+
+  const productos = loadData()
 
   const productsMap = productos.map((p) => {
     if (p.id === +id) {
@@ -22,17 +22,13 @@ module.exports = function (req, res) {
             detail: detail ? detail.trim(): detail ,
           };
       
-
       return productEdit;
     }
 
     return p;
   });
 
-  const productosString = JSON.stringify(productsMap, null, 3);
+  saveData(productsMap);
 
-  const pathProducts = path.join(__dirname, "../../database/productos.json");
-  fs.writeFileSync(pathProducts, productosString, "utf-8");
-
-  res.redirect("/admin/");
+  res.redirect('/admin');
 };
