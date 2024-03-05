@@ -1,0 +1,132 @@
+[
+   {
+      "id": 1,
+      "category": "Pizzas",
+      "name": "Ruculas",
+      "price": 8000,
+      "discount": 5,
+      "freeShipping": false,
+      "image": "/images/Pizza-img6.jpg",
+      "detail": "Una exquisita combinación de muzzarella fundida, tomate cherrys gratinados y rucula"
+   },
+   {
+      "id": 2,
+      "category": "Pizzas",
+      "name": "Fugazzeta",
+      "price": 5000,
+      "discount": null,
+      "freeShipping": false,
+      "image": "/images/Pizza-img7.jpg",
+      "detail": "Una exquisita combinación de muzzarella fundida, con cebolla caramelizada"
+   },
+   {
+      "id": 3,
+      "category": "Pizzas",
+      "name": "Napolitana",
+      "price": 5000,
+      "discount": null,
+      "freeShipping": true,
+      "image": "/images/pizza-napo",
+      "detail": "Una exquisita combinación de muzzarella fundida, tomates maserados en aceite y ajo más oregano"
+   },
+   {
+      "id": 4,
+      "category": "Pizzas",
+      "name": "Muzzarela y Jamón",
+      "price": 4500,
+      "discount": null,
+      "freeShipping": true,
+      "image": "/images/Pizza-Muzza-jamon.jpg",
+      "detail": "Una exquisita combinación de muzzarella fundida con el plus del mejor jamón"
+   },
+   {
+      "id": 5,
+      "category": "Pizzas",
+      "name": "Calabresa",
+      "price": 4500,
+      "discount": null,
+      "freeShipping": true,
+      "image": "/images/Pizza-Calabresa.jpg",
+      "detail": "Una exquisita combinación de muzzarella fundida con el mejor milan "
+   },
+   {
+      "id": 6,
+      "category": "Pizzas",
+      "name": "Muzzarella",
+      "price": 3800,
+      "discount": null,
+      "freeShipping": false,
+      "image": "/images/Pizza-muzza.jpg",
+      "detail": "Una exquisita combinación de muzzarella fundida, oregano y aceitunas"
+   },
+   {
+      "id": 7,
+      "category": "Hamburguesas",
+      "name": "Clasica",
+      "price": 3800,
+      "discount": null,
+      "freeShipping": false,
+      "image": "/images/Hamb-Clasicaa.jpg",
+      "detail": "El más delicioso medallon de carne vacuna con los sabores del queso fundido, lechuga y tomate frescos"
+   },
+   {
+      "id": 8,
+      "category": "Hamburguesas",
+      "name": "Clasica cheddar",
+      "price": 4200,
+      "discount": null,
+      "freeShipping": false,
+      "image": "/images/Hamb-clasicaBasic.jpg",
+      "detail": "El más delicioso medallon de carne vacuna con los sabores del queso cheddar fundido, lechuga y tomate frescos"
+   },
+   {
+      "id": 9,
+      "category": "Hamburguesas",
+      "name": "Clasica completa",
+      "price": 5000,
+      "discount": 5,
+      "freeShipping": false,
+      "image": "/images/Hamb-extraClasica.jpg",
+      "detail": "El más delicioso medallon de carne vacuna con los sabores del queso fundido, beccon, jamón y lechuga y tomate frescos "
+   },
+   {
+      "id": 10,
+      "category": "Hamburguesas",
+      "name": "Extra Completa",
+      "price": 5800,
+      "discount": 5,
+      "freeShipping": false,
+      "image": "/images/Hamb-DOBLE.jpg",
+      "detail": "Doble medallon de carne vacuna de los más deliciosos con los sabores del queso cheddar fundido, lechuga y tomate y cebolla frescos"
+   },
+   {
+      "id": 11,
+      "category": "Papas Fritas",
+      "name": "Clasicas",
+      "price": 3000,
+      "discount": null,
+      "freeShipping": true,
+      "image": "/images/Papas-1.png",
+      "detail": "Crujientes y sabrozas papas fritas combinadas con queso cheddar"
+   },
+   {
+      "id": 12,
+      "category": "Papas Fritas",
+      "name": "Clasicas baccon",
+      "price": 3500,
+      "discount": null,
+      "freeShipping": true,
+      "image": "/images/Papas-2.png",
+      "detail": "Crujientes y sabrozas papas fritas combinadas con queso cheddar y baccon"
+   },
+   {
+      "id": 13,
+      "category": "Papas Fritas",
+      "name": "Clasicas Cebolla",
+      "price": 4000,
+      "discount": null,
+      "freeShipping": true,
+      "image": "/images/Papas3.jpg",
+      "detail": "Crujientes y sabrozas papas fritas combinadas con salsa blanca, rucula y cebolla"
+   }
+]
