@@ -2,7 +2,7 @@ const { loadData } = require("../../database")
 
 module.exports = (req, res) => {
   
-  const productos= loadData();
+  const productos= loadData("productos");
   
   /*Aqui solo renderizamos el contenido de la vista*/
       res.render("admin/listProducts", {productos}, (err, content) =>{

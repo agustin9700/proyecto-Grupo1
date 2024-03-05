@@ -128,5 +128,35 @@
       "freeShipping": true,
       "image": "/images/Papas3.jpg",
       "detail": "Crujientes y sabrozas papas fritas combinadas con salsa blanca, rucula y cebolla"
+   },
+   {
+      "id": 14,
+      "category": "Pizzas",
+      "name": "Pizza de laurel",
+      "price": 7777,
+      "discount": 0,
+      "freeShipping": true,
+      "image": "/images/default.jpg",
+      "detail": "Pizza de laurel"
+   },
+   {
+      "id": 15,
+      "category": "Hamburguesas",
+      "name": "asdasdasd",
+      "price": 9999,
+      "discount": 0,
+      "freeShipping": false,
+      "image": "/images/default.jpg",
+      "detail": "asdasdasd"
+   },
+   {
+      "id": 16,
+      "category": "Papas",
+      "name": "pizzademierda",
+      "price": 123123123,
+      "discount": 0,
+      "freeShipping": true,
+      "image": "/images/default.jpg",
+      "detail": "uuuuu"
    }
 ]

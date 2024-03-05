@@ -1,13 +1,13 @@
-const { loadData, saveData } = require("../../database");
+const { saveData } = require("../../database");
 
 module.exports = (req, res)=> {
-  
+  let productos = require("../../database/productos.json")
   const {id} = req.params;
 
   const { category, name, price, discount, freeShipping, image, detail } =
     req.body;
 
-  const productos = loadData()
+  
 
   const productsMap = productos.map((p) => {
     if (p.id === +id) {
@@ -28,7 +28,7 @@ module.exports = (req, res)=> {
     return p;
   });
 
-  saveData(productsMap);
+  saveData(productsMap,"productos");
 
-  res.redirect('/admin');
+  res.redirect('/admin/');
 };
