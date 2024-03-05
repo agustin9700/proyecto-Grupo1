@@ -1,8 +1,6 @@
 let productEdit= require("../../database/productos.json")
 
 
-
-
 module.exports = (req,res) => {
     const {id} = req.params;
     
