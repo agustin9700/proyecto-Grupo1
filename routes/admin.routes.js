@@ -16,6 +16,6 @@ router.put("/editar/:id", adminController.updateProduct)
 
 // "/admin"
 router.get("/eliminar-producto",adminController.deleteProduct)
-router.delete("/eliminar-producto",adminController.putDeleteProduct)
+router.delete("/eliminar-producto/:id",adminController.putDeleteProduct)
 
 module.exports = router;
