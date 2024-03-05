@@ -12,4 +12,7 @@ router.post("/crearProduct", adminController.newProduct);
 router.get("/editar/:id", adminController.update);
 router.put("/editar/:id",adminController.datosMod)
 
+// "/admin"
+router.get("/eliminar-producto",adminController.deleteProduct)
+
 module.exports = router;
