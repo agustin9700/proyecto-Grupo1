@@ -8,12 +8,11 @@ module.exports = {
         return productos
     },
 
-    saveData: function (data, filenameJSON) {
+    saveData: function (data, filenameJSON){ 
        const jsonData = JSON.stringify(data, null, 3); 
        fs.writeFileSync(path.join(__dirname, `./${filenameJSON}.json`), jsonData, 'utf-8');
 
-   
+
     }
 
 }
-
