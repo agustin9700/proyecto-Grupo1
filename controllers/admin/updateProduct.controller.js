@@ -1,10 +1,14 @@
+const fs = require('fs')
+const path = require('path')
+
 const { saveData } = require("../../database");
 
 module.exports = (req, res)=> {
   let productos = require("../../database/productos.json")
   const {id} = req.params;
+  const image = req.file;
 
-  const { category, name, price, discount, freeShipping, image, detail } =
+  const { category, name, price, discount, freeShipping, detail } =
     req.body;
 
   
@@ -18,10 +22,19 @@ module.exports = (req, res)=> {
             price: +price,
             discount: +discount ,
             freeShipping: freeShipping === "true",
-            image: image ? image : "/images/default.jpg",
-            detail: detail ? detail.trim(): detail ,
+            detail: detail ? detail.trim(): detail,
+            image: image ? image.filename : p.image
           };
-      
+        
+        if(image?.filename){
+          const pathBefore = path.join(__dirname, './public/images' + p.image);
+          const existsFile = fs.existsSync(pathBefore);
+
+          if(existsFile){
+            fs.unlinkSync()
+          }
+        }
+    
       return productEdit;
     }
 
