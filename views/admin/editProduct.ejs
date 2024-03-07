@@ -1,7 +1,7 @@
 <div class="container-form mx-auto mb-5">
     <a href="/admin" class="btn btn-primary mb-3 boton-regresar">Ver lista</a>
 
-    <form action="/admin/editar/<%= productEdit.id %>?_method=PUT" method="POST" class="row mx-auto text-center p-4 form-border">
+    <form action="/admin/editar/<%= productEdit.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="row mx-auto text-center p-4 form-border">
         <h3>Modificación de Producto</h3>
         <h6 class="text-body-tertiary" >Ingrese la información</h6>
         
