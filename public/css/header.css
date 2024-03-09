@@ -52,6 +52,12 @@ header{
     color: var(--Naranja);
     border-radius: 20px;
   }
+  .hamb1{
+    align-self: center;
+  }
+  .primerAheader{
+    display: none;
+  }
 
 /*TABLET*/
 @media(min-width: 400px){
@@ -126,7 +132,7 @@ header{
         vertical-align: middle;
     }
     .ulInf{
-        display: inline-block;
+        display: flex;
         padding-left: 6px;
     }
     .verMenu{
@@ -170,6 +176,9 @@ header{
     }
 }
 @media(min-width:769px){
+    .primerAheader{
+        display: inline-block;
+      }
     .navHeader2 ul li a{
         display: inline-block;
         color: var(--Blanco);

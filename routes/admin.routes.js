@@ -18,6 +18,6 @@ router.put("/editar/:id", upload.single('image'), adminController.updateProduct)
 
 // "/admin"
 router.get("/eliminar-producto",adminController.deleteProduct)
-router.delete("/eliminar-producto/:id",adminController.putDeleteProduct)
+router.delete("/eliminar-producto/:id",adminController.postDeleteProduct)
 
 module.exports = router;
