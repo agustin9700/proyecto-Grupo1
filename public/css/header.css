@@ -10,7 +10,6 @@ header{
 }
 .logueoHeader nav ul{
     display: flex;
-    gap: 10px;
 }
 .logueoHeader nav ul li a{
     color: var(--Blanco);
@@ -19,6 +18,9 @@ header{
     display: none;
 }
 .coraHeader{
+    display: none;
+}
+.ruedaHeader{
     display: none;
 }
 .navHeader2{
@@ -61,6 +63,9 @@ header{
 
 /*TABLET*/
 @media(min-width: 400px){
+    .primerAheader{
+        display: flex;
+    }
     header{
         padding: 0;
     }
@@ -101,6 +106,10 @@ header{
     .coraHeader{
         display: inline-block;
         padding: 0 2px 0 2px;
+    }
+    .ruedaHeader{
+        display: inline-block;
+        padding: 0 3px 0 3px;
     }
     .carritoHeader{
         padding: 0 1px 0 1px;

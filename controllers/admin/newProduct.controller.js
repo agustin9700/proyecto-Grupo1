@@ -1,9 +1,9 @@
-const { saveData} = require("../../database");
-let products = require("../../database/productos.json");
+const { loadData,saveData} = require("../../database");
 
 
 
 module.exports = function(req, res) {
+    let products = loadData("productos")
     const imgInfo= req.file;
     
     const { name,category,price,discount,freeShipping,detail } = req.body;
