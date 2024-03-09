@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const multer = require('multer')
+
 const adminController = require("../controllers/admin");
 const { upload } = require("../middleware/uploadfile");
 
@@ -10,7 +10,7 @@ router.get("/listProducts", adminController.admin);
 
 
 router.get("/crearProduct",adminController.crear)
-router.post("/crearProduct", adminController.newProduct);
+router.post("/crearProduct",upload.single('image'), adminController.newProduct);
 
 // "/admin"
 router.get("/editar/:id", adminController.editProduct);

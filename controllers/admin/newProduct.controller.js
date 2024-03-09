@@ -1,9 +1,12 @@
-const { saveData,loadData } = require("../../database");
-let products = loadData("productos");
+const { saveData} = require("../../database");
+let products = require("../../database/productos.json");
+
 
 
 module.exports = function(req, res) {
-    const { name,category,price,discount,freeShipping,image,detail } = req.body;
+    const imgInfo= req.file;
+    
+    const { name,category,price,discount,freeShipping,detail } = req.body;
    
     const newid = products[products.length - 1].id + 1;
     const newProduct = {
@@ -13,10 +16,10 @@ module.exports = function(req, res) {
         price:+price,
         discount:+discount,
         freeShipping: freeShipping === "true",
-        image: "/images/default.jpg",
+        image: imgInfo? `/images/${imgInfo.filename}` : "/images/default.jpg",
         detail
     }
-    console.log(newProduct)
+    
 
     products = [...products, newProduct];
 
