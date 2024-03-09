@@ -21,11 +21,11 @@ module.exports = (req, res)=> {
             discount: +discount ,
             freeShipping: freeShipping === "true",
             detail: detail ? detail.trim(): detail,
-          image: image ? `/images/${image.filename}` : p.image
+            image: image ? `/images/${image.filename}` : p.image
           };
         
         if(image?.filename){
-          const pathBefore = path.join(__dirname, '../public/images' + p.image);
+          const pathBefore = path.join(__dirname, '../public/' + p.image);
           const existsFile = fs.existsSync(pathBefore);
 
           if(existsFile){
