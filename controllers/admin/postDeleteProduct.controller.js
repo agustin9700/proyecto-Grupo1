@@ -7,7 +7,6 @@ module.exports=(req,res) =>{
     const productsLessOne = products.filter(p => p.id !== +id)
     const productDeleted = products.find(p => p.id === +id)
     const filePath= path.join(__dirname, `../../public${productDeleted.image}`)
-    console.log(productDeleted.image)
     const existFile = fs.existsSync(filePath)
     if(existFile){
         fs.unlinkSync(filePath)
