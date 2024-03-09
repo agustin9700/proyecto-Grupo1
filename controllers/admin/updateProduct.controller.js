@@ -1,17 +1,15 @@
 const fs = require('fs')
 const path = require('path')
 
-const { saveData } = require("../../database");
+const { saveData, loadData } = require("../../database");
 
 module.exports = (req, res)=> {
-  let productos = require("../../database/productos.json")
+  let productos = loadData('productos')
   const {id} = req.params;
   const image = req.file;
 
   const { category, name, price, discount, freeShipping, detail } =
     req.body;
-
-  
 
   const productsMap = productos.map((p) => {
     if (p.id === +id) {
@@ -23,15 +21,15 @@ module.exports = (req, res)=> {
             discount: +discount ,
             freeShipping: freeShipping === "true",
             detail: detail ? detail.trim(): detail,
-            image: image ? image.filename : p.image
+            image: image ? `/images/${image.filename}` : p.image
           };
         
         if(image?.filename){
-          const pathBefore = path.join(__dirname, './public/images' + p.image);
+          const pathBefore = path.join(__dirname, `../../public${p.image}`);
           const existsFile = fs.existsSync(pathBefore);
 
           if(existsFile){
-            fs.unlinkSync()
+            fs.unlinkSync(pathBefore)
           }
         }
     
@@ -43,5 +41,5 @@ module.exports = (req, res)=> {
 
   saveData(productsMap,"productos");
 
-  res.redirect('/admin/');
+  res.redirect('/admin');
 };
