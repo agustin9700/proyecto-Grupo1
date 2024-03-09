@@ -34,8 +34,6 @@ app.use('/admin', adminRoutes);
 app.use("/",search)
 
 
-
-
 app.use("*", errorPagina)
 
 app.listen(port,() => console.log(`http://localhost:${port}`));
