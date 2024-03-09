@@ -128,14 +128,5 @@
       "freeShipping": true,
       "image": "/images/Papas3.jpg",
       "detail": "Crujientes y sabrozas papas fritas combinadas con salsa blanca, rucula y cebolla"
-   },
-   {
-      "id": 14,
-      "name": "",
-      "price": 0,
-      "discount": 0,
-      "freeShipping": false,
-      "image": "/images/default.jpg",
-      "detail": ""
    }
 ]

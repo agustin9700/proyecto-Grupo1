@@ -25,11 +25,11 @@ module.exports = (req, res)=> {
           };
         
         if(image?.filename){
-          const pathBefore = path.join(__dirname, '../public/' + p.image);
+          const pathBefore = path.join(__dirname, `../../public${p.image}`);
           const existsFile = fs.existsSync(pathBefore);
 
           if(existsFile){
-            fs.unlinkSync()
+            fs.unlinkSync(pathBefore)
           }
         }
     
@@ -41,5 +41,5 @@ module.exports = (req, res)=> {
 
   saveData(productsMap,"productos");
 
-  res.redirect('/admin/listProducts');
+  res.redirect('/admin');
 };
