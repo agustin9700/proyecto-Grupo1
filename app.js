@@ -29,7 +29,8 @@ app.use(methodOverride("_method"))
 app.use('/', homeRoutes);
 app.use('/user', authenticationRoutes);
 app.use('/carrito', productCartRoutes);
-app.use('/producto', productRoutes);
+app.use('/productos', productRoutes);
+app.use('/detalle', productRoutes)
 app.use('/admin', adminRoutes);
 app.use("/",search)
 

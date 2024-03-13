@@ -32,7 +32,7 @@ Las preguntas y sus conclusiones son:
 
     Por último y de las más importantes que nos hicimos fue esta. Como equipo nos podriamos juntar más días, el sprint 1 hicimos videollamadas pero no todos los días o día por medio. Ser mas detallistas con el proyecto, pensarlo de manera funcional y tratar de estar en cada detalle, siempre un paso adelante del cliente para poder desarrollar una interacción más dinamica y fácil entre el cliente y la página.
 
-Charla Retrospectiva:
+Charla Retrospectiva sprint 2
 
 Uno de los aspectos que resaltó durante nuestra conversación fue la responsabilidad que cada uno asumió con sus tareas. Fue evidente que todos estábamos comprometidos con el éxito del proyecto, y esa dedicación se tradujo en un flujo de trabajo eficiente y resultados positivos.
 
@@ -45,3 +45,12 @@ Sin embargo, también identificamos áreas de mejora durante nuestra retrospecti
 Estas áreas de mejora no son obstáculos insuperables; más bien, son oportunidades para crecer y perfeccionar nuestras prácticas de trabajo. 
 
 En resumen, nuestra charla retrospectiva no solo fue una revisión de nuestras acciones pasadas, sino también un compromiso colectivo de seguir creciendo y aprendiendo juntos.
+
+ 
+Retrospectiva sprint 3
+
+A inicios de este sprint nos anuncio Nath que se agregaba un nuevo integrante al grupo. A quien desde un principio se le comunico mediante el grupo de whatsApp y videollamadas como nos manejamos en este equipo y que LA COMUNICACIÓN ES PRIMORDIAL!! Le pedimos que se descargue el proyecto, se le conto a grandes rasgos que se trata de un e-commers de venta de comida rapida, etc. ... Nos dijo que se iba a descargar el proyecto y que lo iba a mirar ...Tambien le dijimos que cualquier consulta el equipo estaba predispuesto a ayudarlo, ya que era entendible que estuviese un poco perdido.
+
+Durante este sprint, nuestro equipo de desarrollo enfrentó desafíos significativos, pero gracias a nuestra dedicación y colaboración, logramos superarlos con éxito.
+De un equipo de cinco desarrolladores, cuatro de nosotros cumplimos con nuestras metas establecidas para el sprint. A pesar de este sólido avance, enfrentamos un obstáculo inesperado cuando la parte asignada al nuevo desarrollador quedó pendiente.
+En lugar de lamentarnos, el equipo demostró disposición y de manera conjunta, asumimos la responsabilidad de abordar la parte faltante. La comunicación fluida y la disposición para ayudarnos mutuamente fueron clave para garantizar que el trabajo quedara completo.
