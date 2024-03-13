@@ -1,8 +1,10 @@
+const { loadData } = require("../../database")
+
 module.exports= (req,res) => {
-    const datos= require("./basedate.json")
+    const datos= loadData('basedate')
     
     
-    res.render('home',{"datosProductos":datos})
+    res.render('home', {datosProductos: datos})
 
 
 }
