@@ -1,9 +1,7 @@
-let productEdit= require("../../database/productos.json")
-
-
+const {loadData} = require("../../database")
 module.exports = (req,res) => {
     const {id} = req.params;
-    
+    const productEdit = loadData("productos")
     const findProductEdit = productEdit.find(p => p.id === +id)
 
     res.render("admin/editProduct", {"productEdit" : findProductEdit},(err, content) =>{
@@ -13,5 +11,4 @@ module.exports = (req,res) => {
           views: content
         });
 })
-
 }
