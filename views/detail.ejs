@@ -2,6 +2,7 @@
 <html lang="es">
 <!-- Include Head -->
 <%- include('./partials/head', {title: 'Detalle', bootstrapActive: true}) %>
+<head><link rel="stylesheet" href="/css/detail.css"></head>
 <body>
 	<!-- Header -->
 	<%- include('./partials/header') %>
@@ -17,10 +18,10 @@
 		<div class="product-detail">
 			<div class="row">
 			
-			<div class="col-12 col-lg-8">
-					<img src="/images/products/<%= p.image %>" alt="product image" class="product-detail-img">
+				<div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-center">
+					<img src="<%= p.image %>" alt="product image" class="product-detail-img">
 					<p class="product-detail-description">
-						<%= p.description %>
+						<%= p.detail %>
 					</p>
 				</div>
 				<div class="col-12 col-lg-4">
@@ -28,12 +29,12 @@
 						<h2 class="product-detail-title"><%= p.name %></h2>
 						
 							<p class="product-detail-price small">
-								<span>$<%=p.price %></span>
+								<span>$<%= toThousand(p.price)%></span>
 								
-								<b><%= p.discount %>% OFF</b>
+								<b><%=p.discount%>% OFF</b>
 							</p>
 							<p class="product-detail-price">
-								$<%=p.price - (p.price * p.discount / 100)%>
+								$<%=toThousand(p.price - (p.price * p.discount / 100))%>
 							</p>
 						
 
@@ -48,11 +49,10 @@
 							</li>
 						</ul>
 
-						<a href="/carrito" class="buy-now-button">Agregar al carrito</a>
-						<hr>
-
-						<button><a href="/productos" class="action-button edit">Menu</a></button>
-						
+						<a href="/carrito" class="btn btn-lg agregarCarritoDetail" style="background-color: #FF6600; color: white; border-color: #FF6600;">Agregar al carrito</a>
+						<a href="/productos" class="btn btn-lg agregarCarritoDetail" style="background-color: #FF6600; color: white; border-color: #FF6600; text-decoration: none; display: inline-block;">
+							Menu
+						  </a>
 					</article>
 			</div>
 			</div>
