@@ -93,9 +93,11 @@
                       </span>
                       <div class="precio-off">
                         <span>$<%= datosProductos[j].price %></span>
-                        <span>
-                          <%= datosProductos[j].discount %> %OFF
-                        </span>
+                        <% if (datosProductos[j].discount) { %>
+                          <span><%= datosProductos[j].discount %> %OFF</span>
+                        <% } else { %>
+                          <span><br></span>
+                          <% } %>
                       </div>
                       <div class="envio-gratis">
                         <% if (datosProductos[j].freeShipping) { %>
@@ -163,9 +165,11 @@
                       </span>
                       <div class="precio-off">
                         <span>$<%= datosHamb[j].price %></span>
-                        <span>
-                          <%= datosHamb[j].discount %> %OFF
-                        </span>
+                        <% if (datosHamb[j].discount) { %>
+                          <span><%= datosHamb[j].discount %> %OFF</span>
+                        <% } else { %>
+                          <span><br></span>
+                          <% } %>
                       </div>
                       <div class="envio-gratis">
                         <% if (datosHamb[j].freeShipping) { %>
