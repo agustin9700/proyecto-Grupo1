@@ -12,7 +12,7 @@
       <% for (let i = 0; i < resultadosBusqueda.length; i++) { %>
           <div class="articulos-home item">
               <figure class="container-img">
-                  <img class="d-block w-100 img-fluid" src="<%= resultadosBusqueda[i].image %>" alt="">
+                  <img class="d-block h-100 w-100 img-fluid" src="<%= resultadosBusqueda[i].image %>" alt="">
               </figure>
               <i class="fa-solid fa-heart"></i>
               <i class="fa-solid fa-plus"></i>
@@ -25,11 +25,11 @@
                   <% if (resultadosBusqueda[i].freeShipping) { %>
                       <span>Envío Gratis</span>
                   <% } else { %>
-                      <br>
+                      <span> <br></span>
                   <% } %>
               </div>
               <div class="button-container">
-                  <button><a href="/productos/detalle/<%= resultadosBusqueda[i].id %>">Detalle</button></a>
+                <a href="/productos/detalle/<%= resultadosBusqueda[i].id %>"> <button>Detalle</button></a>
               </div>
           </div>
       <% } %>

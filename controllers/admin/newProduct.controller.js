@@ -30,5 +30,5 @@ module.exports = function(req, res) {
     
   
     
-    return res.redirect("/admin/listProducts");
+    return res.redirect("/admin");
 }

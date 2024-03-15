@@ -64,9 +64,9 @@
       "category": "Hamburguesas",
       "name": "Clasica",
       "price": 3800,
-      "discount": null,
+      "discount": 0,
       "freeShipping": false,
-      "image": "/images/Hamb-Clasicaa.jpg",
+      "image": "/images/img-1710473828360.avif",
       "detail": "El más delicioso medallon de carne vacuna con los sabores del queso fundido, lechuga y tomate frescos"
    },
    {
@@ -74,9 +74,9 @@
       "category": "Hamburguesas",
       "name": "Clasica cheddar",
       "price": 4200,
-      "discount": null,
+      "discount": 10,
       "freeShipping": false,
-      "image": "/images/Hamb-clasicaBasic.jpg",
+      "image": "/images/img-1710475785419.jpg",
       "detail": "El más delicioso medallon de carne vacuna con los sabores del queso cheddar fundido, lechuga y tomate frescos"
    },
    {
@@ -86,8 +86,8 @@
       "price": 5000,
       "discount": 5,
       "freeShipping": false,
-      "image": "/images/Hamb-extraClasica.jpg",
-      "detail": "El más delicioso medallon de carne vacuna con los sabores del queso fundido, beccon, jamón y lechuga y tomate frescos "
+      "image": "/images/img-1710476415772.jpg",
+      "detail": "El más delicioso medallon de carne vacuna con los sabores del queso fundido, beccon, jamón y lechuga y tomate frescos"
    },
    {
       "id": 10,
@@ -96,7 +96,7 @@
       "price": 5800,
       "discount": 5,
       "freeShipping": false,
-      "image": "/images/Hamb-DOBLE.jpg",
+      "image": "/images/img-1710476187246.jpg",
       "detail": "Doble medallon de carne vacuna de los más deliciosos con los sabores del queso cheddar fundido, lechuga y tomate y cebolla frescos"
    },
    {
@@ -124,9 +124,29 @@
       "category": "Papas Fritas",
       "name": "Clasicas Cebolla",
       "price": 4000,
-      "discount": null,
-      "freeShipping": true,
-      "image": "/images/Papas3.jpg",
+      "discount": 0,
+      "freeShipping": false,
+      "image": "/images/img-1710477660719.jpg",
       "detail": "Crujientes y sabrozas papas fritas combinadas con salsa blanca, rucula y cebolla"
+   },
+   {
+      "id": 14,
+      "category": "Hamburguesas",
+      "name": "Hamburguesa Vegana",
+      "price": 5000,
+      "discount": 0,
+      "freeShipping": true,
+      "image": "/images/img-1710476722534.jpg",
+      "detail": "Exquisita hamburguesa vegana de soja y lenteja con lechuga, tomate y pan de papa"
+   },
+   {
+      "id": 15,
+      "category": "Hamburguesas",
+      "name": "Hamburguesa Picante",
+      "price": 6000,
+      "discount": 15,
+      "freeShipping": true,
+      "image": "/images/img-1710477377234.png",
+      "detail": "Hamburguesa picante con salsa tabasco, cheddar, lechuga y cebolla crispy."
    }
 ]

@@ -48,21 +48,21 @@
           </div>
           <ul>
             <li>
-              <a href="/producto/detalle#pizza">
+              <a href="/productos#pizza">
                 <div class="upper-body-img"> <img src="./images/productos/pizza.png" alt=""></div>
-                <div class="categoria-upper-body"><span>PIZZA</span></div>
+                <div class="categoria-upper-body"><span>Pizzas</span></div>
               </a>
             </li>
             <li>
-              <a href="/producto/detalle#hamburguesa">
+              <a href="/productos#hamburguesa">
                 <div class="upper-body-img"> <img src="./images/productos/burger.png" alt=""></div>
-                <div class="categoria-upper-body"><span>Burguers</span></div>
+                <div class="categoria-upper-body"><span>Hamburguesas</span></div>
               </a>
             </li>
             <li>
-              <a href="/producto/detalle#papas">
+              <a href="/productos#papas">
                 <div class="upper-body-img"> <img src="./images/productos/papas.png" alt=""></div>
-                <div class="categoria-upper-body"><span>Agregados</span></div>
+                <div class="categoria-upper-body"><span>Papas</span></div>
               </a>
             </li>
           </ul>
@@ -84,7 +84,7 @@
                   <% for (let j=i; j < i + 4 && j < datosProductos.length; j++) { %>
                     <div class="articulos-home">
                       <figure class="container-img">
-                        <img class="d-block w-100 img-fluid" src="<%= datosProductos[j].image %>" alt="">
+                        <img class="d-block h-100 w-100 img-fluid" src="<%= datosProductos[j].image %>" alt="">
                       </figure>
                       <i class="fa-solid fa-heart"></i>
                       <i class="fa-solid fa-plus"></i>
@@ -93,19 +93,21 @@
                       </span>
                       <div class="precio-off">
                         <span>$<%= datosProductos[j].price %></span>
-                        <span>
-                          <%= datosProductos[j].discount %> %OFF
-                        </span>
+                        <% if (datosProductos[j].discount) { %>
+                          <span><%= datosProductos[j].discount %> %OFF</span>
+                        <% } else { %>
+                          <span><br></span>
+                          <% } %>
                       </div>
                       <div class="envio-gratis">
                         <% if (datosProductos[j].freeShipping) { %>
                           <span>Envío Gratis</span>
                           <% } else { %>
-                            <br>
+                            <span><br></span>
                             <% } %>
                       </div>
                       <div class="button-container">
-                        <button><a href="/productos/detalle/<%= datosProductos[j].id %>">Detalle</button></a>
+                        <a href="/productos/detalle/<%= datosProductos[j].id %>"> <button>Detalle</button></a>
                       </div>
                     </div>
                     <% } %>
@@ -154,7 +156,7 @@
                   <% for (let j=i; j < i + 4 && j < datosHamb.length; j++) { %>
                     <div class="articulos-home">
                       <figure class="container-img">
-                        <img class="d-block w-100 img-fluid" src="<%= datosHamb[j].image %>" alt="">
+                        <img class="d-block h-100 w-100 img-fluid" src="<%= datosHamb[j].image %>" alt="">
                       </figure>
                       <i class="fa-solid fa-heart"></i>
                       <i class="fa-solid fa-plus"></i>
@@ -163,21 +165,25 @@
                       </span>
                       <div class="precio-off">
                         <span>$<%= datosHamb[j].price %></span>
-                        <span>
-                          <%= datosHamb[j].discount %> %OFF
-                        </span>
+                        <% if (datosHamb[j].discount) { %>
+                          <span><%= datosHamb[j].discount %> %OFF</span>
+                        <% } else { %>
+                          <span><br></span>
+                          <% } %>
                       </div>
                       <div class="envio-gratis">
                         <% if (datosHamb[j].freeShipping) { %>
                           <span>Envío Gratis</span>
                           <% } else { %>
-                            <br>
+                            <span><br></span>
                             <% } %>
 
 
                       </div>
                       <div class="button-container">
-                        <button><a href="/productos/detalle/<%= datosHamb[j].id %>">Detalle</button></a>
+                        <a href="/productos/detalle/<%= datosHamb[j].id %>">
+                          <button>Detalle</button>
+                        </a>
                       </div>
                     </div>
                     <% } %>
