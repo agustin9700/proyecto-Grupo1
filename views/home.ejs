@@ -101,11 +101,11 @@
                         <% if (datosProductos[j].freeShipping) { %>
                           <span>Envío Gratis</span>
                           <% } else { %>
-                            <br>
+                            <span><br></span>
                             <% } %>
                       </div>
                       <div class="button-container">
-                        <button><a href="/productos/detalle/<%= datosProductos[j].id %>">Detalle</button></a>
+                        <a href="/productos/detalle/<%= datosProductos[j].id %>"> <button>Detalle</button></a>
                       </div>
                     </div>
                     <% } %>
@@ -171,13 +171,15 @@
                         <% if (datosHamb[j].freeShipping) { %>
                           <span>Envío Gratis</span>
                           <% } else { %>
-                            <br>
+                            <span><br></span>
                             <% } %>
 
 
                       </div>
                       <div class="button-container">
-                        <button><a href="/productos/detalle/<%= datosHamb[j].id %>">Detalle</button></a>
+                        <a href="/productos/detalle/<%= datosHamb[j].id %>">
+                          <button>Detalle</button>
+                        </a>
                       </div>
                     </div>
                     <% } %>
