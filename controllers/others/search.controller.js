@@ -1,5 +1,6 @@
 module.exports = function(req, res) {
-    let productos = require("../home/basedate.json");
+    const { loadData } = require("../../database");
+    const productos = loadData('productos')
     let busqueda = req.query.productoBuscado.toLowerCase(); // Convertir a minúsculas
 
     let resultadosBusqueda = [];

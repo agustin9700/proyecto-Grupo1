@@ -29,11 +29,20 @@
                   <% } %>
               </div>
               <div class="button-container">
-                  <button>Agregar Carrito</button>
+                  <button><a href="/productos/detalle/<%= resultadosBusqueda[i].id %>">Detalle</button></a>
               </div>
           </div>
       <% } %>
+
+<% if (!resultadosBusqueda.length) { %>
+    <div class="col-12" style="margin-bottom: 150px;">
+        <h2 class="products-title" style="color: tomato;">No hay productos que coincidan con esa búsqueda</h2>
+    </div>
+<%}%>
+
   </div>
+
+  
   
  
  
