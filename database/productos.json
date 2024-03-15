@@ -64,9 +64,9 @@
       "category": "Hamburguesas",
       "name": "Clasica",
       "price": 3800,
-      "discount": null,
+      "discount": 0,
       "freeShipping": false,
-      "image": "/images/Hamb-Clasicaa.jpg",
+      "image": "/images/img-1710473828360.avif",
       "detail": "El más delicioso medallon de carne vacuna con los sabores del queso fundido, lechuga y tomate frescos"
    },
    {
