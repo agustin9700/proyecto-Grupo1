@@ -1,7 +1,9 @@
 module.exports = {
     admin: require("./listProducts.controller"),
     crear:require("./crearProduct.controller"),
-    newProduct:require("./newProduct.controller.js"),
-    update: require("./update.controller"),
-    datosMod:require("./datosMod.controller.js")
+    newProduct:require("./newProduct.controller"),
+    editProduct: require("./editProduct.controller"),
+    updateProduct: require("./updateProduct.controller"),
+    deleteProduct: require("./deleteProduct.controller.js"),
+    postDeleteProduct: require("./postDeleteProduct.controller.js")
 }

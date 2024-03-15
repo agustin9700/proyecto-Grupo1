@@ -1,13 +1,12 @@
 [
   {
     "id": 1,
-    "category": "burgers",
+    "category": "hamburguesas",
     "name": "Classic Burger",
     "price": 8000,
     "discount": 15,
     "freeShipping": true,
     "image": "/images/productos/burgers/deluxe.jpg"
-    
   },
   {
     "id": 2,
@@ -20,7 +19,7 @@
   },
   {
     "id": 3,
-    "category": "burgers",
+    "category": "hamburguesas",
     "name": "BBQ Burger",
     "price": 9500,
     "discount": 12,
@@ -38,7 +37,7 @@
   },
   {
     "id": 5,
-    "category": "burgers",
+    "category": "hamburguesas",
     "name": "Veggie Burger",
     "price": 8500,
     "discount": 10,
@@ -56,7 +55,7 @@
   },
   {
     "id": 7,
-    "category": "burgers",
+    "category": "hamburguesas",
     "name": "Spicy Burger",
     "price": 9000,
     "discount": 10,
@@ -74,7 +73,7 @@
   },
   {
     "id": 9,
-    "category": "burgers",
+    "category": "hamburguesas",
     "name": "Double Cheeseburger",
     "price": 9500,
     "discount": 8,
@@ -92,7 +91,7 @@
   },
   {
     "id": 11,
-    "category": "burgers",
+    "category": "hamburguesas",
     "name": "Bacon Burger",
     "price": 9200,
     "discount": 12,
@@ -107,6 +106,23 @@
     "discount": 15,
     "freeShipping": true,
     "image": "/images/productos/burgers/classic.jpg"
+  },
+  {
+    "id": 13,
+    "category": "papas",
+    "name": "Classic Fries",
+    "price": 5000,
+    "discount": 0,
+    "freeShipping": true,
+    "image": "/images/productos/burgers/classic.jpg"
+  },
+  {
+    "id": 14,
+    "category": "papas",
+    "name": "Cheese Fries",
+    "price": 6500,
+    "discount": 0,
+    "freeShipping": true,
+    "image": "/images/productos/burgers/classic.jpg"
   }
-  
 ]

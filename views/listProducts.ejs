@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- head -->
-<%- include ("./partials/head",{title: "Detalle de producto" ,bootstrapActive: true})%>
+<%- include ("./partials/head",{title: "Productos" ,bootstrapActive: true})%>
 
   <body>
     <!-- header -->
@@ -29,7 +29,7 @@
               </div>
 
               <div class="botones">
-                <button><a href=""></a>Detalle</button>
+                <button><a href="./productos/detalle/<%= p.id %>">Detalle</button></a>
                 <button><a href="./carrito">Agregar</button></a>
               </div>
             </article>
@@ -63,7 +63,7 @@
               </div>
 
               <div class="botones">
-                <button><a href=""></a>Detalle</button>
+                <button><a href="./productos/detalle/<%= p.id %>">Detalle</button></a>
                 <button><a href="./carrito">Agregar</button></a>
               </div>
             </article>
@@ -95,7 +95,7 @@
               </div>
 
               <div class="botones">
-                <button> <a href=""></a>Detalle</button>
+                <button><a href="./productos/detalle/<%= p.id %>">Detalle</button></a>
                 <button><a href="./carrito">Agregar</button></a>
               </div>
             </article>

@@ -1,10 +1,11 @@
 <header>
     <div class="partSup">
-      <a href="/"><img class="logoHeader" src="/images/logo.png" alt="logo"></a>
+      <a class="primerAheader" href="/"><img class="logoHeader" src="/images/logo.png" alt="logo"></a>
       <i class="fas fa-bars hamb1"></i>
       <div class="logueoHeader">
         <nav>
           <ul>
+            <li><a href="/admin"><i class="fa-solid fa-gear ruedaHeader"></i></i></a></li>
             <li><a href="/carrito"><i class="fas fa-cart-plus carritoHeader"></i></a></li>
             <li><a href="/user/login"><i class="fa-regular fa-heart coraHeader"></i></a></li>
             <li><a href="/user/register"><i class="fa-regular fa-user userHeader"></i></a></li>
@@ -17,15 +18,16 @@
       <nav class="navHeader2">
         <ul class="ulInf">
           <button type="button" class="verMenu"><i class="fas fa-bars hamb2"></i> Ver menú</button>
-          <li><a href="/producto/detalle"> Papas</a></li>
-          <li><a href="/producto/detalle"> Pizzas</a></li>
-          <li><a href="/producto/detalle"> Hamburguesas</a></li>
+          <li><a href="/productos"> Papas</a></li>
+          <li><a href="/productos"> Pizzas</a></li>
+          <li><a href="/productos"> Hamburguesas</a></li>
+          <!--<li class="aAdminHeader"><a href="/admin"> Admin</a></li> -->
         </ul>
       </nav>
       <div class="divBusquedaHeader">
-        <form action="/register" method="post">
+        <form action="/search" method="get">
           <input type="text" name="productoBuscado" placeholder="Buscar productos" value="">
-          <button><i class="fas fa-search lupaHeader"></i></button>
+          <button value="search" type="submit"><i class="fas fa-search lupaHeader"></i></button >
         </form>
       </div>
     </div>

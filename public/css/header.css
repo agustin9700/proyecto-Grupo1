@@ -10,7 +10,6 @@ header{
 }
 .logueoHeader nav ul{
     display: flex;
-    gap: 10px;
 }
 .logueoHeader nav ul li a{
     color: var(--Blanco);
@@ -19,6 +18,9 @@ header{
     display: none;
 }
 .coraHeader{
+    display: none;
+}
+.ruedaHeader{
     display: none;
 }
 .navHeader2{
@@ -52,9 +54,18 @@ header{
     color: var(--Naranja);
     border-radius: 20px;
   }
+  .hamb1{
+    align-self: center;
+  }
+  .primerAheader{
+    display: none;
+  }
 
 /*TABLET*/
 @media(min-width: 400px){
+    .primerAheader{
+        display: flex;
+    }
     header{
         padding: 0;
     }
@@ -94,7 +105,11 @@ header{
     }
     .coraHeader{
         display: inline-block;
-        padding: 0 2px 0 2px;
+        padding: 0 3px 0 3px;
+    }
+    .ruedaHeader{
+        display: inline-block;
+        padding: 0 3px 0 3px;
     }
     .carritoHeader{
         padding: 0 1px 0 1px;
@@ -126,7 +141,7 @@ header{
         vertical-align: middle;
     }
     .ulInf{
-        display: inline-block;
+        display: flex;
         padding-left: 6px;
     }
     .verMenu{
@@ -170,6 +185,9 @@ header{
     }
 }
 @media(min-width:769px){
+    .primerAheader{
+        display: inline-block;
+      }
     .navHeader2 ul li a{
         display: inline-block;
         color: var(--Blanco);

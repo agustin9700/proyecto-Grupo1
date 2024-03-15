@@ -1,10 +1,8 @@
-const fs = require("fs");
-const path = require("path");
-
+const { loadData } = require("../../database")
 
 module.exports = (req, res) => {
   
-  const productos= JSON.parse(fs.readFileSync(path.join(__dirname, "../../database/productos.json"), "utf-8"))
+  const productos= loadData("productos");
   
   /*Aqui solo renderizamos el contenido de la vista*/
       res.render("admin/listProducts", {productos}, (err, content) =>{

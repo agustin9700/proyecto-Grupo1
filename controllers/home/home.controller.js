@@ -1,8 +1,11 @@
+const { loadData } = require("../../database")
+
 module.exports= (req,res) => {
-    const datos= require("./basedate.json")
-    
-    
-    res.render('home',{"datosProductos":datos})
+    const datos= loadData('productos')
+    const datosHamb = datos.filter(p => p.category === "Hamburguesas")
+
+        
+    res.render('home', {datosProductos: datos, datosHamb})
 
 
 }

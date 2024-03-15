@@ -1,9 +1,12 @@
-const path = require("path");
-const fs = require("fs");
-let products = require("../../database/productos.json");
+const { loadData,saveData} = require("../../database");
+
+
 
 module.exports = function(req, res) {
-    const { name,category,price,discount,freeShipping,image,detail } = req.body;
+    let products = loadData("productos")
+    const imgInfo= req.file;
+    
+    const { name,category,price,discount,freeShipping,detail } = req.body;
    
     const newid = products[products.length - 1].id + 1;
     const newProduct = {
@@ -13,17 +16,14 @@ module.exports = function(req, res) {
         price:+price,
         discount:+discount,
         freeShipping: freeShipping === "true",
-        image: "/images/Papas-1.png",
+        image: imgInfo? `/images/${imgInfo.filename}` : "/images/default.jpg",
         detail
     }
-    console.log(newProduct)
+    
 
     products = [...products, newProduct];
 
-    products = JSON.stringify(products, null, 3);
-    const pathProducts = path.join(__dirname, "../../database/productos.json");
-    
-    fs.writeFileSync(pathProducts, products, "utf-8");
+    saveData(products,"productos")
 
     
     
