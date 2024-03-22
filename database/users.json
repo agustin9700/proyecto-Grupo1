@@ -1,34 +1,52 @@
 [
-{
-    "id": 1,
-    "name": "Luka Ezequiel Erba",
-    "user": "erbaLuka7",
-    "email": "ezequielerba7@gamil.com",
-    "password": "erbalukaezequiel",
-    "agreement": true
- },
- {
-    "id": 2,
-    "name": "Agustin Montero",
-    "user": "agusMontero",
-    "email": "Agustin.montero1997@gmail.com",
-    "password": "agusMontero",
-    "agreement": true
- },
- {
-    "id": 3,
-    "name": "Ariana Kneeteman",
-    "user": "ariKneeteman",
-    "email": "kneetemana@gmail.com",
-    "password": "ariKneeteman",
-    "agreement": true
- },
- {
-    "id": 4,
-    "name": "Paulo Elias Gimenez",
-    "user": "pauloGimenez",
-    "email": "itspaulogimenez@gmail.com",
-    "password": "pauloGimenez",
-    "agreement": true
- }
+   {
+      "id": 1,
+      "name": "Luka Ezequiel Erba",
+      "user": "erbaLuka7",
+      "email": "ezequielerba7@gamil.com",
+      "password": "erbalukaezequiel",
+      "agreement": true
+   },
+   {
+      "id": 2,
+      "name": "Agustin Montero",
+      "user": "agusMontero",
+      "email": "Agustin.montero1997@gmail.com",
+      "password": "agusMontero",
+      "agreement": true
+   },
+   {
+      "id": 3,
+      "name": "Ariana Kneeteman",
+      "user": "ariKneeteman",
+      "email": "kneetemana@gmail.com",
+      "password": "ariKneeteman",
+      "agreement": true
+   },
+   {
+      "id": 4,
+      "name": "Paulo Elias Gimenez",
+      "user": "pauloGimenez",
+      "email": "itspaulogimenez@gmail.com",
+      "password": "pauloGimenez",
+      "agreement": true
+   },
+   {
+      "id": 5,
+      "name": "ads",
+      "user": "asd",
+      "email": "asd@gmail.com",
+      "password": "$2b$10$M5hLBa70PXS3IYgm5roPuOPC4xaOXbq6ap0OdQRt/1SD.4O1maQ26",
+      "tic": "acepto los terminos",
+      "image": ""
+   },
+   {
+      "id": 6,
+      "name": "adssad",
+      "user": "asdfaf",
+      "email": "asdas@gmail.com",
+      "password": "$2b$10$tRTQh0l0bb7KDSewPxsRP.WD3YnOaesdLicSkNqtj6Ko5u/qM5kEe",
+      "tic": "acepto los terminos",
+      "image": ""
+   }
 ]

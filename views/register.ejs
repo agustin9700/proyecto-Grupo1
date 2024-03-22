@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <!-- head -->
-    <%- include ("./partials/head", {title: "Registrarse",bootstrapActive: false})%>
+    <%- include ("./partials/head", {title: "Registrarse",bootstrapActive: true})%>
 <body class="bodyRegister">
     <img class="pizzaRegister" src="/images/pizzaRegister.png" alt="">
     <main class="mainRegister">
@@ -9,30 +9,34 @@
         <div class="fotosRegister">
             <img class="logoRegister" src="/images/logo.png" alt="">
         </div>
-            <form class="formRegister" action="/register" method="post">
+            <form class="formRegister" action="/user/register" method="post" enctype="application/x-www-form-urlencoded">
                 <div class="divFormRegister">
                 <div class="divNombreRegister divInputsRegister">
                     <label class="tituloInputRegister" for="nombreRegister">Nombre</label>
-                    <input class="barraInputRegister" type="text" name="nombreRegister" value="" id="nombreRegister">
+                    <input class="barraInputRegister" type="text" name="name" value="" id="nombreRegister">
                     <span class="feedback">El nombre es muy corto</span>
                 </div>
                 <div class="divUsuarioRegister divInputsRegister">
                     <label class="tituloInputRegister" for="usuarioRegister">Usuario</label>
-                    <input class="barraInputRegister" type="text" name="usuarioRegister" value="" id="usuarioRegister">
+                    <input class="barraInputRegister" type="text" name="user" value="" id="usuarioRegister">
                     <span class="feedback">El nombre de usuario ya está en uso</span>
                 </div>
                 <div class="divEmailRegister divInputsRegister">
                     <label class="tituloInputRegister" for="emailRegister">Email</label>
-                    <input class="barraInputRegister" type="email" name="emailRegister" value="" id="emailRegister">
+                    <input class="barraInputRegister" type="email" name="email" value="" id="emailRegister">
                     <span class="feedback">El email ya está en uso</span>
                 </div>
                 <div class="divContrasenaRegister divInputsRegister">
                     <label class="tituloInputRegister" for="contrasenaRegister">Contraseña</label>
-                    <input class="barraInputRegister" type="password" name="contrasenaRegister" value="" id="contrasenaRegister">
+                    <input class="barraInputRegister" type="password" name="password" value="" id="contrasenaRegister">
                     <span class="feedback">La contraseña debe tener al menos 8 caracteres</span>
                 </div>
+                <div class="mb-2 fs-5">
+                    <label for="fotoperfil" class="form-label">foto de perfil</label>
+                    <input class="form-control" type="file" id="fotoperfil" name="imageProfile">
+                </div>
                 <div class="divAceptoRegiter">
-                    <input class="checkboxRegister" type="checkbox" name="terminosYcondiciones" value="terminosAceptados">
+                    <input class="checkboxRegister" type="checkbox" name="tic" value="terminosAceptados">
                     <p class="pTerminosRegister">
                         Estoy de acuerdo con los <a class="aRegister" href="">términos de servicio</a>, la <a class="aRegister" href="">política de privacidad</a> y la <a class="aRegister" href="">configuración de notificación</a> predeterminada de <a class="aComoRegister" href="/">como en casa</a>.
                     </p>

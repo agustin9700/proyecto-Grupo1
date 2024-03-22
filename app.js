@@ -4,8 +4,7 @@ const port = 3030;
 const path = require("path");
 const cookieParser = require('cookie-parser');
 const partials = require('express-partials');
-const methodOverride = require("method-override")
-
+const methodOverride = require("method-override");
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
