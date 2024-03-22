@@ -20,4 +20,5 @@ module.exports= function (req, res){
    saveData(users, 'users')
     console.log(imageFile)
    return res.redirect('/user/login') 
+ 
 }

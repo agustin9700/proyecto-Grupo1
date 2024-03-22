@@ -25,28 +25,11 @@
    },
    {
       "id": 4,
-      "name": "Paulo Elias Gimenez",
-      "user": "pauloGimenez",
-      "email": "itspaulogimenez@gmail.com",
-      "password": "pauloGimenez",
-      "agreement": true
-   },
-   {
-      "id": 5,
-      "name": "ads",
-      "user": "asd",
-      "email": "asd@gmail.com",
-      "password": "$2b$10$M5hLBa70PXS3IYgm5roPuOPC4xaOXbq6ap0OdQRt/1SD.4O1maQ26",
+      "name": "asddsa",
+      "user": "asdsa",
+      "email": "sadsa@gmail.com",
+      "password": "$2b$10$6PjJwKndIUvMjWHcSMDC6OKsnoxCzdlNBsqpoH3SQufsTh/ZpFYgq",
       "tic": "acepto los terminos",
-      "image": ""
-   },
-   {
-      "id": 6,
-      "name": "adssad",
-      "user": "asdfaf",
-      "email": "asdas@gmail.com",
-      "password": "$2b$10$tRTQh0l0bb7KDSewPxsRP.WD3YnOaesdLicSkNqtj6Ko5u/qM5kEe",
-      "tic": "acepto los terminos",
-      "image": ""
+      "image": "img-1711076951124.jpg"
    }
 ]
