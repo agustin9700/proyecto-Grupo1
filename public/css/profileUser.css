@@ -1,0 +1,17 @@
+.mainProfileUser{
+    background-image: url("/images/logos/fondoProfile.avif");
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.containerProfile label, h6 {
+ color: var(--Blanco);
+}
+.profileUserDiv1{
+    color: var(--Blanco)
+}
+.perfilProfileUser{
+    color: var(--Blanco);
+}

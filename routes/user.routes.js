@@ -9,4 +9,7 @@ router.post("/login",userController.loginProcess)
 
 router.get('/register',userNoLogueado, userController.register)
 router.post('/register',upload.single('imageProfile'), userController.newUser)
+
+router.get("/perfil", userNoLogueado, userController.profile)
+
 module.exports = router

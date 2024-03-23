@@ -153,8 +153,7 @@ font-size: 10px;
 @media(min-width:769px){
     .pizzaRegister{
         display: inline-block;
-        width: 30vw;
-        height: 100vh;
+        width: 60vw;
     }
     .bodyRegister{
         display: flex;
