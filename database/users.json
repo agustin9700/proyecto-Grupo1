@@ -1,35 +1,12 @@
 [
+  
    {
       "id": 1,
-      "name": "Luka Ezequiel Erba",
-      "user": "erbaLuka7",
-      "email": "ezequielerba7@gamil.com",
-      "password": "erbalukaezequiel",
-      "agreement": true
-   },
-   {
-      "id": 2,
-      "name": "Agustin Montero",
-      "user": "agusMontero",
-      "email": "Agustin.montero1997@gmail.com",
-      "password": "agusMontero",
-      "agreement": true
-   },
-   {
-      "id": 3,
-      "name": "Ariana Kneeteman",
-      "user": "ariKneeteman",
-      "email": "kneetemana@gmail.com",
-      "password": "ariKneeteman",
-      "agreement": true
-   },
-   {
-      "id": 4,
-      "name": "asddsa",
-      "user": "asdsa",
-      "email": "sadsa@gmail.com",
-      "password": "$2b$10$6PjJwKndIUvMjWHcSMDC6OKsnoxCzdlNBsqpoH3SQufsTh/ZpFYgq",
+      "name": "admin",
+      "user": "admin",
+      "email": "admin@gmail.com",
+      "password": "$2b$10$S3fEo82ADbm34sn2NEjvW.qJe9mkNnrVSwOhiYF5t2s13gd7efn56",
       "tic": "acepto los terminos",
-      "image": "img-1711076951124.jpg"
+      "image": "img-1711156787505.jpg"
    }
 ]

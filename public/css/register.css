@@ -119,6 +119,7 @@ font-size: 10px;
 @media(min-width: 400px){
     .mainRegister{
         padding: 25px;
+        margin: auto;
     }
     .divFormRegister{
         display: flex;
@@ -127,7 +128,7 @@ font-size: 10px;
         padding: 35px 20px 0;
     }
     .divNombreRegister, .divUsuarioRegister{
-        width: 48%;
+        width: 100%;
     }
     .divEmailRegister, .divContrasenaRegister{
         width: 100%;
@@ -152,7 +153,8 @@ font-size: 10px;
 @media(min-width:769px){
     .pizzaRegister{
         display: inline-block;
-        width: 40%;
+        width: 30vw;
+        height: 100vh;
     }
     .bodyRegister{
         display: flex;
