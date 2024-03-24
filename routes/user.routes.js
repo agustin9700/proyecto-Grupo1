@@ -7,6 +7,7 @@ const userNoLogueado = require('../middleware/userNoLogeado')
 router.get('/login',userNoLogueado, userController.login)
 router.post("/login",userController.loginProcess)
 
+
 router.get('/register',userNoLogueado, userController.register)
 router.post('/register',upload.single('imageProfile'), userController.newUser)
 
