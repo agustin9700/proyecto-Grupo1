@@ -1,3 +1,6 @@
 module.exports= (req,res)=>{
-    res.render("profileUser")
+     
+    const userlogueado = req.session.user
+
+    res.render("profileUser", {userlogueado})
 }

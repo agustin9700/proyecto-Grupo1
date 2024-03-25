@@ -5,10 +5,19 @@
       <div class="logueoHeader">
         <nav>
           <ul>
-            <li><a href="/admin"><i class="fa-solid fa-gear ruedaHeader"></i></i></a></li>
+          <% if (userlogueado) { %>
+           <li><a href="/admin"><i class="fa-solid fa-gear ruedaHeader"></i></i></a></li>
+           <% } else { %>
             <li><a href="/carrito"><i class="fas fa-cart-plus carritoHeader"></i></a></li>
-            <li><a href="/user/login"><i class="fa-regular fa-heart coraHeader"></i></a></li>
+            <% } %>
+            
+          <% if (!userlogueado) { %>
+           <li><a href="/user/login"><i class="fa-regular fa-heart coraHeader"></i></a></li>
             <li><a href="/user/register"><i class="fa-regular fa-user userHeader"></i></a></li>
+            <% } else { %>
+              <li><a href="/user/perfil">PERFIL</a></li>
+              <% } %>
+            
 
           </ul>
         </nav>
