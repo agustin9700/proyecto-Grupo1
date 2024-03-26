@@ -20,22 +20,22 @@ const validateResult = [
     check('tic').bail(),
 
     
-    body('imageProfile')
-        .custom((value,{req})=>{
-            const reqFile = req.reqFile?.imageProfile?.length;
-
-            const extensionesAceptadas = ['.jpg','.jpeg','.png'];
-            if(!reqFile){
-                throw new Error('la imagen de perfil es requrida')
-            }else{
-                let extensionesImage = path.extname(file.originalName)
-                if(!extensionesAceptadas.includes(extensionesImage)){
-                    throw new Error('La extensiones permitidas son .jpg .png .jpeg')
-                }
+    body('imageProfile').custom((value, { req }) => {
+        const reqFile = req.reqFile?.imageProfile?.length;
+        const extensionesAceptadas = ['.jpg', '.jpeg', '.png'];
+    
+        if (!reqFile) {
+            throw new Error('La imagen de perfil es requerida');
+        } else {
+            let extensionesImage = path.extname(file.originalName);
+            if (!extensionesAceptadas.includes(extensionesImage)) {
+                throw new Error('Las extensiones permitidas son .jpg, .png, .jpeg');
             }
-            return true
-        })
-];
+        }
+    
+        return true;
+    })
+]
 
 
 module.exports = validateResult;
