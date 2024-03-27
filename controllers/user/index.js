@@ -4,6 +4,6 @@ module.exports = {
     newUser: require('./newUser.controller'),
     loginProcess: require("./login.process.controller"),
     profile: require("./profile.controller"),
-    registerProcess: require('./register.process.controller'),
+    
     
 }

@@ -1,7 +1,7 @@
-const {check,body} = require('express-validator');
-const path = require('path')
+const { check, body } = require('express-validator');
+const path = require('path');
 
-const validateResult = [
+const validaciones = [
     check('name')
         .isLength({ min: 3, max: 16 }).withMessage('El nombre debe tener entre 3 y 16 caracteres')
         .notEmpty().withMessage('El nombre es requerido').bail(),
@@ -19,23 +19,21 @@ const validateResult = [
     
     check('tic').bail(),
 
-    
     body('imageProfile')
-        .custom((value,{req})=>{
-            const reqFile = req.reqFile?.imageProfile?.length;
+        .custom((value, { req }) => {
+            const reqFile = req.file;
 
-            const extensionesAceptadas = ['.jpg','.jpeg','.png'];
-            if(!reqFile){
-                throw new Error('la imagen de perfil es requrida')
-            }else{
-                let extensionesImage = path.extname(file.originalName)
-                if(!extensionesAceptadas.includes(extensionesImage)){
-                    throw new Error('La extensiones permitidas son .jpg .png .jpeg')
+            const extensionesAceptadas = ['.jpg', '.jpeg', '.png'];
+            if (!reqFile) {
+                throw new Error('La imagen de perfil es requerida');
+            } else {
+                let extension = path.extname(reqFile.originalname);
+                if (!extensionesAceptadas.includes(extension)) {
+                    throw new Error('Las extensiones permitidas son .jpg, .png y .jpeg');
                 }
             }
-            return true
+            return true;
         })
 ];
 
-
-module.exports = validateResult;
+module.exports = validaciones;
