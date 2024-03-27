@@ -7,5 +7,14 @@
       "password": "$2b$10$S3fEo82ADbm34sn2NEjvW.qJe9mkNnrVSwOhiYF5t2s13gd7efn56",
       "tic": "acepto los terminos",
       "image": "img-1711156787505.jpg"
+   },
+   {
+      "id": 2,
+      "name": "agustin",
+      "user": "agustin",
+      "email": "agustin@gmail.com",
+      "password": "$2b$10$xV49sa6LWUeYxSPAMU3WNOgiSVpKKm4DAFWIiEWtD4T1882EItLAK",
+      "tic": true,
+      "image": "img-1711498665866.png"
    }
 ]

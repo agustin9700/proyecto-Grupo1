@@ -25,7 +25,7 @@ module.exports = function (req, res){
      saveData(users, 'users')
         res.redirect('/user/login') 
     }else{
-        res.render("register", {errors: errors.mapped(),
+        res.render("register", {errors: errors.array(),
         old:req.body})
     }
    

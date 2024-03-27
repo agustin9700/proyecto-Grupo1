@@ -12,7 +12,7 @@ router.get('/login',userNoLogueado, login)
 router.post("/login",loginProcess)
 
 router.get('/register',userNoLogueado, register)
-router.post('/register',[upload.single('image-perfil'),validaciones], newUser)
+router.post('/register',[upload.single('imageProfile'),validaciones], newUser)
 
 
 router.get("/perfil", userLogeado, profile)
