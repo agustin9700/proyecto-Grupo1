@@ -6,8 +6,8 @@
       "email": "admin@gmail.com",
       "password": "$2b$10$S3fEo82ADbm34sn2NEjvW.qJe9mkNnrVSwOhiYF5t2s13gd7efn56",
       "tic": "acepto los terminos",
-      "image": "img-1711156787505.jpg",
-      "phone": 11111,
+      "image": "img-1711597216782.jpg",
+      "phone": "",
       "province": "",
       "city": "",
       "street": "",
@@ -26,14 +26,14 @@
       "id": 3,
       "name": "Luka Erba",
       "user": "_erbaLuka7",
-      "email": "@luka@gmail.com",
+      "email": "luka@gmail.com",
       "password": "$2b$10$gda79WLYCeYwV7V1/6ZdPOYThkD0g4A8eOAeDOpW1LaOOmnRGB7DG",
       "tic": true,
-      "image": "img-1711594556356.jpg",
+      "image": "img-1711598655645.jpg",
       "phone": 2245474185,
       "province": "Buenos Aires",
       "city": "Castelli",
-      "street": "Roman",
-      "num": 123
+      "street": "Juan Roman Riquelme",
+      "num": 12345
    }
 ]
