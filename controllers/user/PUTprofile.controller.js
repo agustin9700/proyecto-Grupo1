@@ -1,6 +1,7 @@
 const {loadData, saveData} = require('../../database');
-const bcrypt = require("bcrypt");
 const {validationResult} = require("express-validator");
+const path = require('path')
+const fs = require('fs')
 module.exports=(req,res)=>{
     const users = loadData("users")
     const image = req.file
@@ -18,7 +19,7 @@ module.exports=(req,res)=>{
                 city: city? city.trim() : "",
                 street: street? street.trim() : "",
                 num: num? +num : "",
-                image: image ? `/images/${image.filename}` : u.image
+                image: image ? image.filename : u.image
               };
               if(image?.filename){
                 const pathBefore = path.join(__dirname, `../../public${u.image}`);

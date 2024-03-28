@@ -26,14 +26,14 @@
       "id": 3,
       "name": "Luka Erba",
       "user": "_erbaLuka7",
-      "email": "luka@gmail.com",
+      "email": "@luka@gmail.com",
       "password": "$2b$10$gda79WLYCeYwV7V1/6ZdPOYThkD0g4A8eOAeDOpW1LaOOmnRGB7DG",
       "tic": true,
-      "image": "img-1711589455685.jpg",
+      "image": "img-1711594556356.jpg",
       "phone": 2245474185,
       "province": "Buenos Aires",
       "city": "Castelli",
-      "street": "maradona",
+      "street": "Roman",
       "num": 123
    }
 ]
