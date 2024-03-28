@@ -22,7 +22,7 @@ module.exports=(req,res)=>{
                 image: image ? image.filename : u.image
               };
               if(image?.filename){
-                const pathBefore = path.join(__dirname, `../../public${u.image}`);
+                const pathBefore = path.join(__dirname, `../../public/images/${u.image}`);
                 const existsFile = fs.existsSync(pathBefore);
       
                 if(existsFile){
