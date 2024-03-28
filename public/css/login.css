@@ -118,11 +118,21 @@
 }
 /*DESKTOP*/
 @media(min-width:769px){
+  .mainLogin{
+    margin: 0 auto;
+  }
+  .bodyLogin{
+    height: 100vh;
+  }
   .pizzaLogin{
       display: inline-block;
-      width: 40%;
-      height: 1200px;
-  }
+      width: 30%;
+      height: 100%;
+  } 
+  /*.pizzaLogin{
+    display: inline-block;
+          width: 60vw;
+  }*/
   .mainlogin{
     height: 70%;
   } 

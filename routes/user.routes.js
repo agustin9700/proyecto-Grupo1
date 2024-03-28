@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const {login,register,newUser,loginProcess,profile} = require('../controllers/user')
+const {login,register,newUser,loginProcess,profile,PUTprofile} = require('../controllers/user')
 const { upload } = require('../middleware/uploadfile')
 const userNoLogueado = require('../middleware/userNoLogeado')
 const userLogeado = require('../middleware/userLogeado')
@@ -15,6 +15,7 @@ router.get('/register',userNoLogueado, register)
 router.post('/register',[upload.single('imageProfile'),validaciones], newUser)
 
 
-router.get("/perfil", userLogeado, profile)
+router.get("/perfil/:user", userLogeado, profile)
+router.put("/perfil/:user", [userLogeado,upload.single('imageProfile'),validaciones], PUTprofile)
 
 module.exports = router

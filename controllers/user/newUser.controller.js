@@ -18,7 +18,12 @@ module.exports = function (req, res){
          email:email?.trim(),
          password: bcrypt.hashSync(password?.trim(), 10),
          tic: tic !== undefined ? true : false,
-         image: imageFile ? imageFile.filename : ''
+         image: imageFile ? imageFile.filename : '',
+         phone: "",
+        province: "",
+        city: "",
+        street: "",
+        num: ""
      } 
      
      users = [...users, newUser]
