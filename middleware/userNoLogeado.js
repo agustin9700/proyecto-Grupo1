@@ -3,6 +3,7 @@ function userNoLogueado(req, res, next) {
       next();
     } else {
       res.send("ya estas logueado con la cuenta "+req.cookies.recordarme);
+      
     }
   }
   

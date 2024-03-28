@@ -1,6 +1,8 @@
 const {loadData, saveData} = require('../../database');
 const bcrypt = require("bcrypt");
 const {validationResult} = require("express-validator");
+const path =require("path");
+const fs = require("fs")
 module.exports=(req,res)=>{
     const users = loadData("users")
     const image = req.file
