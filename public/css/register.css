@@ -42,7 +42,7 @@
 }
 .barraInputRegister{
     height: 40px;
-    width: 100%;
+    width: 1000px;
     border: 1px solid var(--Gris);
     border-radius: 5px;
     padding: 10px;

@@ -3,6 +3,7 @@
 }
 .bodyLogin{
   margin: 0;
+  background-color: var(--Blanco);
 }
 .mainLogin{
   padding: 15px;
