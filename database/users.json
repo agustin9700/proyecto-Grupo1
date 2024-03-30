@@ -24,15 +24,15 @@
    },
    {
       "id": 3,
-      "name": "Luka Erba",
+      "name": "Luka Ezequiel Erba",
       "user": "_erbaLuka7",
       "email": "luka@gmail.com",
       "password": "$2b$10$gda79WLYCeYwV7V1/6ZdPOYThkD0g4A8eOAeDOpW1LaOOmnRGB7DG",
       "tic": true,
-      "image": "img-1711599100833.jpg",
+      "image": "img-1711775963359.jpg",
       "phone": 2245474185,
       "province": "Buenos Aires",
-      "city": "Castelli",
+      "city": "",
       "street": "Juan Roman Riquelme",
       "num": 12345
    }
