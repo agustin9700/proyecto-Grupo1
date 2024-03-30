@@ -23,6 +23,13 @@
                                             alt="avatar"></figure>
                                         <h6>Selecciona una nueva foto</h6>
                                         <input type="file" name="imageProfile" id="imageProfile" class="text-center center-block file-upload">
+                                        <% if (locals.errors) { %>
+                                            <% locals.errors.forEach(error => { %>
+                                                <% if (error.path === 'imageProfile') { %>
+                                                    <span class="feedback"><%= error.msg %></span>   
+                                                <% } %>
+                                            <% }) %>    
+                                        <% } %> 
                                     </div>
                                     </hr><br>
                                 </div>
@@ -35,6 +42,13 @@
                                                 </label>
                                                 <input type="text" class="form-control" name="name" id="nombreRegister" value="<%=userlogueado.name%>"
                                                     placeholder="nombre">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'name') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -44,6 +58,13 @@
                                                 </label>
                                                 <input type="text" class="form-control" name="user" id="usuarioRegister" value="<%=userlogueado.user%>"
                                                     placeholder="usuario">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'user') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
                                             </div>
                                         </div>
                                     </div>
@@ -55,6 +76,13 @@
                                                 </label>
                                                 <input type="tel" class="form-control" name="phone" id="phone" value="<%=userlogueado.phone? userlogueado.phone : "" %>"
                                                     placeholder="teléfono">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'phone') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -64,6 +92,13 @@
                                                 </label>
                                                 <input type="email" class="form-control" name="email" id="emailRegister" value="<%=userlogueado.email%>"
                                                     placeholder="email">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'email') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
                                             </div>
                                         </div>
                                     </div>
@@ -75,6 +110,13 @@
                                                 </label>
                                                 <input type="text" class="form-control" name="province" id="province" value="<%=userlogueado.province? userlogueado.province : "" %>"
                                                     placeholder="provincia">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'province') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -83,6 +125,13 @@
                                                     <h4>Ciudad</h4>
                                                 </label>
                                                 <input type="text" class="form-control" name="city" id="city" placeholder="ciudad" value="<%=userlogueado.city? userlogueado.city : "" %>">
+                                                <% if (locals.errors) { %>
+                                                    <% locals.errors.forEach(error => { %>
+                                                        <% if (error.path === 'city') { %>
+                                                            <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                        <% } %>
+                                                    <% }) %>    
+                                                <% } %> 
                                             </div>
                                         </div>
                                     </div>
@@ -94,6 +143,13 @@
                                                 </label>
                                                 <input type="text" class="form-control" name="street" id="street" value="<%=userlogueado.street? userlogueado.street : "" %>"
                                                     placeholder="calle">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'street') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -103,6 +159,13 @@
                                                 </label>
                                                 <input type="number" class="form-control" name="num" id="num" value="<%=userlogueado.num? userlogueado.num : "" %>"
                                                     placeholder="número de casa o depto">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'num') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
                                             </div>
                                         </div>
                                     </div>
