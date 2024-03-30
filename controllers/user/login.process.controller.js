@@ -19,7 +19,7 @@ module.exports = function(req, res) {
             if (req.body.recordarme !== undefined) {
                 res.cookie("recordarme", userCorrecto.user, { maxAge: 30000 });
             }
-            return res.redirect("/admin");
+            return res.redirect("/");
         }
     } else {
         // Renderizar la página de inicio de sesión con mensajes de error

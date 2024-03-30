@@ -26,7 +26,7 @@
                                         <% if (locals.errors) { %>
                                             <% locals.errors.forEach(error => { %>
                                                 <% if (error.path === 'imageProfile') { %>
-                                                    <span class="feedback"><%= error.msg %></span>   
+                                                    <span class="feedback" style="color: red; background-color: white;"><%= error.msg %></span>   
                                                 <% } %>
                                             <% }) %>    
                                         <% } %> 
@@ -40,7 +40,7 @@
                                                 <label for="nombreRegister">
                                                     <h4>Nombre</h4>
                                                 </label>
-                                                <input type="text" class="form-control" name="name" id="nombreRegister" value="<%=userlogueado.name%>"
+                                                <input type="text" class="form-control" name="name" id="nombreRegister" value="<%= locals.old?.name? locals.old.name : userlogueado.name%>"
                                                     placeholder="nombre">
                                                     <% if (locals.errors) { %>
                                                         <% locals.errors.forEach(error => { %>
@@ -56,7 +56,7 @@
                                                 <label for="usuarioRegister">
                                                     <h4>Usuario</h4>
                                                 </label>
-                                                <input type="text" class="form-control" name="user" id="usuarioRegister" value="<%=userlogueado.user%>"
+                                                <input type="text" class="form-control" name="user" id="usuarioRegister" value="<%= locals.old?.user? locals.old.user : userlogueado.user%>"
                                                     placeholder="usuario">
                                                     <% if (locals.errors) { %>
                                                         <% locals.errors.forEach(error => { %>
@@ -74,7 +74,7 @@
                                                 <label for="phone">
                                                     <h4>Teléfono</h4>
                                                 </label>
-                                                <input type="tel" class="form-control" name="phone" id="phone" value="<%=userlogueado.phone? userlogueado.phone : "" %>"
+                                                <input type="tel" class="form-control" name="phone" id="phone" value="<%= locals.old?.phone? locals.old.phone : userlogueado.phone? userlogueado.phone : "" %>"
                                                     placeholder="teléfono">
                                                     <% if (locals.errors) { %>
                                                         <% locals.errors.forEach(error => { %>
@@ -90,7 +90,7 @@
                                                 <label for="emailRegister">
                                                     <h4>Email</h4>
                                                 </label>
-                                                <input type="email" class="form-control" name="email" id="emailRegister" value="<%=userlogueado.email%>"
+                                                <input type="email" class="form-control" name="email" id="emailRegister" value="<%= locals.old?.email? locals.old.email : userlogueado.email%>"
                                                     placeholder="email">
                                                     <% if (locals.errors) { %>
                                                         <% locals.errors.forEach(error => { %>
@@ -108,7 +108,7 @@
                                                 <label for="province">
                                                     <h4>Provincia</h4>
                                                 </label>
-                                                <input type="text" class="form-control" name="province" id="province" value="<%=userlogueado.province? userlogueado.province : "" %>"
+                                                <input type="text" class="form-control" name="province" id="province" value="<%= locals.old?.province? locals.old.province : userlogueado.province? userlogueado.province : "" %>"
                                                     placeholder="provincia">
                                                     <% if (locals.errors) { %>
                                                         <% locals.errors.forEach(error => { %>
@@ -124,7 +124,7 @@
                                                 <label for="city">
                                                     <h4>Ciudad</h4>
                                                 </label>
-                                                <input type="text" class="form-control" name="city" id="city" placeholder="ciudad" value="<%=userlogueado.city? userlogueado.city : "" %>">
+                                                <input type="text" class="form-control" name="city" id="city" placeholder="ciudad" value="<%= locals.old?.city? locals.old.city : userlogueado.city? userlogueado.city : "" %>">
                                                 <% if (locals.errors) { %>
                                                     <% locals.errors.forEach(error => { %>
                                                         <% if (error.path === 'city') { %>
@@ -141,7 +141,7 @@
                                                 <label for="street">
                                                     <h4>Calle</h4>
                                                 </label>
-                                                <input type="text" class="form-control" name="street" id="street" value="<%=userlogueado.street? userlogueado.street : "" %>"
+                                                <input type="text" class="form-control" name="street" id="street" value="<%= locals.old?.street? locals.old.street : userlogueado.street? userlogueado.street : "" %>"
                                                     placeholder="calle">
                                                     <% if (locals.errors) { %>
                                                         <% locals.errors.forEach(error => { %>
@@ -157,7 +157,7 @@
                                                 <label for="num">
                                                     <h4>Número</h4>
                                                 </label>
-                                                <input type="number" class="form-control" name="num" id="num" value="<%=userlogueado.num? userlogueado.num : "" %>"
+                                                <input type="number" class="form-control" name="num" id="num" value="<%= locals.old?.num? locals.old.num : userlogueado.num? userlogueado.num : "" %>"
                                                     placeholder="número de casa o depto">
                                                     <% if (locals.errors) { %>
                                                         <% locals.errors.forEach(error => { %>
