@@ -6,7 +6,6 @@ module.exports = (req,res) => {
 
     res.render("admin/editProduct", {"productEdit" : findProductEdit},(err, content) =>{
         err && res.send(err.message)
-    
         res.render("partials/dashboard", {
           views: content
         });
