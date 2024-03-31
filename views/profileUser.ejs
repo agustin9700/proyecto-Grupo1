@@ -3,115 +3,173 @@
 <!-- head -->
 <%- include ("./partials/head",{title: "Perfil Usuario" ,bootstrapActive: true})%>
 
-  <body>
+<body>
     <!-- header -->
     <%- include ("./partials/header") %>
     <main class="mainProfileUser">
         <div class="containerProfile">
-
             <div class="row profileUserDiv1">
-                <div class="col-sm-4" style="margin-top: 50px;">
-                    <div class="text-center">
-                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail"
-                            alt="avatar">
-                        <h6>selecciona una nueva foto</h6>
-                        <input type="file" class="text-center center-block file-upload">
-                    </div>
-                    </hr><br>
-                </div>
-    
-                <div class="col-sm-8" style="margin-top: 50px;">
+                <div class="col-sm-12" style="margin-top: 50px;">
                     <ul class="nav nav-tabs">
                         <li class="active "><a class="perfilProfileUser" data-toggle="tab" href="#home">Perfil</a></li>
                     </ul>
-    
-    
                     <div class="tab-content">
                         <div class="tab-pane active" id="home">
                             <hr>
-                            <form class="form row" action="/user/perfil" method="post" id="registrationForm">
-                                <div class="form-group col-6">
-    
-                                    <div class="">
-                                        <label for="nombreRegister">
-                                            <h4>Nombre</h4>
-                                        </label>
-                                        <input type="text" class="form-control" name="name" id="nombreRegister"
-                                            placeholder="nombre">
+                            <form class="form row" action="/user/perfil/<%=userlogueado.user%>?_method=PUT" method="post" enctype="multipart/form-data" id="registrationForm">
+                                <div class="col-sm-4">
+                                    <div class="text-center">
+                                        <figure style="width: 250px; margin: auto;"><img style="width: 100%;" src="/images/<%=userlogueado.image%>"  class="avatar img-circle img-thumbnail"
+                                            alt="avatar"></figure>
+                                        <h6>Selecciona una nueva foto</h6>
+                                        <input type="file" name="imageProfile" id="imageProfile" class="text-center center-block file-upload">
+                                        <% if (locals.errors) { %>
+                                            <% locals.errors.forEach(error => { %>
+                                                <% if (error.path === 'imageProfile') { %>
+                                                    <span class="feedback" style="color: red; background-color: white;"><%= error.msg %></span>   
+                                                <% } %>
+                                            <% }) %>    
+                                        <% } %> 
                                     </div>
+                                    </hr><br>
                                 </div>
-                                <div class="form-group col-6">
-    
-                                    <div class="">
-                                        <label for="usuarioRegister">
-                                            <h4>Usuario</h4>
-                                        </label>
-                                        <input type="text" class="form-control" name="user" id="usuarioRegister"
-                                            placeholder="usuario">
+                                <div class="form-group col-sm-8">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="nombreRegister">
+                                                    <h4>Nombre</h4>
+                                                </label>
+                                                <input type="text" class="form-control" name="name" id="nombreRegister" value="<%= locals.old?.name? locals.old.name : userlogueado.name%>"
+                                                    placeholder="nombre">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'name') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="usuarioRegister">
+                                                    <h4>Usuario</h4>
+                                                </label>
+                                                <input type="text" class="form-control" name="user" id="usuarioRegister" value="<%= locals.old?.user? locals.old.user : userlogueado.user%>"
+                                                    placeholder="usuario">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'user') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-    
-                                <div class="form-group col-6">
-    
-                                    <div class="col-xs-6">
-                                        <label for="teléfono">
-                                            <h4>Teléfono</h4>
-                                        </label>
-                                        <input type="number" class="form-control" name="teléfono" id="teléfono"
-                                            placeholder="teléfono">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="phone">
+                                                    <h4>Teléfono</h4>
+                                                </label>
+                                                <input type="tel" class="form-control" name="phone" id="phone" value="<%= locals.old?.phone? locals.old.phone : userlogueado.phone? userlogueado.phone : "" %>"
+                                                    placeholder="teléfono">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'phone') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="emailRegister">
+                                                    <h4>Email</h4>
+                                                </label>
+                                                <input type="email" class="form-control" name="email" id="emailRegister" value="<%= locals.old?.email? locals.old.email : userlogueado.email%>"
+                                                    placeholder="email">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'email') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-    
-                                <div class="form-group col-6">
-                                    <div class="col-xs-6">
-                                        <label for="emailRegister">
-                                            <h4>Email</h4>
-                                        </label>
-                                        <input type="text" class="form-control" name="email" id="emailRegister"
-                                            placeholder="introduce tu móvil">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="province">
+                                                    <h4>Provincia</h4>
+                                                </label>
+                                                <input type="text" class="form-control" name="province" id="province" value="<%= locals.old?.province? locals.old.province : userlogueado.province? userlogueado.province : "" %>"
+                                                    placeholder="provincia">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'province') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="city">
+                                                    <h4>Ciudad</h4>
+                                                </label>
+                                                <input type="text" class="form-control" name="city" id="city" placeholder="ciudad" value="<%= locals.old?.city? locals.old.city : userlogueado.city? userlogueado.city : "" %>">
+                                                <% if (locals.errors) { %>
+                                                    <% locals.errors.forEach(error => { %>
+                                                        <% if (error.path === 'city') { %>
+                                                            <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                        <% } %>
+                                                    <% }) %>    
+                                                <% } %> 
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group col-6">
-    
-                                    <div class="col-xs-6">
-                                        <label for="provincia">
-                                            <h4>Provincia</h4>
-                                        </label>
-                                        <input type="text" class="form-control" name="provincia" id="provincia"
-                                            placeholder="provincia">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="street">
+                                                    <h4>Calle</h4>
+                                                </label>
+                                                <input type="text" class="form-control" name="street" id="street" value="<%= locals.old?.street? locals.old.street : userlogueado.street? userlogueado.street : "" %>"
+                                                    placeholder="calle">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'street') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="num">
+                                                    <h4>Número</h4>
+                                                </label>
+                                                <input type="number" class="form-control" name="num" id="num" value="<%= locals.old?.num? locals.old.num : userlogueado.num? userlogueado.num : "" %>"
+                                                    placeholder="número de casa o depto">
+                                                    <% if (locals.errors) { %>
+                                                        <% locals.errors.forEach(error => { %>
+                                                            <% if (error.path === 'num') { %>
+                                                                <span class="feedback" style="color: red"><%= error.msg %></span>   
+                                                            <% } %>
+                                                        <% }) %>    
+                                                    <% } %> 
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group col-6">
-    
-                                    <div class="col-xs-6">
-                                        <label for="ciudad">
-                                            <h4>Ciudad</h4>
-                                        </label>
-                                        <input type="text" class="form-control" id="ciudad" placeholder="ciudad">
-                                    </div>
-                                </div>
-                                <div class="form-group col-6">
-    
-                                    <div class="col-xs-6">
-                                        <label for="calle">
-                                            <h4>Calle</h4>
-                                        </label>
-                                        <input type="text" class="form-control" name="calle" id="calle"
-                                            placeholder="calle">
-                                    </div>
-                                </div>
-                                <div class="form-group col-6">
-    
-                                    <div class="col-xs-6">
-                                        <label for="numero">
-                                            <h4>Número</h4>
-                                        </label>
-                                        <input type="number" class="form-control" name="numero" id="numero"
-                                            placeholder="numero de casa o depto">
-                                    </div>
-                                </div>
-                                <div class="form-group col-6">
-                                    <div class="col-xs-12">
+                                    <div class="text-center">
                                         <br>
                                         <button class="btn btn-success" type="submit"><i
                                                 class="glyphicon glyphicon-ok-sign"></i> Guardar</button>
@@ -120,20 +178,16 @@
                                     </div>
                                 </div>
                             </form>
-    
                             <hr>
-    
                         </div>
                     </div>
-    
                 </div>
             </div>
+        </div>
     </main>
-
-      <%- include ("./partials/footer") %>
-
-        <!--Boostrap script-->
-        <%- include ("./partials/scripts") %>
-  </body>
+    <%- include ("./partials/footer") %>
+    <!-- Bootstrap script-->
+    <%- include ("./partials/scripts") %>
+</body>
 
 </html>
