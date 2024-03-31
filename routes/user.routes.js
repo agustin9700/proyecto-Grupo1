@@ -1,18 +1,22 @@
 const express = require('express')
 const router = express.Router()
-const userController = require('../controllers/user')
+const {login,register,newUser,loginProcess,profile,PUTprofile} = require('../controllers/user')
 const { upload } = require('../middleware/uploadfile')
 const userNoLogueado = require('../middleware/userNoLogeado')
 const userLogeado = require('../middleware/userLogeado')
+const validaciones = require("../middleware/Validation/registerValidation")
+const loginValidation = require("../middleware/Validation/loginValidation")
+const editProfileValidation = require('../middleware/Validation/editProfileValidation')
 
 
-router.get('/login',userNoLogueado, userController.login)
-router.post("/login",userController.loginProcess)
+router.get('/login',userNoLogueado, login)
+router.post("/login",loginValidation ,loginProcess)
+
+router.get('/register',userNoLogueado, register)
+router.post('/register',[upload.single('imageProfile'),validaciones], newUser)
 
 
-router.get('/register',userNoLogueado, userController.register)
-router.post('/register',upload.single('imageProfile'), userController.newUser)
-
-router.get("/perfil", userLogeado, userController.profile)
+router.get("/perfil/:user", userLogeado, profile)
+router.put("/perfil/:user", [userLogeado,upload.single('imageProfile'),editProfileValidation], PUTprofile)
 
 module.exports = router

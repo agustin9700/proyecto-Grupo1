@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- head -->
-<%- include ("./partials/head", {title: "Login",bootstrapActive: true})%>
-
-<body class="bodyRegister">
-    <img class="pizzaRegister" src="/images/pizzaRegister.png" alt="">
-    <main class="mainRegister">
+<head>
+    <!-- Incluir encabezado -->
+    <%- include ("./partials/head", {title: "Loguearse",bootstrapActive: true})%>
+</head>
+<body class="bodyLogin">
+    <img class="pizzaLogin" src="/images/pizzaRegister.png" alt="">
+    <main class="mainLogin">
         <a href="/"><i class="fa-solid fa-angle-left volverRegister"></i></a>
         <div class="fotosRegister">
             <img class="logoRegister" src="/images/logo.png" alt="">
         </div>
-            <form class="formRegister row" action="/user/login" method="post" enctype="application/x-www-form-urlencoded">
-                <div class="divFormRegister">
-                
+        <form class="formRegister row" action="/user/login" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="divFormRegister">
                 <div class="divUsuarioRegister divInputsRegister col-12">
                     <label class="tituloInputRegister" for="usuarioRegister">Usuario</label>
-                    <input class="barraInputRegister" type="text" name="user" value="" id="usuarioRegister">
-                    
+                    <input class="barraInputRegister" type="text" name="user" value="" id="usuarioRegister" style="width: 100%;">
+                    <% if (locals.errors) { %>
+                        <% locals.errors.forEach(error => { %>
+                            <% if (error.path === 'user') { %>
+                                <span class="text-danger m-0 align-top"><%= error.msg %></span>   
+                            <% } %>
+                        <% }) %>    
+                    <% } %> 
+                    <span class="text-danger m-0"><%= typeof locals.error !== "undefined" ? locals.error : "" %></span>
                 </div>
-               
                 <div class="divContrasenaRegister divInputsRegister col-12">
                     <label class="tituloInputRegister" for="contrasenaRegister">Contraseña</label>
-                    <input class="barraInputRegister" type="password" name="password" value="" id="contrasenaRegister">
-                    
+                    <input class="barraInputRegister" type="password" name="password" value="" id="contrasenaRegister" style="width: 100%;">
+                    <% if (locals.errors) { %>
+                        <% locals.errors.forEach(error => { %>
+                            <% if (error.path === 'password') { %>
+                                <span class="text-danger m-0 align-top"><%= error.msg %></span>   
+                            <% } %>
+                        <% }) %>    
+                    <% } %> 
+                    <span class="text-danger m-0"><%= typeof locals.error !== "undefined" ? locals.error : "" %></span>
                 </div>
-
-                <div  class="mt-3">
-                    <input  type="checkbox" id="recordarme" name="recordarme">
+                <div class="mt-3">
+                    <input type="checkbox" id="recordarme" name="recordarme">
                     <label for="recordarme" class="form-label">Recordarme</label>
-                    
                 </div>
-                
-                
                 <div class="divBotonRegister mt-2">
                     <button class="enviarRegister" type="submit">Login</button>
                 </div>
@@ -43,5 +52,4 @@
         </p>
     </main>
 </body>
-
 </html>
