@@ -34,7 +34,7 @@ const validacionesEditProfile = [
         .isAlphanumeric('es-ES',{ignore:" "}).withMessage('Los caracteres especiales no están permitidos'),
 
     check('num')
-        .optional({nullable:true})
+        .optional({nullable:true, checkFalsy: true})
         .isNumeric().withMessage('debes colocar el número de tu localidad'),
 
     body('imageProfile')
