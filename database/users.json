@@ -35,5 +35,19 @@
       "city": "Castelli",
       "street": "Juan Roman Riquelme",
       "num": 12345
+   },
+   {
+      "id": 4,
+      "name": "Ariana",
+      "user": "arian",
+      "email": "ariana@gmail.com",
+      "password": "$2b$10$2KW5j8YXew8zZsLGAVmFxuO08YAoh9GcKj74T2nxWjx2wAXRoxAha",
+      "tic": true,
+      "image": "img-1711927640430.jpeg",
+      "phone": "",
+      "province": "",
+      "city": "",
+      "street": "",
+      "num": ""
    }
 ]
