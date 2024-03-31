@@ -1,5 +1,6 @@
 const multer = require('multer');
 const path = require("path")
+const formato = ["images/jpeg", "images/jpg" ,"images/png"]
 
 
 const storage = multer.diskStorage({
@@ -11,6 +12,7 @@ const storage = multer.diskStorage({
       cb(null, formatoFile)
     }
   });
+
   
   const upload = multer({ storage });
 
