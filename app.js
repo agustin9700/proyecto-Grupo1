@@ -4,13 +4,14 @@ const port = 3030;
 const path = require("path");
 const cookieParser = require('cookie-parser');
 const partials = require('express-partials');
-const methodOverride = require("method-override")
-
+const methodOverride = require("method-override");
+const session = require("express-session");
+const recordarmeCookie = require("./middleware/recordarmeCookie")
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 //app.set('views', path.join(__dirname, './views'));
-app.use(partials())
+
 
 
 const homeRoutes = require ('./routes/home.routes');
@@ -25,6 +26,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser())
 app.use(methodOverride("_method"))
+app.use(partials())
+app.use(session({secret: "esto es secreto"}))
+app.use(recordarmeCookie)
 
 app.use('/', homeRoutes);
 app.use('/user', authenticationRoutes);

@@ -12,7 +12,7 @@
         <div class="barraLateral">
 
         <div class="logo">
-            <img src="\images\logos\logo.ico" alt="">
+            <a href="/"><img src="\images\logos\logo.ico" alt=""></a>
         </div>
 
         <div class="menu">
@@ -21,7 +21,7 @@
 
                 <li class="li-dash">
                     <i class="fa-solid fa-user"></i>
-                    <a href="#"><p>Usuario</p></a>
+                    <a href="/user/perfil"><p>Perfil</p></a>
                 </li>
                 
                 <li class="li-dash">
@@ -48,6 +48,14 @@
                     <i class="fa-solid fa-inbox"></i>
                     <a href="#"><p>Mensajes</p></a>
                 </li>
+                
+
+            </ul>
+            <ul class="menu-ul "> 
+                <li class="li-dash">
+                    <i class="fa-solid fa-power-off"></i>
+                    <a href="/admin/logout"><p>Cerrar Sesión</p></a>
+                </li>
             </ul>
         </div>
         </div> 
@@ -60,9 +68,9 @@
             </div>
 
             <div class="adminUser">
-                <img src="/images/DSC_0661.JPG" alt="ImagePerfil">
-                <h5>ArianaKneeteman</h5>
-                <h6>Admin</h6>
+                <img src="/images/<%= userlogin.image ? userlogin.image : 'default.jpg' %>" alt="ImagePerfil">
+                <h5> <%= userlogin.name  %></h5>
+                <h6> <%= userlogin.user %></h6>
             </div>
         </div>                  
       
