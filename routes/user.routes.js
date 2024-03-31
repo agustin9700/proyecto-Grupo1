@@ -5,6 +5,7 @@ const { upload } = require('../middleware/uploadfile')
 const userNoLogueado = require('../middleware/userNoLogeado')
 const userLogeado = require('../middleware/userLogeado')
 
+
 router.get('/login',userNoLogueado, userController.login)
 router.post("/login",userController.loginProcess)
 
