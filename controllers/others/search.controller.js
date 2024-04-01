@@ -1,4 +1,5 @@
 module.exports = function(req, res) {
+    const userlogueado = req.session.user
     const { loadData } = require("../../database");
     const productos = loadData('productos')
     let busqueda = req.query.productoBuscado.toLowerCase(); // Convertir a minúsculas
@@ -14,5 +15,5 @@ module.exports = function(req, res) {
         }
     }
 
-    res.render("search",{resultadosBusqueda});
+    res.render("search",{resultadosBusqueda, userlogueado});
 };

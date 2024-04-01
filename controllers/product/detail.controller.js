@@ -4,5 +4,7 @@ module.exports= (req,res) => {
     const {id} = req.params
     const products = loadData("productos")
     const productFind = products.find(p => p.id === +id)
-    res.render('detail',{p:productFind,toThousand})
+    const userlogueado = req.session.user
+
+    res.render('detail',{p:productFind,toThousand, userlogueado})
 }

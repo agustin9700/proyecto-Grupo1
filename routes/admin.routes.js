@@ -11,7 +11,7 @@ router.get("/listProducts",userLogeado, adminController.admin);
 
 
 router.get("/crearProduct",userLogeado,adminController.crear)
-router.post("/crearProduct",upload.single('image'), adminController.newProduct);
+router.post("/crearProduct",upload.single('image'),adminController.newProduct);
 
 // "/admin"
 router.get("/editar/:id",userLogeado, adminController.editProduct);

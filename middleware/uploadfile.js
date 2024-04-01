@@ -1,5 +1,6 @@
 const multer = require('multer');
 const path = require("path")
+const formato = ["images/jpeg", "images/jpg" ,"images/png"]
 
 
 const storage = multer.diskStorage({
@@ -10,9 +11,10 @@ const storage = multer.diskStorage({
       const formatoFile = "img"  + '-' + Date.now() + path.extname(file.originalname);
       cb(null, formatoFile)
     }
-  })
+  });
+
   
-  const upload = multer({ storage : storage });
+  const upload = multer({ storage });
 
   module.exports = {
     upload
